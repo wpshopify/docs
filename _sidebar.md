@@ -1,30 +1,37 @@
--  Getting Started
+-  <span class="section-getting-started">Getting Started</span>
 
-   -  [Connecting](getting-started/connecting.md)
+   -  [Syncing](getting-started/syncing.md)
    -  [Displaying](getting-started/displaying.md)
    -  [Settings](getting-started/settings.md)
-   -  [Gotchas](getting-started/gotchas.md)
+   -  [Common Issues](getting-started/common-issues.md)
    -  [Requirements](getting-started/requirements.md)
    -  [License](getting-started/license.md)
    -  [FAQs](getting-started/faqs.md)
    -  [Changelog](getting-started/changelog.md)
 
-*  Shortcodes
+*  <span class="section-shortcodes">Shortcodes</span>
 
-   -  [[wps_products]](shortcodes/wps_products.md)
    -  [[wps_products_title]](shortcodes/wps_products_title.md)
    -  [[wps_products_description]](shortcodes/wps_products_description.md)
    -  [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
    -  [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
    -  [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
 
-*  Common Issues
+*  <span class="section-render-api">Render API</span>
 
-   -  [Products not showing](common-issues/products-not-showing.md)
-   -  [Syncing errors](common-issues/syncing-errors.md)
+   -  [Products](render-api/products.md)
 
-*  Render API
-*  Guides
-*  Templates
-*  Actions
-*  Filters
+*  <span class="section-guides">Guides</span>
+
+   -  [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
+
+*  <span class="section-templates">Templates</span>
+
+   -  [products/title](templates/products/title.md)
+
+*  <span class="section-actions">Actions</span>
+
+   -  [wps_cart_icon](actions/wps_cart_icon.md)
+
+*  <span class="section-filters">Filters</span>
+   -  [wps_product_class](filters/wps_product_class.md)

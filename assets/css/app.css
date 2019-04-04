@@ -1,0 +1,227 @@
+:root {
+   --sidebar-width: 350px;
+   --content-max-width: 950px;
+   --sidebar-nav-indent: 20px;
+   --code-block-border-radius: 5px;
+   --code-inline-border-radius: 5px;
+}
+
+@keyframes rotating {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+img[alt='wpshopify'] {
+   animation: rotating 12s linear infinite;
+}
+
+.sidebar {
+   /*box-shadow: 0 0px 35px -6px hsla(0, 0%, 55%, 0.2);*/
+   border-right: 1px solid #ddd;
+   padding-right: 0;
+}
+
+.sidebar::-webkit-scrollbar {
+   width: 1em;
+}
+
+.markdown-section code,
+.markdown-section pre,
+.markdown-section pre > code {
+   color: rgb(255, 255, 255); /* default color for elements not styled by prism theme */
+   background-color: #001625; /* dark background, because vue.css modify it */
+}
+
+/* because the bgcolor change in previous css rule. font-color when using inline code tag */
+.markdown-section code {
+   color: #eccb84;
+}
+
+@font-face {
+   font-family: 'Fira Mono Regular';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Fira Mono Regular'), url('../fonts/FiraMono-Regular.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Fira Mono Medium';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Fira Mono Medium'), url('../fonts/FiraMono-Medium.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Fira Mono Bold';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Fira Mono Bold'), url('../fonts/FiraMono-Bold.woff') format('woff');
+}
+
+.sidebar li > p {
+   font-weight: 700;
+   margin: 25px 0 0;
+   color: #000;
+   font-size: 18px;
+   font-family: 'Fira Mono Bold';
+}
+
+.sidebar li a {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar li > ul > li {
+   font-size: 18px;
+}
+
+.sidebar li.active {
+   position: relative;
+}
+
+.sidebar li.active:before {
+   content: '';
+   display: inline-block;
+   background-image: url('../icon-asteriks.svg');
+   background-size: contain;
+   width: 12px;
+   height: 12px;
+   position: absolute;
+   left: -20px;
+   top: calc(50% - 5px);
+}
+
+.sidebar {
+   line-height: 1.4;
+}
+.logo {
+   max-width: 230px;
+}
+.content p {
+   font-size: 18px;
+}
+.content p:first-of-type,
+.content li {
+   font-size: 20px;
+}
+.content h1 {
+   font-size: 42px;
+   font-family: 'Fira Mono Bold';
+}
+.content p,
+.content h2 {
+   font-family: 'Open Sans', sans-serif;
+   /* font-weight: bold; */
+}
+
+.content h2,
+.content h3,
+.content h4 {
+   font-weight: bold;
+}
+
+.content h2 {
+   font-size: 24px;
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 1em;
+   padding-bottom: 5px;
+   font-weight: 100;
+}
+
+.content h3 {
+   font-size: 20px;
+}
+
+.content h3 code {
+   font-size: 18px;
+   position: relative;
+   left: -7px;
+}
+
+.content h4 {
+   font-size: 18px;
+}
+
+.content h1:hover a.anchor:hover {
+   text-decoration: none;
+   cursor: text;
+}
+
+.docs-social-link {
+   max-width: 40px;
+   display: inline-block;
+}
+
+.app-name-link {
+   display: block;
+   text-align: left;
+
+   position: relative;
+   top: 15px;
+}
+
+.sidebar > h1 img {
+   max-width: 250px;
+}
+
+#main {
+   margin-left: 6vw;
+}
+.close #main {
+   margin-left: auto;
+}
+
+[data-page*='getting-started'] .content h1 span,
+.section-getting-started {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff6ca), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #fff6ca 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%);
+}
+
+[data-page*='shortcodes'] .content h1 span,
+.section-shortcodes {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #a9f8ff 50%, transparent 50%);
+}
+
+[data-page*='render-api'] .content h1 span,
+.section-render-api {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e5e0ff), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #e5e0ff 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #e5e0ff 50%, transparent 50%);
+}
+
+[data-page*='guides'] .content h1 span,
+.section-guides {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffd1df), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #ffd1df 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #ffd1df 50%, transparent 50%);
+}
+
+[data-page*='templates'] .content h1 span,
+.section-templates {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #befff2), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #befff2 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #befff2 50%, transparent 50%);
+}
+
+[data-page*='actions'] .content h1 span,
+[data-page*='filters'] .content h1 span,
+.section-actions,
+.section-filters {
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f0f0f0), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #f0f0f0 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%);
+}
+
+::-moz-selection {
+   background: #001625;
+   color: white;
+}
+::selection {
+   background: #001625;
+   color: white;
+}

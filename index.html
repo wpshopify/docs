@@ -7,94 +7,14 @@
       <meta name="description" content="Description" />
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" />
+      <link href="https://unpkg.com/prism-theme-night-owl@1.0.1/style.min.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 
-      <style>
-         @font-face {
-            font-family: 'Fira Mono Regular';
-            font-style: normal;
-            font-weight: normal;
-            src: local('Fira Mono Regular'), url('./assets/fonts/FiraMono-Regular.woff') format('woff');
-         }
-
-         @font-face {
-            font-family: 'Fira Mono Medium';
-            font-style: normal;
-            font-weight: normal;
-            src: local('Fira Mono Medium'), url('./assets/fonts/FiraMono-Medium.woff') format('woff');
-         }
-
-         @font-face {
-            font-family: 'Fira Mono Bold';
-            font-style: normal;
-            font-weight: normal;
-            src: local('Fira Mono Bold'), url('./assets/fonts/FiraMono-Bold.woff') format('woff');
-         }
-
-         .sidebar li > p {
-            font-weight: 700;
-            margin: 25px 0 0;
-            color: #000;
-            font-size: 18px;
-            font-family: 'Fira Mono Bold';
-         }
-         .sidebar li > ul > li {
-            font-size: 18px;
-         }
-         .logo {
-            max-width: 230px;
-         }
-
-         :root {
-            --sidebar-width: 350px;
-         }
-         .content p,
-         .content li {
-            font-size: 20px;
-         }
-         .content h1 {
-            font-size: 50px;
-            font-family: 'Fira Mono Bold';
-         }
-         .content h1:hover a.anchor:hover {
-            text-decoration: none;
-            cursor: text;
-         }
-
-         .docs-social-link {
-            max-width: 40px;
-            display: inline-block;
-         }
-
-         .app-name-link {
-            display: block;
-            text-align: left;
-         }
-
-         .sidebar > h1 img {
-            max-width: 250px;
-         }
-
-         [data-page*='getting-started'] .content h1 span {
-            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff6ca), color-stop(50%, transparent));
-            background-image: -webkit-linear-gradient(bottom, #fff6ca 50%, transparent 50%);
-            background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%);
-         }
-
-         [data-page*='shortcodes'] .content h1 span {
-            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
-            background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
-            background-image: linear-gradient(0deg, #a9f8ff 50%, transparent 50%);
-         }
-
-         [data-page*='common-issues'] .content h1 span {
-            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e5e0ff), color-stop(50%, transparent));
-            background-image: -webkit-linear-gradient(bottom, #e5e0ff 50%, transparent 50%);
-            background-image: linear-gradient(0deg, #e5e0ff 50%, transparent 50%);
-         }
-      </style>
+      <link href="assets/css/app.css" rel="stylesheet" />
    </head>
    <body>
       <div id="app"></div>
+
       <script>
          window.$docsify = {
             loadSidebar: true,

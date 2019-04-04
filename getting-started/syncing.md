@@ -1,6 +1,6 @@
-# Connecting
+# Syncing
 
-Connecting your Shopify store to WordPress is pretty straight forward. However it does require a little bit of configuration within Shopify beforehand. We've made a short video tutorial below that will walk you through the entire process.
+Syncing your Shopify store to WordPress is pretty straight forward. However it does require a little bit of configuration within Shopify beforehand. We've made a short video tutorial below that will walk you through the entire process.
 
 ## Step 1.
 
