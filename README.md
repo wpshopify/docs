@@ -1,3 +1,6 @@
-# 🚧 WP Shopify 2.0 in progress
+# WP Shopify 2.0 Documentation
 
-> Sell and build custom Shopify experiences on WordPress
+<br>
+
+> [!WARNING]
+> WP Shopify 2.0 is still under development. These docs may change!

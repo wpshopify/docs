@@ -6,9 +6,9 @@ Below are some common issues users have when using the plugin
 
 ## Syncing Errors
 
-We've taken great steps to ensure that the syncing process works across multiple different environments. However sometimes a web host may have certain restrictions in place that prevent the process from finishing successfully. 
+We've taken great steps to ensure that the syncing process works across multiple different environments. However sometimes a web host may have certain restrictions in place that prevent the process from finishing successfully.
 
-If you're not finding a particular syncing error in the list below, please open an issue on the official WordPress.org forums here: https://wordpress.org/plugins/wpshopify/ . You can also <a href="https://wpshop.io/purchase">purchase</a> a WP Shopify Pro license to receive dedicated live support in our private Slack channel.
+If you're not finding a particular syncing error in the list below, please open an issue on the official WordPress.org forums here: https://wordpress.org/plugins/wpshopify/ . You can also [purchase](https://wpshop.io/purchase) a WP Shopify Pro license to receive dedicated live support in our private Slack channel.
 
 ### First things to check
 

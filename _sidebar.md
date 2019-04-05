@@ -5,6 +5,7 @@
    -  [Settings](getting-started/settings.md)
    -  [Common Issues](getting-started/common-issues.md)
    -  [Requirements](getting-started/requirements.md)
+   -  [WP Shopify Pro](getting-started/wp-shopify-pro.md)
    -  [License](getting-started/license.md)
    -  [FAQs](getting-started/faqs.md)
    -  [Changelog](getting-started/changelog.md)

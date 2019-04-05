@@ -4,7 +4,7 @@
    --sidebar-nav-indent: 20px;
    --code-block-border-radius: 5px;
    --code-inline-border-radius: 5px;
-   --copycode-background: #19212c;
+   --copycode-background: #242f3f;
    --base-line-height: 1.5;
 }
 
@@ -34,6 +34,10 @@ span > code {
    color: #1e99b8;
 }
 
+.content .alert .title {
+   font-size: 18px;
+}
+
 @keyframes rotating {
    from {
       transform: rotate(0deg);
@@ -46,8 +50,31 @@ img[alt='wpshopify'] {
    animation: rotating 12s linear infinite;
 }
 
+.markdown-section td {
+   border: 1px solid #ddd;
+}
+
+.anchor {
+   position: relative;
+}
+
+.pro-only {
+   position: absolute;
+   right: -80px;
+   font-size: 75%;
+   top: 0;
+   color: #4951cf;
+}
+
+thead th {
+   font-size: 18px;
+}
+
+.markdown-section th {
+   padding-left: 0;
+}
+
 .sidebar {
-   /*box-shadow: 0 0px 35px -6px hsla(0, 0%, 55%, 0.2);*/
    border-right: 1px solid #ddd;
    padding-right: 0;
 }
@@ -66,6 +93,14 @@ img[alt='wpshopify'] {
 /* because the bgcolor change in previous css rule. font-color when using inline code tag */
 .markdown-section code {
    color: #eccb84;
+}
+
+/* .markdown-section a.anchor:hover {
+
+} */
+
+.content > article {
+   padding-bottom: 10em;
 }
 
 @font-face {
