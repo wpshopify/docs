@@ -1,8 +1,8 @@
 # [wps_products_title]
 
-Displays the "title "component of one or more products.
+Displays the product "title "component of one or more products.
 
-## Examples Usage:
+## 🎯 Example Usage
 
 ```js
 // Simple usage to show all products
@@ -18,7 +18,7 @@ Displays the "title "component of one or more products.
 [wps_products_title description="Limited offer"]
 ```
 
-## Attributes
+## ⚡️ Attributes
 
 ### `title`
 
@@ -29,6 +29,12 @@ Allows for filtering products that contain specific titles. Multiple values must
 ```
 
 ### `vendor`
+
+Allows for filtering products that belong to certain vendors. Multiple values must be comma separated.
+
+```js
+[wps_products_title vendor="Apple, Microsoft"]
+```
 
 ### `description`
 

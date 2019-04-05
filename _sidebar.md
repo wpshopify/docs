@@ -11,11 +11,15 @@
 
 *  <span class="section-shortcodes">Shortcodes</span>
 
+   -  [[wps_products]](shortcodes/wps_products.md)
    -  [[wps_products_title]](shortcodes/wps_products_title.md)
    -  [[wps_products_description]](shortcodes/wps_products_description.md)
    -  [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
    -  [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
    -  [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
+   -  [[wps_cart]](shortcodes/wps_cart.md)
+   -  [[wps_search]](shortcodes/wps_search.md)
+   -  [[wps_filters]](shortcodes/wps_filters.md)
 
 *  <span class="section-render-api">Render API</span>
 

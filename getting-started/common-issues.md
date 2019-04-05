@@ -6,11 +6,13 @@ Below are some common issues users have when using the plugin
 
 ## Syncing Errors
 
-We've taken great steps to ensure that the syncing process works across multiple different environments. However sometimes a web host may have certain restrictions and limitations in place that prevent the process from finishing successfully. If none of the below information helps, please send us an email or purchase a WP Shopify Pro license to receive dedicated live support in our private Slack channel.
+We've taken great steps to ensure that the syncing process works across multiple different environments. However sometimes a web host may have certain restrictions in place that prevent the process from finishing successfully. 
+
+If you're not finding a particular syncing error in the list below, please open an issue on the official WordPress.org forums here: https://wordpress.org/plugins/wpshopify/ . You can also <a href="https://wpshop.io/purchase">purchase</a> a WP Shopify Pro license to receive dedicated live support in our private Slack channel.
 
 ### First things to check
 
-1. Make sure you've set the proper API permissions for your Shopify private app. Specifically, ensure that "Read and Write" is selected for "Product Information".
+1. Make sure you've set the proper API permissions for your Shopify private app. Specifically, ensure that `Read and Write` is selected for "Product Information".
 2. Ensure you meet WP Shopifys minimum requirements.
 3. Check your PHP and Apache/Nginx logs to see if any errors are shown. If you don't know how to do this, contact your web host and ask them to look on your behalf. If you find any errors please send them to us by email or in the private Slack channel for further help.
 4. Ask your web host if they have a firewall enabled that restricts numerous third-party API requests during a short period of time.

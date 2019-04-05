@@ -4,6 +4,34 @@
    --sidebar-nav-indent: 20px;
    --code-block-border-radius: 5px;
    --code-inline-border-radius: 5px;
+   --copycode-background: #19212c;
+   --base-line-height: 1.5;
+}
+
+.markdown-section pre[data-lang]::after {
+   display: none;
+}
+pre[v-pre] {
+   box-shadow: 0 2px 10px 2px hsla(0, 0%, 55%, 0.49);
+}
+
+li > code,
+span > code {
+   box-shadow: 0 2px 4px 1px hsla(0, 0%, 55%, 0.23);
+}
+
+.content ol li,
+.content ul li {
+   margin-bottom: 0.7em;
+}
+
+.content p a {
+   color: #1e99b8;
+}
+
+.content p a:hover {
+   opacity: 0.7;
+   color: #1e99b8;
 }
 
 @keyframes rotating {
