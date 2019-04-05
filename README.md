@@ -1,3 +1,3 @@
-# WP Shopify documentation
+# WP Shopify documentation v2
 
-> An awesome project.
+> Sell and build custom Shopify experiences on WordPress

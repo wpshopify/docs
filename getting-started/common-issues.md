@@ -1,5 +1,7 @@
 # Common Issues
 
+Below are some common issues users have when using the plugin
+
 ## Products Not Showing
 
 ## Syncing Errors
