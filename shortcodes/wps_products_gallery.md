@@ -1,26 +1,26 @@
 # [wps_products_gallery]
 
-Displays the product "gallery "component of one or more products.
+Displays the product "gallery" component.
 
 ## 🎯 Example Usage
 
 ```js
-// Defaults to showing gallery for the latest 10 products
+// Defaults to showing galleries for the latest 10 products
 [wps_products_gallery]
 
-// Show gallery from products with titles "Product A" and Product B"
+// Show galleries for products with titles "Product A" and Product B"
 [wps_products_gallery title="Product A, Product B"]
 
-// Show gallery from products of type "Sale". Don't show image zoom or gallery thumbnails.
+// Show galleries for products of type "Sale". Don't show image zoom or gallery thumbs
 [wps_products_gallery type="Sale" show_featured_only="true" show_zoom="false"]
 
 ```
 
-## ⚡️ Attributes
+## ⚡️ Available Attributes
 
 ### `title`
 
-Display gallery component from product title(s).
+Display gallery from product title(s).
 
 Default: `false`
 
@@ -30,7 +30,7 @@ Default: `false`
 
 ### `slug`
 
-Display gallery component from product slug(s). Case insensitive.
+Display gallery from product slug(s). Case insensitive.
 
 Default: `false`
 
@@ -40,7 +40,7 @@ Default: `false`
 
 ### `tag`
 
-Display gallery component from product tag(s).
+Display gallery from product tag(s).
 
 Default: `false`
 
@@ -50,7 +50,7 @@ Default: `false`
 
 ### `vendor`
 
-Display gallery component from product vendor(s).
+Display gallery from product vendor(s).
 
 Default: `false`
 
@@ -60,7 +60,7 @@ Default: `false`
 
 ### `type`
 
-Display gallery component from product type(s).
+Display gallery from product type(s).
 
 Default: `false`
 
@@ -70,7 +70,10 @@ Default: `false`
 
 ### `description`
 
-Display gallery component from product description
+Display gallery from product description. Performs a "wildcard" search based on the content you provide. For example, providing the value "Sale" will return products will the following descriptions:
+
+"This product is on Sale until Tuesday!"<br>
+"Sale ends tomorrow"
 
 Default: `false`
 
@@ -80,7 +83,7 @@ Default: `false`
 
 ### `product_id`
 
-Display gallery component from product id(s).
+Display gallery from product id(s).
 
 Default: `false`
 
@@ -90,7 +93,7 @@ Default: `false`
 
 ### `post_id`
 
-Display gallery component from post id(s).
+Display gallery from post id(s).
 
 Default: `false`
 
@@ -107,8 +110,8 @@ Default: `title`
 | Available Values |
 | :--------------- |
 | title            |
-| updated          |
-| created          |
+| updated_at       |
+| created_at       |
 
 ```js
 [wps_products_gallery orderby="title"]
@@ -126,17 +129,29 @@ Default: `desc`
 | desc             |
 
 ```js
+// Smallest to largest (A to Z) (old to new)
 [wps_products_gallery order="asc"]
+
+// Largest to smallest (Z to A) (new to old)
+[wps_products_gallery order="desc"]
 ```
 
 ### `limit`
 
-Allows for limiting the output to a certain number of items.
+Allows for limiting the number of galleries. Set to "false" to remove limit altogether.
 
 Default: `10`
 
+| Available Values |
+| :--------------- |
+| Any number       |
+| false            |
+
 ```js
 [wps_products_gallery limit="25"]
+
+// Removes limit altogether
+[wps_products_gallery limit="false"]
 ```
 
 ### `render_from_server`
@@ -144,6 +159,11 @@ Default: `10`
 Determines whether to render the gallery on the client or server. [Learn more](/getting-started/displaying)
 
 Default: `false`
+
+| Available Values |
+| :--------------- |
+| true             |
+| false            |
 
 ```js
 [wps_products_gallery render_from_server="true"]
@@ -155,6 +175,11 @@ Determines whether to show only the feature image. By default, all product image
 
 Default: `false`
 
+| Available Values |
+| :--------------- |
+| true             |
+| false            |
+
 ```js
 [wps_products_gallery show_featured_only="true"]
 ```
@@ -164,6 +189,11 @@ Default: `false`
 Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md).
 
 Default: `false`
+
+| Available Values |
+| :--------------- |
+| true             |
+| false            |
 
 ```js
 [wps_products_gallery show_zoom="true"]
