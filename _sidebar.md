@@ -18,7 +18,7 @@
    -  [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
    -  [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
    -  [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
-   -  [[wps_cart]](shortcodes/wps_cart.md)
+   -  [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
    -  [[wps_search]](shortcodes/wps_search.md)
    -  [[wps_filters]](shortcodes/wps_filters.md)
 
