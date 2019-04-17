@@ -18,7 +18,7 @@ Displays the product "title" component.
 
 ## ⚡️ Available Attributes
 
-### `title`
+### `title` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product title(s).
 
@@ -28,7 +28,7 @@ Default: `false`
 [wps_products_title title="Product A, Product B"]
 ```
 
-### `slug`
+### `slug` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product slug(s). Case insensitive.
 
@@ -38,7 +38,7 @@ Default: `false`
 [wps_products_title slug="product-a, product-b"]
 ```
 
-### `tag`
+### `tag` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product tag(s).
 
@@ -48,7 +48,7 @@ Default: `false`
 [wps_products_title tag="tag-a, tab-b"]
 ```
 
-### `vendor`
+### `vendor` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product vendor(s).
 
@@ -58,7 +58,7 @@ Default: `false`
 [wps_products_title vendor="Apple, Microsoft"]
 ```
 
-### `type`
+### `type` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product type(s).
 
@@ -68,7 +68,7 @@ Default: `false`
 [wps_products_title type="Featured, Popular"]
 ```
 
-### `description`
+### `description` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product description. Performs a "wildcard" search based on the content you provide. For example, providing the value "Sale" will return products will the following descriptions:
 
@@ -81,7 +81,7 @@ Default: `false`
 [wps_products_title description="This is from the product description ..."]
 ```
 
-### `product_id`
+### `product_id` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from product id(s).
 
@@ -91,7 +91,7 @@ Default: `false`
 [wps_products_title product_id="19213874213, 93283473232"]
 ```
 
-### `post_id`
+### `post_id` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display title from post id(s).
 
@@ -101,7 +101,7 @@ Default: `false`
 [wps_products_title post_id="3124, 9128"]
 ```
 
-### `orderby`
+### `orderby` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines the order criteria of the output of two or more titles. Only one value allowed.
 
@@ -117,7 +117,7 @@ Default: `title`
 [wps_products_title orderby="title"]
 ```
 
-### `order`
+### `order` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines how to order the output of two or more titles. Only one value allowed.
 
@@ -136,7 +136,7 @@ Default: `desc`
 [wps_products_title order="desc"]
 ```
 
-### `limit`
+### `limit` <span class="attr-type attr-type-optional">(optional)</span>
 
 Allows for limiting the number of titles. Set to "false" to remove limit altogether.
 
@@ -154,7 +154,7 @@ Default: `10`
 [wps_products_title limit="false"]
 ```
 
-### `render_from_server`
+### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines whether to render the title on the client or server. [Learn more](/getting-started/displaying)
 

@@ -58,12 +58,26 @@ img[alt='wpshopify'] {
    position: relative;
 }
 
-.pro-only {
+.attr-type {
    position: absolute;
-   right: -80px;
+   right: -70px;
    font-size: 75%;
    top: 0;
+}
+
+.attr-type-pro-only {
    color: #4951cf;
+   font-weight: 400;
+}
+
+.attr-type-required {
+   color: red;
+   font-weight: 400;
+}
+
+.attr-type-optional {
+   color: #858585;
+   font-weight: 400;
 }
 
 thead th {
@@ -244,6 +258,7 @@ thead th {
 }
 
 [data-page*='shortcodes'] .content h1 span,
+[data-page*='filters'] .content h1 .anchor span,
 .section-shortcodes {
    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
@@ -287,4 +302,15 @@ thead th {
 ::selection {
    background: #001625;
    color: white;
+}
+
+.money-button {
+   position: fixed !important;
+   z-index: 999999 !important;
+   bottom: 0 !important;
+   right: 0 !important;
+}
+
+.icon-l {
+   font-size: 20px;
 }

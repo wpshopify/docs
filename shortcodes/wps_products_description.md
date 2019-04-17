@@ -18,7 +18,7 @@ Displays the product "description" component.
 
 ## ⚡️ Available Attributes
 
-### `title`
+### `title` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product title(s).
 
@@ -28,7 +28,7 @@ Default: `false`
 [wps_products_description title="Product A, Product B"]
 ```
 
-### `slug`
+### `slug` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product slug(s). Case insensitive.
 
@@ -38,7 +38,7 @@ Default: `false`
 [wps_products_description slug="product-a, product-b"]
 ```
 
-### `tag`
+### `tag` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product tag(s).
 
@@ -48,7 +48,7 @@ Default: `false`
 [wps_products_description tag="tag-a, tab-b"]
 ```
 
-### `vendor`
+### `vendor` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product vendor(s).
 
@@ -58,7 +58,7 @@ Default: `false`
 [wps_products_description vendor="Apple, Microsoft"]
 ```
 
-### `type`
+### `type` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product type(s).
 
@@ -68,7 +68,7 @@ Default: `false`
 [wps_products_description type="Featured, Popular"]
 ```
 
-### `description`
+### `description` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product description. Performs a "wildcard" search based on the content you provide. For example, providing the value "Sale" will return products will the following descriptions:
 
@@ -81,7 +81,7 @@ Default: `false`
 [wps_products_description description="This is from the product description ..."]
 ```
 
-### `product_id`
+### `product_id` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from product id(s).
 
@@ -91,7 +91,7 @@ Default: `false`
 [wps_products_description product_id="19213874213, 93283473232"]
 ```
 
-### `post_id`
+### `post_id` <span class="attr-type attr-type-optional">(optional)</span>
 
 Display description from post id(s).
 
@@ -101,7 +101,7 @@ Default: `false`
 [wps_products_description post_id="3124, 9128"]
 ```
 
-### `orderby`
+### `orderby` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines the order criteria of the output of two or more descriptions. Only one value allowed.
 
@@ -117,7 +117,7 @@ Default: `title`
 [wps_products_description orderby="title"]
 ```
 
-### `order`
+### `order` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines how to order the output of two or more descriptions. Only one value allowed.
 
@@ -136,7 +136,7 @@ Default: `desc`
 [wps_products_description order="desc"]
 ```
 
-### `limit`
+### `limit` <span class="attr-type attr-type-optional">(optional)</span>
 
 Allows for limiting the number of descriptions. Set to "false" to remove limit altogether.
 
@@ -154,7 +154,7 @@ Default: `10`
 [wps_products_description limit="false"]
 ```
 
-### `render_from_server`
+### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
 
 Determines whether to render the description on the client or server. [Learn more](/getting-started/displaying)
 
