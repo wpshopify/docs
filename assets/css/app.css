@@ -6,6 +6,7 @@
    --code-inline-border-radius: 5px;
    --copycode-background: #242f3f;
    --base-line-height: 1.5;
+   --table-row-odd-background: #f4f6f8;
 }
 
 .markdown-section pre[data-lang]::after {
@@ -62,7 +63,7 @@ img[alt='wpshopify'] {
    position: absolute;
    right: -70px;
    font-size: 75%;
-   top: 0;
+   top: 2px;
 }
 
 .attr-type-pro-only {
@@ -138,9 +139,14 @@ thead th {
    src: local('Fira Mono Bold'), url('../fonts/FiraMono-Bold.woff') format('woff');
 }
 
+.sidebar-nav ul ul,
+.sidebar nav ul ul {
+   margin-left: 0;
+}
+
 .sidebar li > p {
    font-weight: 700;
-   margin: 25px 0 0;
+   margin: 25px 0 5px;
    color: #000;
    font-size: 18px;
    font-family: 'Fira Mono Bold';
@@ -152,6 +158,11 @@ thead th {
 
 .sidebar li > ul > li {
    font-size: 18px;
+}
+
+.sidebar-nav li > a[href^='#/']:not([href*='?id=']),
+.sidebar-nav li > a[href^='#/']:not([href*='?id=']) ~ ul a {
+   padding-left: var(--sidebar-nav-indent);
 }
 
 .sidebar li.active {
@@ -166,7 +177,7 @@ thead th {
    width: 12px;
    height: 12px;
    position: absolute;
-   left: -20px;
+   left: 0px;
    top: calc(50% - 5px);
 }
 
@@ -193,6 +204,10 @@ thead th {
    /* font-weight: bold; */
 }
 
+.sidebar::-webkit-scrollbar {
+   width: 0 !important;
+}
+
 .content h2,
 .content h3,
 .content h4 {
@@ -204,17 +219,26 @@ thead th {
    border-bottom: 1px solid #ddd;
    margin-bottom: 1em;
    padding-bottom: 5px;
-   font-weight: 100;
 }
 
 .content h3 {
    font-size: 20px;
 }
 
+.alert.sm p,
+.alert.sm .title {
+   font-size: 16px;
+}
+
+.alert.sm {
+   border-radius: var(--code-block-border-radius);
+}
+
 .content h3 code {
-   font-size: 18px;
+   font-size: 19px;
    position: relative;
    left: -7px;
+   font-weight: bold;
 }
 
 .content h4 {
@@ -244,10 +268,14 @@ thead th {
 }
 
 #main {
-   margin-left: 6vw;
+   margin-left: 4vw;
 }
 .close #main {
    margin-left: auto;
+}
+
+.markdown-section h3 {
+   margin-top: 3em;
 }
 
 [data-page*='getting-started'] .content h1 span,

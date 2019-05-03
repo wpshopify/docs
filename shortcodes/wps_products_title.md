@@ -138,25 +138,25 @@ Default: `desc`
 
 ### `limit` <span class="attr-type attr-type-optional">(optional)</span>
 
-Allows for limiting the number of titles. Set to "false" to remove limit altogether.
+Limits the number of titles. Max allowed is `250`.
 
 Default: `10`
 
 | Available Values |
 | :--------------- |
 | Any number       |
-| false            |
 
 ```js
+// Shows up to 250 at any time
 [wps_products_title limit="25"]
 
-// Removes limit altogether
-[wps_products_title limit="false"]
+// Only show one
+[wps_products_title limit="1"]
 ```
 
 ### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
 
-Determines whether to render the title on the client or server. [Learn more](/getting-started/displaying)
+Determines whether to render the title on the client or server. Must have lite sync disabled. [Learn more](/getting-started/displaying)
 
 Default: `false`
 

@@ -138,20 +138,20 @@ Default: `desc`
 
 ### `limit` <span class="attr-type attr-type-optional">(optional)</span>
 
-Allows for limiting the number of buy buttons. Set to "false" to remove limit altogether.
+Limits the number of titles. Max allowed is `250`.
 
 Default: `10`
 
 | Available Values |
 | :--------------- |
 | Any number       |
-| false            |
 
 ```js
-[wps_products_buy_button limit="25"]
+// Shows up to 250 at any time
+[wps_products_title limit="25"]
 
-// Removes limit altogether
-[wps_products_buy_button limit="false"]
+// Only show one
+[wps_products_title limit="1"]
 ```
 
 ### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
