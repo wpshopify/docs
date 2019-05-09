@@ -1,6 +1,6 @@
-# [wps_filters]
+# [wps_storefront]
 
-Displays the filters component.
+Displays the "storefront" component which contains filtering, pagination, and sorting.
 
 ## 🎯 Example Usage
 

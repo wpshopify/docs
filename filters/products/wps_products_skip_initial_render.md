@@ -1,0 +1,1 @@
+# wps_products_skip_initial_render

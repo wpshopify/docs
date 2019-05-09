@@ -1,0 +1,1 @@
+# wps_collections_dropzone_page_size

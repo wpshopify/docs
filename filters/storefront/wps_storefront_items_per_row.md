@@ -1,0 +1,1 @@
+# wps_storefront_items_per_row

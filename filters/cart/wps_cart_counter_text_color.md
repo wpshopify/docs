@@ -1,0 +1,1 @@
+# wps_cart_counter_text_color

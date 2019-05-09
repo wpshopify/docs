@@ -1,6 +1,6 @@
 # [wps_products]
 
-Displays a list of products
+Displays the main products component. Useful for showing a general list of products.
 
 ## 🎯 Example Usage
 
@@ -400,6 +400,31 @@ Determines whether to hide or show pagination. Default: `true`.
 
 ```js
 [wps_products pagination="false"]
+```
+
+### `infinite_scroll`
+
+When turned on, the next page of items will automatically append to the container. Only works when pagination is used. Default: `false`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+```js
+[wps_products infinite_scroll="true"]
+```
+
+### `infinite_scroll_offset`
+
+Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value. Default: `-200`.
+
+| Possible values                 |
+| :------------------------------ |
+| Any positive or negative number |
+
+```js
+[wps_products infinite_scroll_offset="-100"]
 ```
 
 ### `dropzone_pagination`

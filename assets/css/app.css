@@ -7,6 +7,8 @@
    --copycode-background: #242f3f;
    --base-line-height: 1.5;
    --table-row-odd-background: #f4f6f8;
+   --sidebar-nav-link-color: #000;
+   --code-inline-background: hsl(0, 0%, 95%);
 }
 
 .markdown-section pre[data-lang]::after {
@@ -90,7 +92,9 @@ thead th {
 }
 
 .sidebar {
-   border-right: 1px solid #ddd;
+   /* background: linear-gradient(to right, #f0f0f0, #ffdfbde6); */
+   /* background: linear-gradient(to right, #ffffff, #ece9e6); */
+   background: linear-gradient(to right, #c8dfff, #e3f3fa);
    padding-right: 0;
 }
 
@@ -103,6 +107,12 @@ thead th {
 .markdown-section pre > code {
    color: rgb(255, 255, 255); /* default color for elements not styled by prism theme */
    background-color: #001625; /* dark background, because vue.css modify it */
+}
+
+.markdown-section code:not([class*='lang-']):not([class*='language-']),
+.markdown-section p > code {
+   font-weight: bold;
+   color: black;
 }
 
 /* because the bgcolor change in previous css rule. font-color when using inline code tag */
@@ -157,7 +167,7 @@ thead th {
 }
 
 .sidebar li > ul > li {
-   font-size: 18px;
+   /* font-size: 18px; */
 }
 
 .sidebar-nav li > a[href^='#/']:not([href*='?id=']),
@@ -234,11 +244,15 @@ thead th {
    border-radius: var(--code-block-border-radius);
 }
 
+.sidebar-toggle {
+   display: none;
+}
 .content h3 code {
    font-size: 19px;
    position: relative;
    left: -7px;
    font-weight: bold;
+   box-shadow: none;
 }
 
 .content h4 {
@@ -285,8 +299,9 @@ thead th {
    background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%);
 }
 
+/* [data-page*='filters'] .content h1 .anchor span, */
+
 [data-page*='shortcodes'] .content h1 span,
-[data-page*='filters'] .content h1 .anchor span,
 .section-shortcodes {
    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
@@ -309,9 +324,9 @@ thead th {
 
 [data-page*='templates'] .content h1 span,
 .section-templates {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #befff2), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #befff2 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #befff2 50%, transparent 50%);
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #beffcf), color-stop(50%, transparent));
+   background-image: -webkit-linear-gradient(bottom, #beffcf 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #beffcf 50%, transparent 50%);
 }
 
 [data-page*='actions'] .content h1 span,
@@ -321,6 +336,11 @@ thead th {
    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f0f0f0), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #f0f0f0 50%, transparent 50%);
    background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%);
+}
+
+[data-page*='shortcodes'] .content h3 code {
+   /* background: #a9f8ff !important; */
+   padding: 0.2em 0.5em !important;
 }
 
 ::-moz-selection {
