@@ -20,7 +20,7 @@ pre[v-pre] {
 
 li > code,
 span > code {
-   box-shadow: 0 2px 4px 1px hsla(0, 0%, 55%, 0.23);
+   /* box-shadow: 0 2px 4px 1px hsla(0, 0%, 55%, 0.23); */
 }
 
 .content ol li,
@@ -49,8 +49,28 @@ span > code {
       transform: rotate(360deg);
    }
 }
+
+.app-name-link {
+   display: block;
+   border-radius: 50%;
+   background: linear-gradient(to right, #04121c, #152a51);
+   /* background: linear-gradient(to right, #414345, #232526); */
+   /* background: linear-gradient(to right, #438df4, #33b8eb); */
+   padding: 0px;
+   width: 60px;
+   height: 60px;
+}
 img[alt='wpshopify'] {
-   animation: rotating 12s linear infinite;
+   /* animation: rotating 12s linear infinite; */
+   /* background: black;
+   background: linear-gradient(to right, #348ac7, #7474bf); */
+
+   /* border-radius: 5px; */
+   /* max-width: 90px !important; */
+   max-width: 100%;
+   position: relative;
+   top: 0;
+   left: 0;
 }
 
 .markdown-section td {
@@ -92,9 +112,9 @@ thead th {
 }
 
 .sidebar {
-   /* background: linear-gradient(to right, #f0f0f0, #ffdfbde6); */
-   /* background: linear-gradient(to right, #ffffff, #ece9e6); */
-   background: linear-gradient(to right, #c8dfff, #e3f3fa);
+   /* background: linear-gradient(to right, #c8dfff, #e3f3fa); */
+   /* background: linear-gradient(to right, #00cdac, #02aab0); */
+   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
    padding-right: 0;
 }
 
@@ -155,11 +175,14 @@ thead th {
 }
 
 .sidebar li > p {
-   font-weight: 700;
+   /* font-weight: 700; */
    margin: 25px 0 5px;
    color: #000;
-   font-size: 18px;
+   /* font-size: 22px; */
+   font-size: 19px;
    font-family: 'Fira Mono Bold';
+   /* font-family: 'Bitter', serif; */
+   /* font-family: 'Playfair Display', serif; */
 }
 
 .sidebar li a {
@@ -204,12 +227,14 @@ thead th {
 .content li {
    font-size: 20px;
 }
-.content h1 {
+.content h1,
+.content h2 {
    font-size: 42px;
    font-family: 'Fira Mono Bold';
+   /* font-family: 'Bitter', serif; */
+   /* font-family: 'Playfair Display', serif; */
 }
-.content p,
-.content h2 {
+.content p {
    font-family: 'Open Sans', sans-serif;
    /* font-weight: bold; */
 }

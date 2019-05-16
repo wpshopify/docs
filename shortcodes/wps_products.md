@@ -80,7 +80,7 @@ Display products based on the price of one or more variant(s). Default: `false`.
 
 ### `available_for_sale`
 
-Display products based on their availability. Setting `true` will only show products that are in stock. Settings `false` will only show products that are out of stock. Default: `false`.
+Display products based on their availability. Setting `true` will only show products that are in stock. Settings `false` will only show products that are _out_ of stock. Default: `false`.
 
 | Possible values |
 | :-------------- |
@@ -400,6 +400,44 @@ Determines whether to hide or show pagination. Default: `true`.
 
 ```js
 [wps_products pagination="false"]
+```
+
+### `pagination_page_size`
+
+Determines whether to hide or show the pagination page size functionality. Default: `false`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+```js
+[wps_products pagination_page_size="true"]
+```
+
+### `pagination_load_more`
+
+Determines whether to hide or show the pagination load more functionality. Default: `true`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+```js
+[wps_products pagination_load_more="false"]
+```
+
+### `no_results_text`
+
+The text to show when no products are found. Default: `No products found`.
+
+| Possible values |
+| :-------------- |
+| Any text string |
+
+```js
+[wps_products no_results_text="Nothing found! 🙃"]
 ```
 
 ### `infinite_scroll`
