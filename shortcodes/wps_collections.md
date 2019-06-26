@@ -2,7 +2,7 @@
 
 Displays a list of collections
 
-## 🎯 Example Usage
+## 🎯 Examples
 
 ```js
 // Display the cheapest 10 products
@@ -10,25 +10,16 @@ Displays a list of collections
 
 ```
 
-## ⚡️ Available Attributes
+## ⚡️ Attributes
 
 ### `sort_by` <span class="attr-type attr-type-optional">(optional)</span>
 
-Determines the sort order of the output of two or more titles. Only one value allowed.
+Determines the collections sort order. Corresponds to the [Shopify Storefront API](https://help.shopify.com/en/api/storefront-api/reference/enum/collectionsortkeys). Default: `title`
 
-Default: `title`
-
-| Available Values |
-| :--------------- |
-| title            |
-| updated_at       |
-| created_at       |
-| best_selling     |
-| highest_price    |
-| lowest_price     |
-| newest           |
-| oldest           |
-| manually         |
+| Values     |
+| :--------- |
+| title      |
+| updated_at |
 
 ```js
 [wps_collections_title sort_by="title"]
@@ -53,9 +44,9 @@ Limits the number of titles. Max allowed is `250`.
 
 Default: `10`
 
-| Available Values |
-| :--------------- |
-| Any number       |
+| Values     |
+| :--------- |
+| Any number |
 
 ```js
 // Shows up to 250 at any time
@@ -63,4 +54,23 @@ Default: `10`
 
 // Only show one
 [wps_collections_title limit="1"]
+```
+
+### `products_sort_by` <span class="attr-type attr-type-optional">(optional)</span>
+
+Determines the products sort order within a collection. Corresponds to the [Shopify Storefront API](https://help.shopify.com/en/api/storefront-api/reference/enum/productcollectionsortkeys). Default: `title`
+
+| Values             |
+| :----------------- |
+| title              |
+| collection_default |
+| created            |
+| id                 |
+| manual             |
+| price              |
+| relevance          |
+| best_selling       |
+
+```js
+[wps_collections_title products_sort_by="price"]
 ```

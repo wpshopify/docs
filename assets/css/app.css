@@ -4,19 +4,24 @@
    --sidebar-nav-indent: 20px;
    --code-block-border-radius: 5px;
    --code-inline-border-radius: 5px;
-   --copycode-background: #242f3f;
+   /* --copycode-background: #242f3f; */
    --base-line-height: 1.5;
    --table-row-odd-background: #f4f6f8;
    --sidebar-nav-link-color: #000;
-   --code-inline-background: hsl(0, 0%, 95%);
+   /* --code-inline-background: hsl(0, 0%, 95%); */
 }
 
 .markdown-section pre[data-lang]::after {
    display: none;
 }
-pre[v-pre] {
-   box-shadow: 0 2px 10px 2px hsla(0, 0%, 55%, 0.49);
+
+[data-page*='shortcodes'] .markdown-section pre[data-lang] {
+   margin-bottom: 5em;
 }
+
+/* pre[v-pre] {
+   box-shadow: 0 2px 10px 2px hsla(0, 0%, 55%, 0.49);
+} */
 
 li > code,
 span > code {
@@ -29,12 +34,12 @@ span > code {
 }
 
 .content p a {
-   color: #1e99b8;
+   color: #415aff;
 }
 
 .content p a:hover {
    opacity: 0.7;
-   color: #1e99b8;
+   color: #415aff;
 }
 
 .content .alert .title {
@@ -53,12 +58,12 @@ span > code {
 .app-name-link {
    display: block;
    border-radius: 50%;
-   background: linear-gradient(to right, #04121c, #152a51);
+   /* background: linear-gradient(to right, #04121c, #152a51); */
    /* background: linear-gradient(to right, #414345, #232526); */
-   /* background: linear-gradient(to right, #438df4, #33b8eb); */
+   /* background: linear-gradient(to right, #415aff, #33b8eb); */
    padding: 0px;
-   width: 60px;
-   height: 60px;
+   /* width: 70px;
+   height: 70px; */
 }
 img[alt='wpshopify'] {
    /* animation: rotating 12s linear infinite; */
@@ -75,6 +80,7 @@ img[alt='wpshopify'] {
 
 .markdown-section td {
    border: 1px solid #ddd;
+   font-weight: bold;
 }
 
 .anchor {
@@ -85,7 +91,7 @@ img[alt='wpshopify'] {
    position: absolute;
    right: -70px;
    font-size: 75%;
-   top: 2px;
+   top: -1px;
 }
 
 .attr-type-pro-only {
@@ -112,9 +118,7 @@ thead th {
 }
 
 .sidebar {
-   /* background: linear-gradient(to right, #c8dfff, #e3f3fa); */
-   /* background: linear-gradient(to right, #00cdac, #02aab0); */
-   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+   background-color: #f3f3f3;
    padding-right: 0;
 }
 
@@ -125,49 +129,55 @@ thead th {
 .markdown-section code,
 .markdown-section pre,
 .markdown-section pre > code {
-   color: rgb(255, 255, 255); /* default color for elements not styled by prism theme */
-   background-color: #001625; /* dark background, because vue.css modify it */
+   background-color: #011627;
+   color: #fff;
 }
 
-.markdown-section code:not([class*='lang-']):not([class*='language-']),
-.markdown-section p > code {
+/* .markdown-section code:not([class*='lang-']):not([class*='language-']) {
    font-weight: bold;
-   color: black;
-}
+   color: white;
+   background: hsl(243, 89%, 68%);
+} */
 
 /* because the bgcolor change in previous css rule. font-color when using inline code tag */
-.markdown-section code {
-   color: #eccb84;
+/* .markdown-section code {
+   
+} */
+
+body .docsify-copy-code-button,
+body .docsify-copy-code-button:after {
+   background: #011626;
 }
 
-/* .markdown-section a.anchor:hover {
-
-} */
+.markdown-section h3 a.anchor:hover {
+   transform: scale(0.8);
+   text-decoration: none;
+}
 
 .content > article {
    padding-bottom: 10em;
 }
 
-@font-face {
-   font-family: 'Fira Mono Regular';
+/* @font-face {
+   font-family: 'IBM Plex Sans';
    font-style: normal;
    font-weight: normal;
-   src: local('Fira Mono Regular'), url('../fonts/FiraMono-Regular.woff') format('woff');
+   font-family: 'IBM Plex Sans';
 }
 
 @font-face {
-   font-family: 'Fira Mono Medium';
+   font-family: 'IBM Plex Sans';
    font-style: normal;
    font-weight: normal;
-   src: local('Fira Mono Medium'), url('../fonts/FiraMono-Medium.woff') format('woff');
+   font-family: 'IBM Plex Sans';
 }
 
 @font-face {
-   font-family: 'Fira Mono Bold';
+   font-family: 'IBM Plex Sans';
    font-style: normal;
    font-weight: normal;
-   src: local('Fira Mono Bold'), url('../fonts/FiraMono-Bold.woff') format('woff');
-}
+   font-family: 'IBM Plex Sans';
+} */
 
 .sidebar-nav ul ul,
 .sidebar nav ul ul {
@@ -178,9 +188,11 @@ thead th {
    /* font-weight: 700; */
    margin: 25px 0 5px;
    color: #000;
-   /* font-size: 22px; */
    font-size: 19px;
-   font-family: 'Fira Mono Bold';
+   /* font-size: 19px; */
+   font-weight: bold;
+   font-family: 'IBM Plex Sans';
+
    /* font-family: 'Bitter', serif; */
    /* font-family: 'Playfair Display', serif; */
 }
@@ -227,10 +239,16 @@ thead th {
 .content li {
    font-size: 20px;
 }
+
+.content p:first-of-type {
+   margin-bottom: 2.5em;
+}
+
 .content h1,
 .content h2 {
    font-size: 42px;
-   font-family: 'Fira Mono Bold';
+   font-weight: bold;
+   font-family: 'IBM Plex Sans';
    /* font-family: 'Bitter', serif; */
    /* font-family: 'Playfair Display', serif; */
 }
@@ -273,7 +291,7 @@ thead th {
    display: none;
 }
 .content h3 code {
-   font-size: 19px;
+   font-size: 17px;
    position: relative;
    left: -7px;
    font-weight: bold;
@@ -297,9 +315,9 @@ thead th {
 .app-name-link {
    display: block;
    text-align: left;
-
    position: relative;
    top: 15px;
+   max-width: 50px;
 }
 
 .sidebar > h1 img {
@@ -319,53 +337,62 @@ thead th {
 
 [data-page*='getting-started'] .content h1 span,
 .section-getting-started {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff6ca), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff6ca), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #fff6ca 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%); */
 }
 
 /* [data-page*='filters'] .content h1 .anchor span, */
 
 [data-page*='shortcodes'] .content h1 span,
 .section-shortcodes {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #a9f8ff 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #a9f8ff 50%, transparent 50%); */
 }
 
 [data-page*='render-api'] .content h1 span,
 .section-render-api {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e5e0ff), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e5e0ff), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #e5e0ff 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #e5e0ff 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #e5e0ff 50%, transparent 50%); */
 }
 
 [data-page*='guides'] .content h1 span,
 .section-guides {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffd1df), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffd1df), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #ffd1df 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #ffd1df 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #ffd1df 50%, transparent 50%); */
 }
 
 [data-page*='templates'] .content h1 span,
 .section-templates {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #beffcf), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #beffcf), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #beffcf 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #beffcf 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #beffcf 50%, transparent 50%); */
 }
 
 [data-page*='actions'] .content h1 span,
 [data-page*='filters'] .content h1 span,
 .section-actions,
 .section-filters {
-   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f0f0f0), color-stop(50%, transparent));
+   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f0f0f0), color-stop(50%, transparent));
    background-image: -webkit-linear-gradient(bottom, #f0f0f0 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%);
+   background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%); */
 }
 
 [data-page*='shortcodes'] .content h3 code {
-   /* background: #a9f8ff !important; */
-   padding: 0.2em 0.5em !important;
+   padding: 0.3em 0.7em 0.4em 0.7em !important;
+   border: none !important;
+   font-weight: bold !important;
+   color: white !important;
+   background: #415aff !important;
+}
+
+.markdown-section p > code {
+   font-weight: bold;
+   color: #242424;
+   background: #eee;
 }
 
 ::-moz-selection {

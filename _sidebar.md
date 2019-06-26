@@ -35,11 +35,30 @@
 
    -  [products/title](templates/products/title.md)
 
-*  <span class="section-actions">Actions</span>
+*  <span class="section-actions">JavaScript Actions</span>
+
+   -  [before.ready](js/actions/before.ready.md)
+   -  [after.ready](js/actions/after.ready.md)
+   -  [on.cart.open](js/actions/on.cart.open.md)
+   -  [on.cart.close](js/actions/on.cart.close.md)
+   -  [before.product.addToCart](js/actions/before.product.addToCart.md)
+   -  [after.product.addToCart](js/actions/after.product.addToCart.md)
+   -  [on.product.variant.selection](js/actions/on.product.variant.selection.md)
+   -  [on.checkout](js/actions/on.checkout.md)
+   -  [set.checkout.note](js/actions/set.checkout.note.md)
+   -  [set.checkout.attributes](js/actions/set.checkout.attributes.md)
+   -  [update.checkout.attributes](js/actions/update.checkout.attributes.md)
+
+*  <span class="section-actions">JavaScript Filters</span>
+
+   -  [default.cart.title](js/filters/default.cart.title.md)
+   -  [default.cart.checkout.text](js/filters/default.cart.checkout.text.md)
+
+*  <span class="section-actions">PHP Actions</span>
 
    -  [wps_cart_icon](actions/wps_cart_icon.md)
 
-*  <span class="section-filters">Filters: Products</span>
+*  <span class="section-filters">PHP Filters: Products</span>
 
    -  [wps_products_query](filters/products/wps_products_query.md)
    -  [wps_products_sort_by](filters/products/wps_products_sort_by.md)
@@ -83,7 +102,7 @@
    -  [wps_products_dropzone_load_more](filters/products/wps_products_dropzone_load_more.md)
    -  [wps_products_skip_initial_render](filters/products/wps_products_skip_initial_render.md)
 
-*  <span class="section-filters">Filters: Collections</span>
+*  <span class="section-filters">PHP Filters: Collections</span>
 
    -  [wps_collections_dropzone_pagination](filters/collections/wps_collections_dropzone_pagination.md)
    -  [wps_collections_dropzone_page_size](filters/collections/wps_collections_dropzone_page_size.md)
@@ -108,7 +127,7 @@
    -  [wps_collections_excludes](filters/collections/wps_collections_excludes.md)
    -  [wps_collections_single](filters/collections/wps_collections_single.md)
 
--  <span class="section-filters">Filters: Search</span>
+-  <span class="section-filters">PHP Filters: Search</span>
 
    -  [wps_search_dropzone_form](filters/search/wps_search_dropzone_form.md)
    -  [wps_search_dropzone_payload](filters/search/wps_search_dropzone_payload.md)
@@ -131,7 +150,7 @@
    -  [wps_search_page_size](filters/search/wps_search_page_size.md)
    -  [wps_search_skip_initial_render](filters/search/wps_search_skip_initial_render.md)
 
--  <span class="section-filters">Filters: Cart</span>
+-  <span class="section-filters">PHP Filters: Cart</span>
 
    -  [wps_cart_render_from_server](filters/cart/wps_cart_render_from_server.md)
    -  [wps_cart_icon_image](filters/cart/wps_cart_icon_image.md)
@@ -142,7 +161,7 @@
    -  [wps_cart_show_counter](filters/cart/wps_cart_show_counter.md)
    -  [wps_cart_plugin_settings](filters/cart/wps_cart_plugin_settings.md)
 
--  <span class="section-filters">Filters: Storefront</span>
+-  <span class="section-filters">PHP Filters: Storefront</span>
 
    -  [wps_storefront_dropzone_payload](filters/storefront/wps_storefront_dropzone_payload.md)
    -  [wps_storefront_dropzone_options](filters/storefront/wps_storefront_dropzone_options.md)
