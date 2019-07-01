@@ -91,7 +91,7 @@ img[alt='wpshopify'] {
    position: absolute;
    right: -70px;
    font-size: 75%;
-   top: -1px;
+   top: 1px;
 }
 
 .attr-type-pro-only {
@@ -296,6 +296,11 @@ body .docsify-copy-code-button:after {
    left: -7px;
    font-weight: bold;
    box-shadow: none;
+   user-select: text;
+}
+
+.content h3 code:hover {
+   cursor: text;
 }
 
 .content h4 {
