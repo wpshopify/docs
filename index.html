@@ -20,16 +20,47 @@
       <div id="app"></div>
 
       <script>
+         // function getCollapsables() {
+         //    return document.querySelectorAll('.collapsable')
+         // }
+
+         // function collapsableEvents(elements) {
+         //    elements.forEach(el =>
+         //       el.addEventListener('click', function(event) {
+         //          el.classList.remove('is-collapsed')
+         //          event.target.add('is-collapsed')
+         //       })
+         //    )
+         // }
+         // function whenEachDone() {
+         //    return collapsableEvents(getCollapsables())
+         // }
+
+         // function afterEach() {
+         //    return collapsableEvents(getCollapsables())
+         // }
+
          window.$docsify = {
             loadSidebar: true,
-            loadNavbar: false,
+            loadNavbar: true,
+            alias: {
+               '/.*/_sidebar.md': '/_sidebar.md',
+               '/.*/_navbar.md': '/_navbar.md'
+            },
             maxLevel: 3,
             auto2top: true,
+            formatUpdated: '{MM}/{DD}/{YYYY}',
             name: 'wpshopify',
             logo: 'assets/logov3.svg',
             'flexible-alerts': {
                style: 'flat'
-            }
+            },
+            plugins: [
+               function(hook, vm) {
+                  // hook.ready(whenEachDone)
+                  // hook.doneEach(whenEachDone)
+               }
+            ]
          }
       </script>
 

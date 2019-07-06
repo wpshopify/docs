@@ -31,6 +31,7 @@ span > code {
 .content ol li,
 .content ul li {
    margin-bottom: 0.7em;
+   font-size: 18px;
 }
 
 .content p a {
@@ -44,6 +45,7 @@ span > code {
 
 .content .alert .title {
    font-size: 18px;
+   margin: 0;
 }
 
 @keyframes rotating {
@@ -118,8 +120,9 @@ thead th {
 }
 
 .sidebar {
-   background-color: #f3f3f3;
+   /* background-color: #f3f3f3; */
    padding-right: 0;
+   border-right: 1px solid #ddd;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -184,11 +187,45 @@ body .docsify-copy-code-button:after {
    margin-left: 0;
 }
 
+.collapsable {
+   margin-bottom: 0 !important;
+   margin-top: 0 !important;
+   line-height: 1 !important;
+}
+
+/* .sidebar-nav li > ul > li > .collapsable.is-collapsed + ul {
+   display: none;
+} */
+
+/* .sidebar-nav li > ul > li > .collapsable + ul {
+   display: none;
+} */
+
+.sidebar-nav > ul li > ul li > ul {
+   margin-bottom: 1em;
+}
+
+.sidebar-nav > ul li > ul li > ul li a {
+   padding-left: 2em !important;
+   font-size: 16px;
+}
+
+.sidebar-nav > ul li > ul li > ul li.active a {
+   transition: all 0.2s ease;
+   background: #eeeeee;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.sidebar-nav > ul li > ul li > ul li.active:before {
+   left: 2em;
+}
+
 .sidebar li > p {
    /* font-weight: 700; */
    margin: 25px 0 5px;
    color: #000;
-   font-size: 19px;
+   font-size: 22px;
    /* font-size: 19px; */
    font-weight: bold;
    font-family: 'IBM Plex Sans';
@@ -202,11 +239,10 @@ body .docsify-copy-code-button:after {
 }
 
 .sidebar li > ul > li {
-   /* font-size: 18px; */
+   font-size: 17px;
 }
 
-.sidebar-nav li > a[href^='#/']:not([href*='?id=']),
-.sidebar-nav li > a[href^='#/']:not([href*='?id=']) ~ ul a {
+.sidebar-nav ul li ul > a {
    padding-left: var(--sidebar-nav-indent);
 }
 
@@ -214,7 +250,19 @@ body .docsify-copy-code-button:after {
    position: relative;
 }
 
-.sidebar li.active:before {
+.sidebar-nav li.active > a {
+   /* color: #415aff; */
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.sidebar-nav ul > li > ul > li.active > a {
+   /* color: #415aff; */
+   font-weight: normal;
+   /* text-decoration: none; */
+}
+
+/* .sidebar-nav li.active:before {
    content: '';
    display: inline-block;
    background-image: url('../icon-asteriks.svg');
@@ -224,6 +272,10 @@ body .docsify-copy-code-button:after {
    position: absolute;
    left: 0px;
    top: calc(50% - 5px);
+} */
+
+.sidebar-nav ul > li:first-child:before {
+   top: 10px;
 }
 
 .sidebar {
@@ -235,12 +287,12 @@ body .docsify-copy-code-button:after {
 .content p {
    font-size: 18px;
 }
-.content p:first-of-type,
-.content li {
+[data-page*='shortcodes'] .content p:first-of-type,
+[data-page*='shortcodes'] .content li {
    font-size: 20px;
 }
 
-.content p:first-of-type {
+[data-page*='shortcodes'] .content p:first-of-type {
    margin-bottom: 2.5em;
 }
 
@@ -287,9 +339,10 @@ body .docsify-copy-code-button:after {
    border-radius: var(--code-block-border-radius);
 }
 
-.sidebar-toggle {
+/* .sidebar-toggle {
    display: none;
-}
+} */
+
 .content h3 code {
    font-size: 17px;
    position: relative;
@@ -334,6 +387,13 @@ body .docsify-copy-code-button:after {
 }
 .close #main {
    margin-left: auto;
+}
+
+.section > .emoji {
+   width: 25px;
+   height: 25px;
+   right: 22px;
+   position: absolute;
 }
 
 .markdown-section h3 {
@@ -392,6 +452,10 @@ body .docsify-copy-code-button:after {
    font-weight: bold !important;
    color: white !important;
    background: #415aff !important;
+}
+
+[data-page*='shortcodes'] .content h3 code:hover {
+   cursor: pointer;
 }
 
 .markdown-section p > code {

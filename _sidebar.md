@@ -1,4 +1,4 @@
--  <span class="section-getting-started">Getting Started</span>
+-  <span class="section section-getting-started">:zap: Getting Started</span>
 
    -  [Syncing](getting-started/syncing.md)
    -  [Displaying](getting-started/displaying.md)
@@ -7,12 +7,51 @@
    -  [Requirements](getting-started/requirements.md)
    -  [WP Shopify Pro](getting-started/wp-shopify-pro.md)
    -  [License](getting-started/license.md)
-   -  [FAQs](getting-started/faqs.md)
-   -  [Changelog](getting-started/changelog.md)
+   -  [FAQs](https://wpshop.io/faq)
+   -  [Changelog](https://wpshop.io/changelog)
 
-*  <span class="section-shortcodes">Shortcodes</span>
+-  <span class="section section-shortcodes">:electric_plug: Shortcodes</span>
 
-   -  [[wps_products]](shortcodes/wps_products.md)
+   -  <span class="collapsable is-collapsed">[[wps_products]](shortcodes/wps_products?id=wps_products)</span>
+      -  [title](shortcodes/wps_products?id=title)
+      -  [tag](shortcodes/wps_products?id=tag)
+      -  [vendor](shortcodes/wps_products?id=vendor)
+      -  [product_type](shortcodes/wps_products?id=product_type)
+      -  [variants_price](shortcodes/wps_products?id=variants_price)
+      -  [available_for_sale](shortcodes/wps_products?id=available_for_sale)
+      -  [created_at](shortcodes/wps_products?id=created_at)
+      -  [updated_at](shortcodes/wps_products?id=updated_at)
+      -  [product_id](shortcodes/wps_products?id=product_id)
+      -  [post_id](shortcodes/wps_products?id=post_id)
+      -  [sort_by](shortcodes/wps_products?id=sort_by)
+      -  [reverse](shortcodes/wps_products?id=reverse)
+      -  [page_size](shortcodes/wps_products?id=page_size)
+      -  [limit](shortcodes/wps_products?id=limit)
+      -  [connective](shortcodes/wps_products?id=connective)
+      -  [button_color](shortcodes/wps_products?id=button_color)
+      -  [variant_color](shortcodes/wps_products?id=variant_color)
+      -  [button_text](shortcodes/wps_products?id=button_text)
+      -  [hide_quantity](shortcodes/wps_products?id=hide_quantity)
+      -  [min_quantity](shortcodes/wps_products?id=min_quantity)
+      -  [max_quantity](shortcodes/wps_products?id=max_quantity)
+      -  [show_quantity_label](shortcodes/wps_products?id=show_quantity_label)
+      -  [excludes](shortcodes/wps_products?id=excludes)
+      -  [items_per_row](shortcodes/wps_products?id=items_per_row)
+      -  [show_price_range](shortcodes/wps_products?id=show_price_range)
+      -  [show_compare_at](shortcodes/wps_products?id=show_compare_at)
+      -  [quantity_label_text](shortcodes/wps_products?id=quantity_label_text)
+      -  [show_featured_only](shortcodes/wps_products?id=show_featured_only)
+      -  [show_zoom](shortcodes/wps_products?id=show_zoom)
+      -  [pagination](shortcodes/wps_products?id=pagination)
+      -  [pagination_page_size](shortcodes/wps_products?id=pagination_page_size)
+      -  [pagination_load_more](shortcodes/wps_products?id=pagination_load_more)
+      -  [no_results_text](shortcodes/wps_products?id=no_results_text)
+      -  [infinite_scroll](shortcodes/wps_products?id=infinite_scroll)
+      -  [infinite_scroll_offset](shortcodes/wps_products?id=infinite_scroll_offset)
+      -  [dropzone_pagination](shortcodes/wps_products?id=dropzone_pagination)
+      -  [dropzone_page_size](shortcodes/wps_products?id=dropzone_page_size)
+      -  [dropzone_load_more](shortcodes/wps_products?id=dropzone_load_more)
+      -  [render_from_server](shortcodes/wps_products?id=render_from_server)
    -  [[wps_products_title]](shortcodes/wps_products_title.md)
    -  [[wps_products_description]](shortcodes/wps_products_description.md)
    -  [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
@@ -23,19 +62,19 @@
    -  [[wps_search]](shortcodes/wps_search.md)
    -  [[wps_storefront]](shortcodes/wps_storefront.md)
 
-*  <span class="section-render-api">Render API</span>
-
-   -  [Products](render-api/products.md)
-
-*  <span class="section-guides">Guides</span>
+-  <span class="section section-guides">Guides</span>
 
    -  [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
 
-*  <span class="section-templates">Templates</span>
+-  <span class="section section-templates">Templates</span>
 
    -  [products/title](templates/products/title.md)
 
-*  <span class="section-actions">JavaScript Actions</span>
+-  <span class="section section-render-api">Render API</span>
+
+   -  [Products](render-api/products.md)
+
+-  <span class="section section-actions">JavaScript Actions</span>
 
    -  [before.ready](js/actions/before.ready.md)
    -  [after.ready](js/actions/after.ready.md)
@@ -49,16 +88,16 @@
    -  [set.checkout.attributes](js/actions/set.checkout.attributes.md)
    -  [update.checkout.attributes](js/actions/update.checkout.attributes.md)
 
-*  <span class="section-actions">JavaScript Filters</span>
+-  <span class="section section-actions">JavaScript Filters</span>
 
    -  [default.cart.title](js/filters/default.cart.title.md)
    -  [default.cart.checkout.text](js/filters/default.cart.checkout.text.md)
 
-*  <span class="section-actions">PHP Actions</span>
+-  <span class="section section-actions">PHP Actions</span>
 
    -  [wps_cart_icon](actions/wps_cart_icon.md)
 
-*  <span class="section-filters">PHP Filters: Products</span>
+-  <span class="section section-filters">PHP Filters: Products</span>
 
    -  [wps_products_query](filters/products/wps_products_query.md)
    -  [wps_products_sort_by](filters/products/wps_products_sort_by.md)
@@ -102,7 +141,7 @@
    -  [wps_products_dropzone_load_more](filters/products/wps_products_dropzone_load_more.md)
    -  [wps_products_skip_initial_render](filters/products/wps_products_skip_initial_render.md)
 
-*  <span class="section-filters">PHP Filters: Collections</span>
+-  <span class="section section-filters">PHP Filters: Collections</span>
 
    -  [wps_collections_dropzone_pagination](filters/collections/wps_collections_dropzone_pagination.md)
    -  [wps_collections_dropzone_page_size](filters/collections/wps_collections_dropzone_page_size.md)
@@ -127,7 +166,7 @@
    -  [wps_collections_excludes](filters/collections/wps_collections_excludes.md)
    -  [wps_collections_single](filters/collections/wps_collections_single.md)
 
--  <span class="section-filters">PHP Filters: Search</span>
+*  <span class="section section-filters">PHP Filters: Search</span>
 
    -  [wps_search_dropzone_form](filters/search/wps_search_dropzone_form.md)
    -  [wps_search_dropzone_payload](filters/search/wps_search_dropzone_payload.md)
@@ -150,7 +189,7 @@
    -  [wps_search_page_size](filters/search/wps_search_page_size.md)
    -  [wps_search_skip_initial_render](filters/search/wps_search_skip_initial_render.md)
 
--  <span class="section-filters">PHP Filters: Cart</span>
+*  <span class="section section-filters">PHP Filters: Cart</span>
 
    -  [wps_cart_render_from_server](filters/cart/wps_cart_render_from_server.md)
    -  [wps_cart_icon_image](filters/cart/wps_cart_icon_image.md)
@@ -161,7 +200,7 @@
    -  [wps_cart_show_counter](filters/cart/wps_cart_show_counter.md)
    -  [wps_cart_plugin_settings](filters/cart/wps_cart_plugin_settings.md)
 
--  <span class="section-filters">PHP Filters: Storefront</span>
+*  <span class="section section-filters">PHP Filters: Storefront</span>
 
    -  [wps_storefront_dropzone_payload](filters/storefront/wps_storefront_dropzone_payload.md)
    -  [wps_storefront_dropzone_options](filters/storefront/wps_storefront_dropzone_options.md)

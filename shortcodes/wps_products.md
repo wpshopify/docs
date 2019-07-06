@@ -2,7 +2,7 @@
 
 Displays the main products component. Useful for showing a general list of products.
 
-## 🎯 Example Usage
+## 📍 Example Usage
 
 ```js
 // Displays the cheapest 10 products
@@ -16,7 +16,7 @@ Displays the main products component. Useful for showing a general list of produ
 
 ```
 
-## ⚡️ Available Attributes
+## 🎚 Available Attributes
 
 ### `title`
 
@@ -25,6 +25,8 @@ Displays products based on one or more product title(s). Default: `false`.
 | Possible values:        |
 | :---------------------- |
 | Any valid product title |
+
+**Example**
 
 ```js
 [wps_products title="Product A, Product B"]
@@ -38,6 +40,8 @@ Display products based on one or more product tag(s). Default: `false`.
 | :-------------------- |
 | Any valid product tag |
 
+**Example**
+
 ```js
 [wps_products tag="Tag A, Tag B"]
 ```
@@ -49,6 +53,8 @@ Display products based on one or more product vendor(s). Default: `false`.
 | Possible                 |
 | :----------------------- |
 | Any valid product vendor |
+
+**Example**
 
 ```js
 [wps_products vendor="Vendor A, Vendor B"]
@@ -62,6 +68,8 @@ Display products based on one or more product type(s). Default: `false`
 | :--------------------- |
 | Any valid product type |
 
+**Example**
+
 ```js
 [wps_products product_type="Books"]
 ```
@@ -73,6 +81,8 @@ Display products based on the price of one or more variant(s). Default: `false`.
 | Possible values:        |
 | :---------------------- |
 | Any valid variant price |
+
+**Example**
 
 ```js
 [wps_products variants_price="10.00"]
@@ -87,6 +97,8 @@ Display products based on their availability. Setting `true` will only show prod
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products available_for_sale="true"]
 ```
@@ -98,6 +110,8 @@ Display products based on the date it was created. Must use an [ISO 8601](https:
 | Possible values:        |
 | :---------------------- |
 | Any valid ISO 8601 date |
+
+**Example**
 
 ```js
 [wps_products created_at="2019-06-01T06:06:08-04"]
@@ -111,6 +125,8 @@ Display products based on the date it was updated. Must use an [ISO 8601](https:
 | :---------------------- |
 | Any valid ISO 8601 date |
 
+**Example**
+
 ```js
 [wps_products updated_at="2019-06-01T06:06:08-04"]
 ```
@@ -123,6 +139,8 @@ Display products based on one or more product id(s). Default: `false`.
 | :--------------------------- |
 | Any valid Shopify product id |
 
+**Example**
+
 ```js
 [wps_products product_id="19213874213, 93283473232"]
 ```
@@ -134,6 +152,8 @@ Display products based on one or more post id(s). Default: `false`.
 | Possible values:            |
 | :-------------------------- |
 | Any valid WordPress post id |
+
+**Example**
 
 ```js
 [wps_products post_id="3124, 9128"]
@@ -155,6 +175,8 @@ Determines the products sort order. Corresponds to the [Shopify API values](http
 | created_at      |
 | updated_at      |
 
+**Example**
+
 ```js
 [wps_products sort_by="title"]
 ```
@@ -167,6 +189,8 @@ Reverses the products order. Useful when used in combination with `sort_by`. Def
 | :-------------- |
 | true            |
 | false           |
+
+**Example**
 
 ```js
 // Smallest to largest (A to Z) (old to new)
@@ -181,6 +205,8 @@ Determines the number of products to show per page. Only applicable when paginat
 | :-------------- |
 | Any number      |
 
+**Example**
+
 ```js
 // Shows 4 products per page
 [wps_products page_size="4"]
@@ -193,6 +219,8 @@ Limits the number of products that show. Max limit is `250`. Default: `10`.
 | Possible values |
 | :-------------- |
 | Any number      |
+
+**Example**
 
 ```js
 // Shows up to 25 products
@@ -211,6 +239,8 @@ The "connective" attribute determines how the products are found when combining 
 | AND             |
 | OR              |
 
+**Example**
+
 ```js
 // Products with either title will show
 [wps_products title="Awesome product, Even better product" connective="OR"]
@@ -227,6 +257,8 @@ Determines the buy button color. Default: `#14273b`.
 | :------------------ |
 | Any valid CSS color |
 
+**Example**
+
 ```js
 [wps_products button_color="#000"]
 ```
@@ -239,6 +271,8 @@ Determines the variant dropdown color. Default: `#52a7a6`.
 | :------------------ |
 | Any valid CSS color |
 
+**Example**
+
 ```js
 [wps_products variant_color="#000"]
 ```
@@ -250,6 +284,8 @@ Determines the buy button text. Default: `Add to cart`.
 | Possible values |
 | :-------------- |
 | Any text string |
+
+**Example**
 
 ```js
 [wps_products button_text="Add in bag"]
@@ -264,6 +300,8 @@ Determines whether to hide the quantity selection element Default: `false`.
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products hide_quantity="true"]
 ```
@@ -272,6 +310,8 @@ Determines whether to hide the quantity selection element Default: `false`.
 
 Sets a "minimum" number to the quantity field. The user will not be able to add _less than_ this number to the cart at any given time. Default: `false`.
 
+**Example**
+
 ```js
 [wps_products min_quantity="4"]
 ```
@@ -279,6 +319,8 @@ Sets a "minimum" number to the quantity field. The user will not be able to add 
 ### `max_quantity`
 
 Sets a "maximum" number to the quantity field. The user will not be able to add _more than_ this number to the cart at any given time. Default: `false`.
+
+**Example**
 
 ```js
 [wps_products max_quantity="20"]
@@ -292,6 +334,8 @@ Determines whether to show or hide the "label" to the quantity selection element
 | :-------------- |
 | true            |
 | false           |
+
+**Example**
 
 ```js
 [wps_products show_quantity_label="false"]
@@ -309,6 +353,8 @@ Allows for excluding certain product components like the title, description, etc
 | description     |
 | buy-button      |
 
+**Example**
+
 ```js
 [wps_products excludes="title, pricing"]
 ```
@@ -320,6 +366,8 @@ Determines how many products will appear in each row. Default: `3`.
 | Possible values |
 | :-------------- |
 | Any text string |
+
+**Example**
 
 ```js
 [wps_products items_per_row="5"]
@@ -334,6 +382,8 @@ Determines whether to show price ranges for each product. Only applicable when `
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products show_price_range="true"]
 ```
@@ -347,6 +397,8 @@ Determines whether to show the compare at price for each product. Only applicabl
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products show_compare_at="true"]
 ```
@@ -358,6 +410,8 @@ Allows for customizing the label text next to the quantity field. Default: `Quan
 | Possible values |
 | :-------------- |
 | Any text string |
+
+**Example**
 
 ```js
 [wps_products quantity_label_text="Custom quantity text"]
@@ -372,6 +426,8 @@ Determines whether to show only the feature image. By default, all product image
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products show_featured_only="true"]
 ```
@@ -384,6 +440,8 @@ Determines whether to enable product image zooming. When enabled, zoom will be t
 | :-------------- |
 | true            |
 | false           |
+
+**Example**
 
 ```js
 [wps_products show_zoom="true"]
@@ -398,6 +456,8 @@ Determines whether to hide or show pagination. Default: `true`.
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products pagination="false"]
 ```
@@ -410,6 +470,8 @@ Determines whether to hide or show the pagination page size functionality. Defau
 | :-------------- |
 | true            |
 | false           |
+
+**Example**
 
 ```js
 [wps_products pagination_page_size="true"]
@@ -424,6 +486,8 @@ Determines whether to hide or show the pagination load more functionality. Defau
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products pagination_load_more="false"]
 ```
@@ -435,6 +499,8 @@ The text to show when no products are found. Default: `No products found`.
 | Possible values |
 | :-------------- |
 | Any text string |
+
+**Example**
 
 ```js
 [wps_products no_results_text="Nothing found! 🙃"]
@@ -449,6 +515,8 @@ When turned on, the next page of items will automatically append to the containe
 | true            |
 | false           |
 
+**Example**
+
 ```js
 [wps_products infinite_scroll="true"]
 ```
@@ -461,6 +529,8 @@ Determines the offset from the edge of the items container. For example, a value
 | :------------------------------ |
 | Any positive or negative number |
 
+**Example**
+
 ```js
 [wps_products infinite_scroll_offset="-100"]
 ```
@@ -471,6 +541,8 @@ When `pagination` is set to true, this allows for specifying a custom location i
 
 > [!NOTE|className:info sm]
 > The HTML element specified will be completely emptied and replaced with the pagination.
+
+**Example**
 
 ```js
 [wps_products dropzone_pagination="#my-custom-pagination-container"]
@@ -483,6 +555,8 @@ When `pagination` is set to true, this allows for specifying a custom location i
 > [!NOTE|className:info sm]
 > The HTML element specified will be completely emptied and replaced with the page size component.
 
+**Example**
+
 ```js
 [wps_products dropzone_page_size="#my-custom-page-size-container"]
 ```
@@ -493,6 +567,8 @@ When `pagination` is set to true, this allows for specifying a custom location i
 
 > [!NOTE|className:info sm]
 > The HTML element specified will be completely emptied and replaced with the load more component.
+
+**Example**
 
 ```js
 [wps_products dropzone_load_more="#my-custom-load-more-container"]
@@ -506,6 +582,8 @@ Determines whether to render the title on the client or server. Must have lite s
 | :-------------- |
 | true            |
 | false           |
+
+**Example**
 
 ```js
 [wps_products render_from_server="true"]
