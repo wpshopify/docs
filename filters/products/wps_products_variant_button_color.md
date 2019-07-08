@@ -1,1 +1,0 @@
-# wps_products_variant_button_color

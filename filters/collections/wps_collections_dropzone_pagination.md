@@ -1,1 +1,0 @@
-# wps_collections_dropzone_pagination

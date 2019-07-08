@@ -1,1 +1,0 @@
-# wps_search_no_results_text

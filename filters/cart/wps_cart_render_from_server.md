@@ -1,1 +1,0 @@
-# wps_cart_render_from_server

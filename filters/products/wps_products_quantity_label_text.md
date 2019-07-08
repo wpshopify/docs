@@ -1,1 +1,0 @@
-# wps_products_quantity_label_text

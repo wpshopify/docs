@@ -1,1 +1,0 @@
-# wps_products_variants_price

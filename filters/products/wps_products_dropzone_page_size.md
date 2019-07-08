@@ -1,1 +1,0 @@
-# wps_products_dropzone_page_size

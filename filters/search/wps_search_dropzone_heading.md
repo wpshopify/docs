@@ -1,1 +1,0 @@
-# wps_search_dropzone_heading

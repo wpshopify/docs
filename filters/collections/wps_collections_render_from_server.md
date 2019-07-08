@@ -1,1 +1,0 @@
-# wps_collections_render_from_server

@@ -1,1 +1,0 @@
-# wps_products_render_from_server

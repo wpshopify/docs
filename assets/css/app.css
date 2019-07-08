@@ -15,6 +15,14 @@
    display: none;
 }
 
+[data-page*='getting-started/wp-shopify-pro'] table td:first-of-type {
+   width: 240px;
+}
+
+[data-page*='getting-started/wp-shopify-pro'] table td:nth-of-type(2) {
+   width: 150px;
+}
+
 [data-page*='shortcodes'] .markdown-section pre[data-lang] {
    margin-bottom: 5em;
 }
@@ -34,10 +42,12 @@ span > code {
    font-size: 18px;
 }
 
+.content li a,
 .content p a {
    color: #415aff;
 }
 
+.content li a:hover,
 .content p a:hover {
    opacity: 0.7;
    color: #415aff;
@@ -202,12 +212,21 @@ body .docsify-copy-code-button:after {
 } */
 
 .sidebar-nav > ul li > ul li > ul {
-   margin-bottom: 1em;
+   margin-bottom: 12px;
 }
 
 .sidebar-nav > ul li > ul li > ul li a {
-   padding-left: 2em !important;
+   padding-left: 1.4em !important;
    font-size: 16px;
+}
+
+.sidebar-nav > ul li > ul li > ul li a code {
+   background: transparent;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar-nav > ul li > ul li > ul li a code + span {
+   display: none;
 }
 
 .sidebar-nav > ul li > ul li > ul li.active a {
@@ -326,6 +345,13 @@ body .docsify-copy-code-button:after {
    padding-bottom: 5px;
 }
 
+.content .heading-section {
+   font-size: 24px;
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 1em;
+   padding-bottom: 5px;
+}
+
 .content h3 {
    font-size: 20px;
 }
@@ -343,6 +369,7 @@ body .docsify-copy-code-button:after {
    display: none;
 } */
 
+.content h2 code,
 .content h3 code {
    font-size: 17px;
    position: relative;
@@ -352,6 +379,7 @@ body .docsify-copy-code-button:after {
    user-select: text;
 }
 
+.content h2 code:hover,
 .content h3 code:hover {
    cursor: text;
 }
@@ -397,7 +425,7 @@ body .docsify-copy-code-button:after {
 }
 
 .markdown-section h3 {
-   margin-top: 3em;
+   margin-top: 2em;
 }
 
 [data-page*='getting-started'] .content h1 span,
@@ -446,7 +474,27 @@ body .docsify-copy-code-button:after {
    background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%); */
 }
 
-[data-page*='shortcodes'] .content h3 code {
+[data-page*='shortcodes'] .content h2 {
+   border: none;
+   margin: 0;
+}
+
+[data-page*='js/actions'] .content .heading-section,
+[data-page*='shortcodes'] .content .heading-section {
+   padding-bottom: 10px;
+   font-family: 'IBM Plex Sans';
+   font-size: 24px;
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 1em;
+   display: block;
+   font-weight: bold;
+}
+
+.alert.flat.info .title {
+   margin-bottom: 0;
+}
+
+[data-page*='shortcodes'] .content h2 code {
    padding: 0.3em 0.7em 0.4em 0.7em !important;
    border: none !important;
    font-weight: bold !important;
@@ -454,8 +502,10 @@ body .docsify-copy-code-button:after {
    background: #415aff !important;
 }
 
-[data-page*='shortcodes'] .content h3 code:hover {
+[data-page*='shortcodes'] .content h2 a:hover,
+[data-page*='shortcodes'] .content h2 code:hover {
    cursor: pointer;
+   text-decoration: none;
 }
 
 .markdown-section p > code {

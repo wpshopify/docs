@@ -1,1 +1,0 @@
-# wps_products_items_per_row

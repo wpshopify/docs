@@ -2,7 +2,7 @@
 
 Once you're finished syncing, WP Shopify comes with two different methods for displaying your products and collections. You can either use the built-in pages and or the provided shortcodes.
 
-## Method #1. Default pages
+## Default pages
 
 We provide two default pages that show your products out-of-the box. These pages are:
 
@@ -17,7 +17,7 @@ If you prefer to disable these pages all together, you can turn them off from wi
 
 ![WP Shopify disable default pages](http://localhost:4000/assets/displaying-disabled-pages.png)
 
-## Method #2. Shortcodes
+## Shortcodes
 
 The WP Shopify shortcodes allow you to customize your products and collections in ways that the defaults pages cannot.
 

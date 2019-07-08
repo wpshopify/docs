@@ -1,1 +1,0 @@
-# wps_products_add_to_cart_button_width

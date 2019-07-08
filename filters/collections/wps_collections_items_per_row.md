@@ -1,1 +1,0 @@
-# wps_collections_items_per_row
