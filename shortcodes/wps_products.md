@@ -20,11 +20,11 @@ Displays the main products component. Useful for showing a general list of produ
 
 ## `title`
 
-Displays products based on one or more product title(s). Default: `false`.
+Displays products based on one or more product title(s).
 
-| Possible values:        |
-| :---------------------- |
-| Any valid product title |
+| Possible values                 |
+| :------------------------------ |
+| Any valid Shopify product title |
 
 **Example**
 
@@ -34,7 +34,7 @@ Displays products based on one or more product title(s). Default: `false`.
 
 ## `tag`
 
-Display products based on one or more product tag(s). Default: `false`.
+Display products based on one or more product tag(s).
 
 | Possible values       |
 | :-------------------- |
@@ -48,7 +48,7 @@ Display products based on one or more product tag(s). Default: `false`.
 
 ## `vendor`
 
-Display products based on one or more product vendor(s). Default: `false`.
+Display products based on one or more product vendor(s).
 
 | Possible                 |
 | :----------------------- |
@@ -62,9 +62,9 @@ Display products based on one or more product vendor(s). Default: `false`.
 
 ## `product_type`
 
-Display products based on one or more product type(s). Default: `false`
+Display products based on one or more product type(s).
 
-| Possible values:       |
+| Possible values        |
 | :--------------------- |
 | Any valid product type |
 
@@ -74,116 +74,95 @@ Display products based on one or more product type(s). Default: `false`
 [wps_products product_type="Books"]
 ```
 
-## `variants_price`
-
-Display products based on the price of one or more variant(s). Default: `false`.
-
-| Possible values:        |
-| :---------------------- |
-| Any valid variant price |
-
-**Example**
-
-```js
-[wps_products variants_price="10.00"]
-```
-
 ## `available_for_sale`
 
-Display products based on their availability. Setting `true` will only show products that are in stock. Settings `false` will only show products that are _out_ of stock. Default: `false`.
+Display products based on their availability. Setting to `available` will only show products that are in stock. Setting to `unavailable` will only show products that are _out_ of stock. Setting to `any` will show both.
 
 | Possible values |
 | :-------------- |
-| true            |
-| false           |
+| available       |
+| unavailable     |
+| any (default)   |
 
 **Example**
 
 ```js
-[wps_products available_for_sale="true"]
+[wps_products available_for_sale="available"]
 ```
 
 ## `created_at`
 
-Display products based on the date it was created. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Default: `false`.
+Display products based on the date it was created. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-| Possible values:        |
+| Possible values         |
 | :---------------------- |
 | Any valid ISO 8601 date |
 
 **Example**
 
 ```js
-[wps_products created_at="2019-06-01T06:06:08-04"]
+[wps_products created_at="2019-02-21 03:16:41"]
 ```
 
 ## `updated_at`
 
-Display products based on the date it was updated. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Default: `false`.
+Display products based on the date it was updated. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Default: `false`. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-| Possible values:        |
+| Possible values         |
 | :---------------------- |
 | Any valid ISO 8601 date |
 
 **Example**
 
 ```js
-[wps_products updated_at="2019-06-01T06:06:08-04"]
+[wps_products updated_at="2019-02-21 03:16:41"]
 ```
 
 ## `product_id`
 
-Display products based on one or more product id(s). Default: `false`.
+Display products based on one or more Shopify product id(s). 
 
-| Possible values:             |
+Note: this id is different from the GraphQL id that looks like this:
+
+`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzIyMTY5Mjg0MTE2OTY=`
+
+You can base64 decode the above value and get a string such as `gid://shopify/Product/2216928411696`. The end of which represents the Shopify product id.
+
+
+| Possible values              |
 | :--------------------------- |
 | Any valid Shopify product id |
 
 **Example**
 
 ```js
-[wps_products product_id="19213874213, 93283473232"]
-```
-
-## `post_id`
-
-Display products based on one or more post id(s). Default: `false`.
-
-| Possible values:            |
-| :-------------------------- |
-| Any valid WordPress post id |
-
-**Example**
-
-```js
-[wps_products post_id="3124, 9128"]
+[wps_products product_id="2216928411696, 93283473232"]
 ```
 
 ## `sort_by`
 
-Determines the products sort order. Corresponds to the [Shopify API values](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/productsortkeys). Default: `title`.
+Determines the products sort order. Corresponds to the [Shopify API values](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/productsortkeys).
 
 | Possible values |
 | :-------------- |
-| title           |
+| title (default) |
 | vendor          |
 | id              |
 | price           |
 | best_selling    |
 | product_type    |
-| relevance       |
 | created_at      |
 | updated_at      |
 
 **Example**
 
 ```js
-[wps_products sort_by="title"]
+[wps_products sort_by="price"]
 ```
 
 ## `reverse`
 
-Reverses the products order. Useful when used in combination with `sort_by`. Default: `false`.
+Reverses the order of products. Useful when used in combination with `sort_by`.
 
 | Possible values |
 | :-------------- |
@@ -199,7 +178,7 @@ Reverses the products order. Useful when used in combination with `sort_by`. Def
 
 ## `page_size`
 
-Determines the number of products to show per page. Only applicable when pagination is turned on. Default: `10`
+Determines the number of products to show per page. Only applicable when pagination is turned on. Will default to the plugin's global [products per page](getting-started/settings?id=products-per-page) setting.
 
 | Possible values |
 | :-------------- |
@@ -214,7 +193,7 @@ Determines the number of products to show per page. Only applicable when paginat
 
 ## `limit`
 
-Limits the number of products that show. Max limit is `250`. Default: `10`.
+Limits the overall number of products that show. Max limit is `250`.
 
 | Possible values |
 | :-------------- |
@@ -223,8 +202,8 @@ Limits the number of products that show. Max limit is `250`. Default: `10`.
 **Example**
 
 ```js
-// Shows up to 25 products
-[wps_products limit="25"]
+// Show two products per page, up to 10
+[wps_products page_size="2" limit="10"]
 
 // Only show one product
 [wps_products limit="1"]
@@ -232,24 +211,24 @@ Limits the number of products that show. Max limit is `250`. Default: `10`.
 
 ## `connective`
 
-The "connective" attribute determines how the products are found when combining shortcode attributes. The two possible values are `AND` / `OR`. When set to `AND`, all shortcode attributes must match the products. With `OR`, any matched shortcode criteria will return the given products. Default: `AND`.
+The "connective" attribute determines how the products are found when combining _other_ shortcode attributes. For example when set to `and`, every provided attribute must match the searched products. With `or`, _any_ provided attribute will return the matched products. Default: `or`.
 
 | Possible values |
 | :-------------- |
-| AND             |
-| OR              |
+| and             |
+| or              |
 
 **Example**
 
 ```js
 // Products with either title will show
-[wps_products title="Awesome product, Even better product" connective="OR"]
+[wps_products title="Awesome product, Even better product" connective="or"]
 
 // Only products with both Tag1 and Tag2 will show
-[wps_products tag="Tag1, Tag2" connective="AND"]
+[wps_products tag="Tag1, Tag2" connective="and"]
 ```
 
-## `button_color`
+## `add_to_cart_button_color`
 
 Determines the buy button color. Default: `#14273b`.
 
@@ -260,10 +239,10 @@ Determines the buy button color. Default: `#14273b`.
 **Example**
 
 ```js
-[wps_products button_color="#000"]
+[wps_products add_to_cart_button_color="#000"]
 ```
 
-## `variant_color`
+## `variant_button_color`
 
 Determines the variant dropdown color. Default: `#52a7a6`.
 
@@ -274,10 +253,10 @@ Determines the variant dropdown color. Default: `#52a7a6`.
 **Example**
 
 ```js
-[wps_products variant_color="#000"]
+[wps_products variant_button_color="#000"]
 ```
 
-## `button_text`
+## `add_to_cart_button_text`
 
 Determines the buy button text. Default: `Add to cart`.
 
@@ -288,7 +267,7 @@ Determines the buy button text. Default: `Add to cart`.
 **Example**
 
 ```js
-[wps_products button_text="Add in bag"]
+[wps_products add_to_cart_button_text="Add to bag"]
 ```
 
 ## `hide_quantity`

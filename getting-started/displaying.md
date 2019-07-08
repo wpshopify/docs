@@ -1,6 +1,6 @@
 # Displaying
 
-Once you're finished syncing, WP Shopify comes with two different methods for displaying your products and collections. You can either use the built-in pages and or the provided shortcodes.
+Once you're finished syncing, WP Shopify comes with three different methods for displaying your products and collections. You can either use the [default pages](#default-pages), [shortcodes](#shortcodes), or [programmatically](#programmatically).
 
 ## Default pages
 
@@ -35,3 +35,7 @@ For example, each shortcode has a wide array of attributes that you can use to t
 -  [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
 -  [[wps_search]](shortcodes/wps_search.md)
 -  [[wps_storefront]](shortcodes/wps_storefront.md)
+
+## Programmatically
+
+WP Shopify comes with a [Render API](render-api/products) that allows you to display products using PHP.

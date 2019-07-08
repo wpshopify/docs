@@ -92,7 +92,7 @@ img[alt='wpshopify'] {
 
 .markdown-section td {
    border: 1px solid #ddd;
-   font-weight: bold;
+   /* font-weight: bold; */
 }
 
 .anchor {
