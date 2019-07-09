@@ -26,10 +26,7 @@
 -  <span class="section section-guides">Guides</span>
 
    -  [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
-
--  <span class="section section-templates">Templates</span>
-
-   -  [products/title](templates/products/title.md)
+   -  [JavaScript Hooks](guides/javascript-hooks.md)
 
 -  <span class="section section-actions">JavaScript Actions</span>
 
@@ -51,11 +48,16 @@
    -  [Storefront](actions/storefront.md)
 
 -  <span class="section section-filters">PHP Filters</span>
+
    -  [Products](filters/products.md)
    -  [Collections](filters/collections.md)
    -  [Search](filters/search.md)
    -  [Cart](filters/cart.md)
    -  [Storefront](filters/storefront.md)
+
+-  <span class="section section-templates">Templates</span>
+
+   -  [products/title](templates/products/title.md)
 
 -  <span class="section section-render-api">Render API</span>
 

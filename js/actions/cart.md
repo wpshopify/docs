@@ -1,25 +1,35 @@
 # JavaScript Actions: Cart
 
-## on.cart.close
-
-Fires after the cart closes
-
-<span class="heading-section">🎯 Example Usage</span>
-
-```js
-wp.hooks.addAction('on.cart.close', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
-})
-```
+Before getting started, please [read our JavaScript hooks guide](guides/javascript-hooks.md).
 
 ## on.cart.open
 
-Fires after the cart opens
+Fires after the cart opens.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters  | Description                     |
+| :---------- | :------------------------------ |
+| cartElement | Represents the cart DOM element |
+
+**Example**
 
 ```js
-wp.hooks.addAction('on.cart.close', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.addAction('on.cart.open', 'wpshopify', function(cartElement) {
+   // Do something after the cart opens
+})
+```
+
+## on.cart.close
+
+Fires after the cart closes.
+
+| Parameters  | Description                     |
+| :---------- | :------------------------------ |
+| cartElement | Represents the cart DOM element |
+
+**Example**
+
+```js
+wp.hooks.addAction('on.cart.close', 'wpshopify', function(cartElement) {
+   // Do something after the cart closes
 })
 ```

@@ -1,37 +1,53 @@
 # JavaScript Actions: Products
 
+Before getting started, please [read our JavaScript hooks guide](guides/javascript-hooks.md).
+
 ## before.product.addToCart
 
-Fires before the add to cart event
+Fires after all available variants are selected but before adding to the cart.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters     | Description                                                                |
+| :------------- | :------------------------------------------------------------------------- |
+| buyButtonState | Represents the buy button state. Contains reference to the product object. |
+
+**Example**
 
 ```js
-wp.hooks.addAction('before.product.addToCart', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.addAction('before.product.addToCart', 'wpshopify', function(buyButtonState) {
+   // Do something
 })
 ```
 
-## after.product.addToCart
+## on.product.addToCart
 
-Fires after the add to cart event
+Fires when a product is added to the cart.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters     | Description                                           |
+| :------------- | :---------------------------------------------------- |
+| lineItem       | Represents the data that is added to the cart session |
+| productVariant | Represents the product variant data                   |
+
+**Example**
 
 ```js
-wp.hooks.addAction('after.product.addToCart', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.addAction('on.product.addToCart', 'wpshopify', function(lineItem, productVariant) {
+   // Do something
 })
 ```
 
 ## on.product.variant.selection
 
-Fires after a product variant has been selected
+Fires each time a product variant is selected.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters         | Description                          |
+| :----------------- | :----------------------------------- |
+| selectedVariant    | Represents the selected variant data |
+| productOptionState | Represents the product data          |
+
+**Example**
 
 ```js
-wp.hooks.addAction('on.product.variant.selection', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.addAction('on.product.variant.selection', 'wpshopify', function(selectedVariant, productOptionState) {
+   // Do something
 })
 ```

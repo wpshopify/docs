@@ -2,48 +2,60 @@
 
 ## set.checkout.attributes
 
-Fires after the cart closes
+Allows for setting new checkout attributes. Will completely replace the entire list of attributes. The attributes object that you pass must have a property called key and a property called value.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters | Description                                              |
+| :--------- | :------------------------------------------------------- |
+| attributes | A JavaScript object which represents the new attributes. |
+
+**Example Usage**
 
 ```js
-wp.hooks.addAction('set.checkout.attributes', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.doAction('set.checkout.attributes', {
+   key: 'Delivery',
+   value: 'Please leave the package at the door.'
 })
 ```
 
 ## update.checkout.attributes
 
-Fires after the cart opens
+Allows for updating existing checkout attributes. Will append the attribute to the overall checkout attributes list.
 
-<span class="heading-section">🎯 Example Usage</span>
+**Example Usage**
 
 ```js
-wp.hooks.addAction('update.checkout.attributes', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
+wp.hooks.doAction('update.checkout.attributes', {
+   key: 'Delivery',
+   value: 'Please leave the package at the door.'
 })
 ```
 
 ## set.checkout.note
 
-Fires after the cart opens
+Allows for setting a new checkout note. Will completely replace any existing checkout note.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters | Description                                    |
+| :--------- | :--------------------------------------------- |
+| noteValue  | Represents the note value that you want to set |
+
+**Example Usage**
 
 ```js
-wp.hooks.addAction('set.checkout.note', 'wpshopify', function(lineItem, modVariant) {
-   // Do something after add to cart ...
-})
+wp.hooks.doAction('set.checkout.note', 'This is a custom note!')
 ```
 
 # on.checkout
 
-Event fires when the checkout button is clicked
+Fires when the checkout button is clicked.
 
-<span class="heading-section">🎯 Example Usage</span>
+| Parameters    | Description                                                 |
+| :------------ | :---------------------------------------------------------- |
+| checkoutState | Represents the checkout data like lineItems, quantity, etc. |
+
+**Example Usage**
 
 ```js
-wp.hooks.addAction('on.checkout', 'wpshopify', function(checkout) {
+wp.hooks.addAction('on.checkout', 'wpshopify', function(checkoutState) {
    // Do something on checkout ...
 })
 ```

@@ -1,200 +1,343 @@
 # [wps_products_gallery]
 
-Displays the product "gallery" component.
+Displays the product "gallery" component.<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
-## 🎯 Example Usage
+<span class="heading-section">📍 Example Usage</span>
 
 ```js
-// Defaults to showing galleries for the latest 10 products
-[wps_products_gallery]
+// Displays the cheapest 10 products
+[wps_products_gallery sort_by="lowest_price" limit="10"]
 
-// Show galleries for products with titles "Product A" and Product B"
+// Displays products in rows of 5, sorted by best selling
+[wps_products_gallery items_per_row="5" sort_by="best_selling"]
+
+// Displays 20 products per page, sorted by title reversed as Z-A
+[wps_products_gallery page_size="20" sort_by="title" reverse="true"]
+
+```
+
+<span class="heading-section">🎚 Available Attributes</span>
+
+## `title`
+
+Displays products based on one or more product title(s).
+
+| Possible values                 |
+| :------------------------------ |
+| Any valid Shopify product title |
+
+**Example**
+
+```js
 [wps_products_gallery title="Product A, Product B"]
-
-// Show galleries for products of type "Sale". Don't show image zoom or gallery thumbs
-[wps_products_gallery type="Sale" show_featured_only="true" show_zoom="false"]
-
 ```
 
-## ⚡️ Available Attributes
+## `tag`
 
-### `title` <span class="attr-type attr-type-optional">(optional)</span>
+Display products based on one or more product tag(s).
 
-Display gallery from product title(s).
+| Possible values       |
+| :-------------------- |
+| Any valid product tag |
 
-Default: `false`
+**Example**
 
 ```js
-[wps_products_gallery title="Product A, Product B"]
+[wps_products_gallery tag="Tag A, Tag B"]
 ```
 
-### `slug` <span class="attr-type attr-type-optional">(optional)</span>
+## `vendor`
 
-Display gallery from product slug(s). Case insensitive.
+Display products based on one or more product vendor(s).
 
-Default: `false`
+| Possible                 |
+| :----------------------- |
+| Any valid product vendor |
+
+**Example**
 
 ```js
-[wps_products_gallery slug="product-a, product-b"]
+[wps_products_gallery vendor="Vendor A, Vendor B"]
 ```
 
-### `tag` <span class="attr-type attr-type-optional">(optional)</span>
+## `product_type`
 
-Display gallery from product tag(s).
+Display products based on one or more product type(s).
 
-Default: `false`
+| Possible values        |
+| :--------------------- |
+| Any valid product type |
+
+**Example**
 
 ```js
-[wps_products_gallery tag="tag-a, tab-b"]
+[wps_products_gallery product_type="Books"]
 ```
 
-### `vendor` <span class="attr-type attr-type-optional">(optional)</span>
+## `available_for_sale`
 
-Display gallery from product vendor(s).
+Display products based on their availability. Setting to `available` will only show products that are in stock. Setting to `unavailable` will only show products that are _out_ of stock. Setting to `any` will show both.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| available       |
+| unavailable     |
+| any (default)   |
+
+**Example**
 
 ```js
-[wps_products_gallery vendor="Apple, Microsoft"]
+[wps_products_gallery available_for_sale="available"]
 ```
 
-### `type` <span class="attr-type attr-type-optional">(optional)</span>
+## `created_at`
 
-Display gallery from product type(s).
+Display products based on the date it was created. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-Default: `false`
+| Possible values         |
+| :---------------------- |
+| Any valid ISO 8601 date |
+
+**Example**
 
 ```js
-[wps_products_gallery type="Featured, Popular"]
+[wps_products_gallery created_at="2019-02-21 03:16:41"]
 ```
 
-### `description` <span class="attr-type attr-type-optional">(optional)</span>
+## `updated_at`
 
-Display gallery from product description. Performs a "wildcard" search based on the content you provide. For example, providing the value "Sale" will return products will the following descriptions:
+Display products based on the date it was updated. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Default: `false`. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-"This product is on Sale until Tuesday!"<br>
-"Sale ends tomorrow"
+| Possible values         |
+| :---------------------- |
+| Any valid ISO 8601 date |
 
-Default: `false`
+**Example**
 
 ```js
-[wps_products_gallery description="This is from the product description ..."]
+[wps_products_gallery updated_at="2019-02-21 03:16:41"]
 ```
 
-### `product_id` <span class="attr-type attr-type-optional">(optional)</span>
+## `product_id`
 
-Display gallery from product id(s).
+Display products based on one or more Shopify product id(s).
 
-Default: `false`
+Note: this id is different from the GraphQL id that looks like this:
+
+`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzIyMTY5Mjg0MTE2OTY=`
+
+You can base64 decode the above value and get a string such as `gid://shopify/Product/2216928411696`. The end of which represents the Shopify product id.
+
+| Possible values              |
+| :--------------------------- |
+| Any valid Shopify product id |
+
+**Example**
 
 ```js
-[wps_products_gallery product_id="19213874213, 93283473232"]
+[wps_products_gallery product_id="2216928411696, 93283473232"]
 ```
 
-### `post_id` <span class="attr-type attr-type-optional">(optional)</span>
+## `sort_by`
 
-Display gallery from post id(s).
+Determines the products sort order. Corresponds to the [Shopify API values](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/productsortkeys).
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| title (default) |
+| vendor          |
+| id              |
+| price           |
+| best_selling    |
+| product_type    |
+| created_at      |
+| updated_at      |
+
+**Example**
 
 ```js
-[wps_products_gallery post_id="3124, 9128"]
+[wps_products_gallery sort_by="price"]
 ```
 
-### `orderby` <span class="attr-type attr-type-optional">(optional)</span>
+## `reverse`
 
-Determines the order criteria of the output of two or more galleries. Only one value allowed.
+Reverses the order of products. Useful when used in combination with `sort_by`.
 
-Default: `title`
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
 
-| Available Values |
-| :--------------- |
-| title            |
-| updated_at       |
-| created_at       |
-
-```js
-[wps_products_gallery orderby="title"]
-```
-
-### `order` <span class="attr-type attr-type-optional">(optional)</span>
-
-Determines how to order the output of two or more galleries. Only one value allowed.
-
-Default: `desc`
-
-| Available Values |
-| :--------------- |
-| asc              |
-| desc             |
+**Example**
 
 ```js
 // Smallest to largest (A to Z) (old to new)
-[wps_products_gallery order="asc"]
-
-// Largest to smallest (Z to A) (new to old)
-[wps_products_gallery order="desc"]
+[wps_products_gallery sort_by="title" reverse="true"]
 ```
 
-### `limit` <span class="attr-type attr-type-optional">(optional)</span>
+## `page_size`
 
-Limits the number of titles. Max allowed is `250`.
+Determines the number of products to show per page. Only applicable when pagination is turned on. Will default to the plugin's global [products per page](getting-started/settings?id=products-per-page) setting.
 
-Default: `10`
+| Possible values |
+| :-------------- |
+| Any number      |
 
-| Available Values |
-| :--------------- |
-| Any number       |
+**Example**
 
 ```js
-// Shows up to 250 at any time
-[wps_products_title limit="25"]
-
-// Only show one
-[wps_products_title limit="1"]
+// Shows 4 products per page
+[wps_products_gallery page_size="4"]
 ```
 
-### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
+## `limit`
 
-Determines whether to render the gallery on the client or server. [Learn more](/getting-started/displaying)
+Limits the overall number of products that show. Max limit is `250`.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| Any number      |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
 
 ```js
-[wps_products_gallery render_from_server="true"]
+// Show two products per page, up to 10
+[wps_products_gallery page_size="2" limit="10"]
+
+// Only show one product
+[wps_products_gallery limit="1"]
 ```
 
-### `show_featured_only` <span class="attr-type attr-type-optional">(optional)</span>
+## `connective`
 
-Determines whether to show only the feature image. By default, all product images will show as thumbnails below the featured image.
+The "connective" attribute determines how the products are found when combining _other_ shortcode attributes. For example when set to `and`, every provided attribute must match the searched products. With `or`, _any_ provided attribute will return the matched products. Default: `or`.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| and             |
+| or              |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
+
+```js
+// Products with either title will show
+[wps_products_gallery title="Awesome product, Even better product" connective="or"]
+
+// Only products with both Tag1 and Tag2 will show
+[wps_products_gallery tag="Tag1, Tag2" connective="and"]
+```
+
+## `items_per_row`
+
+Determines how many products will appear in each row.
+
+| Possible values |
+| :-------------- |
+| Any text string |
+
+**Example**
+
+```js
+[wps_products_gallery items_per_row="5"]
+```
+
+## `show_featured_only`
+
+Determines whether to only show the product feature image. By default, all product images will show as thumbnails below the featured image.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
 
 ```js
 [wps_products_gallery show_featured_only="true"]
 ```
 
-### `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md).
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
 
 ```js
 [wps_products_gallery show_zoom="true"]
+```
+
+## `pagination`
+
+Determines whether to hide or show pagination.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products_gallery pagination="false"]
+```
+
+## `no_results_text`
+
+The text to show when no products are found.
+
+| Possible values |
+| :-------------- |
+| Any text string |
+
+**Example**
+
+```js
+[wps_products_gallery no_results_text="Nothing found! 🙃"]
+```
+
+## `infinite_scroll`
+
+When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products_gallery infinite_scroll="true"]
+```
+
+## `infinite_scroll_offset`
+
+Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
+
+| Possible values                 |
+| :------------------------------ |
+| Any positive or negative number |
+
+**Example**
+
+```js
+[wps_products_gallery infinite_scroll_offset="-100"]
+```
+
+## `dropzone_load_more`
+
+When `pagination` is set to true, this allows for specifying a custom location in the DOM to place the pagination "load more" control component. Takes any valid CSS selector. When set to false, the load more button will be placed directly below the products output. Default: `false`.
+
+> [!NOTE|className:info sm]
+> The HTML element specified will be completely emptied and replaced with the load more component.
+
+**Example**
+
+```js
+[wps_products_gallery dropzone_load_more="#my-custom-load-more-container"]
 ```

@@ -1,8 +1,8 @@
 # [wps_products_pricing]
 
-Displays the product "pricing" component.
+Displays the product "pricing" component.<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
-## 🎯 Example Usage
+<span class="heading-section">📍 Example Usage</span>
 
 ```js
 // Defaults to showing pricing for the latest 10 products
@@ -16,200 +16,328 @@ Displays the product "pricing" component.
 
 ```
 
-## ⚡️ Available Attributes
+<span class="heading-section">🎚 Available Attributes</span>
 
-### `title` <span class="attr-type attr-type-optional">(optional)</span>
+## `title`
 
-Display pricing from product title(s).
+Displays products based on one or more product title(s).
 
-Default: `false`
+| Possible values                 |
+| :------------------------------ |
+| Any valid Shopify product title |
+
+**Example**
 
 ```js
 [wps_products_pricing title="Product A, Product B"]
 ```
 
-### `slug` <span class="attr-type attr-type-optional">(optional)</span>
+## `tag`
 
-Display pricing from product slug(s). Case insensitive.
+Display products based on one or more product tag(s).
 
-Default: `false`
+| Possible values       |
+| :-------------------- |
+| Any valid product tag |
 
-```js
-[wps_products_pricing slug="product-a, product-b"]
-```
-
-### `tag` <span class="attr-type attr-type-optional">(optional)</span>
-
-Display pricing from product tag(s).
-
-Default: `false`
+**Example**
 
 ```js
-[wps_products_pricing tag="tag-a, tab-b"]
+[wps_products_pricing tag="Tag A, Tag B"]
 ```
 
-### `vendor` <span class="attr-type attr-type-optional">(optional)</span>
+## `vendor`
 
-Display pricing from product vendor(s).
+Display products based on one or more product vendor(s).
 
-Default: `false`
+| Possible                 |
+| :----------------------- |
+| Any valid product vendor |
+
+**Example**
 
 ```js
-[wps_products_pricing vendor="Apple, Microsoft"]
+[wps_products_pricing vendor="Vendor A, Vendor B"]
 ```
 
-### `type` <span class="attr-type attr-type-optional">(optional)</span>
+## `product_type`
 
-Display pricing from product type(s).
+Display products based on one or more product type(s).
 
-Default: `false`
+| Possible values        |
+| :--------------------- |
+| Any valid product type |
+
+**Example**
 
 ```js
-[wps_products_pricing type="Featured, Popular"]
+[wps_products_pricing product_type="Books"]
 ```
 
-### `description` <span class="attr-type attr-type-optional">(optional)</span>
+## `available_for_sale`
 
-Display pricing from product description. Performs a "wildcard" search based on the content you provide. For example, providing the value "Sale" will return products will the following descriptions:
+Display products based on their availability. Setting to `available` will only show products that are in stock. Setting to `unavailable` will only show products that are _out_ of stock. Setting to `any` will show both.
 
-"This product is on Sale until Tuesday!"<br>
-"Sale ends tomorrow"
+| Possible values |
+| :-------------- |
+| available       |
+| unavailable     |
+| any (default)   |
 
-Default: `false`
+**Example**
 
 ```js
-[wps_products_pricing description="This is from the product description ..."]
+[wps_products_pricing available_for_sale="available"]
 ```
 
-### `product_id` <span class="attr-type attr-type-optional">(optional)</span>
+## `created_at`
 
-Display pricing from product id(s).
+Display products based on the date it was created. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-Default: `false`
+| Possible values         |
+| :---------------------- |
+| Any valid ISO 8601 date |
+
+**Example**
 
 ```js
-[wps_products_pricing product_id="19213874213, 93283473232"]
+[wps_products_pricing created_at="2019-02-21 03:16:41"]
 ```
 
-### `post_id` <span class="attr-type attr-type-optional">(optional)</span>
+## `updated_at`
 
-Display pricing from post id(s).
+Display products based on the date it was updated. Must use an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. Default: `false`. Example can be [found based on orders](https://help.shopify.com/en/api/reference/orders/order#created-at-property-2019-07).
 
-Default: `false`
+| Possible values         |
+| :---------------------- |
+| Any valid ISO 8601 date |
+
+**Example**
 
 ```js
-[wps_products_pricing post_id="3124, 9128"]
+[wps_products_pricing updated_at="2019-02-21 03:16:41"]
 ```
 
-### `orderby` <span class="attr-type attr-type-optional">(optional)</span>
+## `product_id`
 
-Determines the order criteria of the output of two or more descriptions. Only one value allowed.
+Display products based on one or more Shopify product id(s).
 
-Default: `title`
+Note: this id is different from the GraphQL id that looks like this:
 
-| Available Values |
-| :--------------- |
-| title            |
-| updated_at       |
-| created_at       |
+`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzIyMTY5Mjg0MTE2OTY=`
+
+You can base64 decode the above value and get a string such as `gid://shopify/Product/2216928411696`. The end of which represents the Shopify product id.
+
+| Possible values              |
+| :--------------------------- |
+| Any valid Shopify product id |
+
+**Example**
 
 ```js
-[wps_products_pricing orderby="title"]
+[wps_products_pricing product_id="2216928411696, 93283473232"]
 ```
 
-### `order` <span class="attr-type attr-type-optional">(optional)</span>
+## `sort_by`
 
-Determines how to order the output of two or more descriptions. Only one value allowed.
+Determines the products sort order. Corresponds to the [Shopify API values](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/productsortkeys).
 
-Default: `desc`
+| Possible values |
+| :-------------- |
+| title (default) |
+| vendor          |
+| id              |
+| price           |
+| best_selling    |
+| product_type    |
+| created_at      |
+| updated_at      |
 
-| Available Values |
-| :--------------- |
-| asc              |
-| desc             |
+**Example**
+
+```js
+[wps_products_pricing sort_by="price"]
+```
+
+## `reverse`
+
+Reverses the order of products. Useful when used in combination with `sort_by`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
 
 ```js
 // Smallest to largest (A to Z) (old to new)
-[wps_products_pricing order="asc"]
-
-// Largest to smallest (Z to A) (new to old)
-[wps_products_pricing order="desc"]
+[wps_products_pricing sort_by="title" reverse="true"]
 ```
 
-### `limit` <span class="attr-type attr-type-optional">(optional)</span>
+## `page_size`
 
-Limits the number of titles. Max allowed is `250`.
+Determines the number of products to show per page. Only applicable when pagination is turned on. Will default to the plugin's global [products per page](getting-started/settings?id=products-per-page) setting.
 
-Default: `10`
+| Possible values |
+| :-------------- |
+| Any number      |
 
-| Available Values |
-| :--------------- |
-| Any number       |
+**Example**
 
 ```js
-// Shows up to 250 at any time
-[wps_products_title limit="25"]
-
-// Only show one
-[wps_products_title limit="1"]
+// Shows 4 products per page
+[wps_products_pricing page_size="4"]
 ```
 
-### `render_from_server` <span class="attr-type attr-type-optional">(optional)</span>
+## `limit`
 
-Determines whether to render the description on the client or server. [Learn more](/getting-started/displaying)
+Limits the overall number of products that show. Max limit is `250`.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| Any number      |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
 
 ```js
-[wps_products_pricing render_from_server="true"]
+// Show two products per page, up to 10
+[wps_products_pricing page_size="2" limit="10"]
+
+// Only show one product
+[wps_products_pricing limit="1"]
 ```
 
-### `show_price_range` <span class="attr-type attr-type-optional">(optional)</span>
+## `connective`
 
-Determines whether to show price ranges. The variant order will not be taken into consideration. Instead, prices will be sorted from smallest to largest to create the necessary range.
+The "connective" attribute determines how the products are found when combining _other_ shortcode attributes. For example when set to `and`, every provided attribute must match the searched products. With `or`, _any_ provided attribute will return the matched products. Default: `or`.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| and             |
+| or              |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
+
+```js
+// Products with either title will show
+[wps_products_pricing title="Awesome product, Even better product" connective="or"]
+
+// Only products with both Tag1 and Tag2 will show
+[wps_products_pricing tag="Tag1, Tag2" connective="and"]
+```
+
+## `items_per_row`
+
+Determines how many products will appear in each row.
+
+| Possible values |
+| :-------------- |
+| Any text string |
+
+**Example**
+
+```js
+[wps_products_pricing items_per_row="5"]
+```
+
+## `show_price_range`
+
+Determines whether to show price ranges. Only applicable when `pricing` is not set within the [excludes](#excludes) attribute.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
 
 ```js
 [wps_products_pricing show_price_range="true"]
 ```
 
-### `show_compare_at` <span class="attr-type attr-type-optional">(optional)</span>
+## `show_compare_at`
 
-Determines whether to show the "compare at" prices. Will _not_ show when compare at price is either: A) The same as the normal price or B) Is empty.
+Determines whether to show the compare at price. Only applicable when `pricing` is not set within the [excludes](#excludes) attribute.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
 
 ```js
 [wps_products_pricing show_compare_at="true"]
 ```
 
-### `show_local` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `pagination`
 
-Determines whether to show prices in the users local currency. [Learn more](/getting-started/displaying)
+Determines whether to hide or show pagination.
 
-Default: `false`
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
 
-| Available Values |
-| :--------------- |
-| true             |
-| false            |
+**Example**
 
 ```js
-[wps_products_pricing show_local="true"]
+[wps_products_pricing pagination="false"]
+```
+
+## `no_results_text`
+
+The text to show when no products are found.
+
+| Possible values |
+| :-------------- |
+| Any text string |
+
+**Example**
+
+```js
+[wps_products_pricing no_results_text="Nothing found! 🙃"]
+```
+
+## `infinite_scroll`
+
+When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products_pricing infinite_scroll="true"]
+```
+
+## `infinite_scroll_offset`
+
+Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
+
+| Possible values                 |
+| :------------------------------ |
+| Any positive or negative number |
+
+**Example**
+
+```js
+[wps_products_pricing infinite_scroll_offset="-100"]
+```
+
+## `dropzone_load_more`
+
+When `pagination` is set to true, this allows for specifying a custom location in the DOM to place the pagination "load more" control component. Takes any valid CSS selector. When set to false, the load more button will be placed directly below the products output. Default: `false`.
+
+> [!NOTE|className:info sm]
+> The HTML element specified will be completely emptied and replaced with the load more component.
+
+**Example**
+
+```js
+[wps_products_pricing dropzone_load_more="#my-custom-load-more-container"]
 ```

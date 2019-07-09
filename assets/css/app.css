@@ -101,9 +101,9 @@ img[alt='wpshopify'] {
 
 .attr-type {
    position: absolute;
-   right: -70px;
+   right: -84px;
    font-size: 75%;
-   top: 1px;
+   top: 4px;
 }
 
 .attr-type-pro-only {
@@ -306,10 +306,16 @@ body .docsify-copy-code-button:after {
 .content p {
    font-size: 18px;
 }
-[data-page*='shortcodes'] .content p:first-of-type,
+
+.content h1 + .alert {
+   margin-top: 1em;
+   margin-bottom: 2em !important;
+}
+
+/* [data-page*='shortcodes'] .content p:first-of-type,
 [data-page*='shortcodes'] .content li {
    font-size: 20px;
-}
+} */
 
 [data-page*='shortcodes'] .content p:first-of-type {
    margin-bottom: 2.5em;

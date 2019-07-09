@@ -1,6 +1,7 @@
 # [wps_products]
 
 Displays the main products component. Useful for showing a general list of products.
+<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
 <span class="heading-section">📍 Example Usage</span>
 
@@ -120,14 +121,13 @@ Display products based on the date it was updated. Must use an [ISO 8601](https:
 
 ## `product_id`
 
-Display products based on one or more Shopify product id(s). 
+Display products based on one or more Shopify product id(s).
 
 Note: this id is different from the GraphQL id that looks like this:
 
 `Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzIyMTY5Mjg0MTE2OTY=`
 
 You can base64 decode the above value and get a string such as `gid://shopify/Product/2216928411696`. The end of which represents the Shopify product id.
-
 
 | Possible values              |
 | :--------------------------- |
@@ -272,7 +272,7 @@ Determines the buy button text. Default: `Add to cart`.
 
 ## `hide_quantity`
 
-Determines whether to hide the quantity selection element Default: `false`.
+Determines whether to hide the quantity input.
 
 | Possible values |
 | :-------------- |
@@ -285,29 +285,9 @@ Determines whether to hide the quantity selection element Default: `false`.
 [wps_products hide_quantity="true"]
 ```
 
-## `min_quantity`
-
-Sets a "minimum" number to the quantity field. The user will not be able to add _less than_ this number to the cart at any given time. Default: `false`.
-
-**Example**
-
-```js
-[wps_products min_quantity="4"]
-```
-
-## `max_quantity`
-
-Sets a "maximum" number to the quantity field. The user will not be able to add _more than_ this number to the cart at any given time. Default: `false`.
-
-**Example**
-
-```js
-[wps_products max_quantity="20"]
-```
-
 ## `show_quantity_label`
 
-Determines whether to show or hide the "label" to the quantity selection element. Shows the word "Quantity" when turned on. Default: `true`.
+Determines whether to show or hide the "label" to the quantity selection element. Shows the word "Quantity" when turned on.
 
 | Possible values |
 | :-------------- |
@@ -320,9 +300,29 @@ Determines whether to show or hide the "label" to the quantity selection element
 [wps_products show_quantity_label="false"]
 ```
 
+## `min_quantity`
+
+Sets a "minimum" number to the quantity field. The user will not be able to add _less than_ this number to the cart at any given time.
+
+**Example**
+
+```js
+[wps_products min_quantity="4"]
+```
+
+## `max_quantity`
+
+Sets a "maximum" number to the quantity field. The user will not be able to add _more than_ this number to the cart at any given time.
+
+**Example**
+
+```js
+[wps_products max_quantity="20"]
+```
+
 ## `excludes`
 
-Allows for excluding certain product components like the title, description, etc. Takes a comma separated string of values. Default: `false`.
+Allows for excluding certain product components like the title, description, etc. Takes a comma separated string of values.
 
 | Possible values |
 | :-------------- |
@@ -335,12 +335,13 @@ Allows for excluding certain product components like the title, description, etc
 **Example**
 
 ```js
+// Don't show the title or pricing
 [wps_products excludes="title, pricing"]
 ```
 
 ## `items_per_row`
 
-Determines how many products will appear in each row. Default: `3`.
+Determines how many products will appear in each row.
 
 | Possible values |
 | :-------------- |
@@ -354,7 +355,7 @@ Determines how many products will appear in each row. Default: `3`.
 
 ## `show_price_range`
 
-Determines whether to show price ranges for each product. Only applicable when `pricing` is not set within the `excludes` attribute. Default: `false`.
+Determines whether to show price ranges for each product. Only applicable when `pricing` is not set within the [excludes](#excludes) attribute.
 
 | Possible values |
 | :-------------- |
@@ -369,7 +370,7 @@ Determines whether to show price ranges for each product. Only applicable when `
 
 ## `show_compare_at`
 
-Determines whether to show the compare at price for each product. Only applicable when `pricing` is not set within the `excludes` attribute. Default: `false`.
+Determines whether to show the compare at price for each product. Only applicable when `pricing` is not set within the [excludes](#excludes) attribute.
 
 | Possible values |
 | :-------------- |
@@ -384,7 +385,7 @@ Determines whether to show the compare at price for each product. Only applicabl
 
 ## `quantity_label_text`
 
-Allows for customizing the label text next to the quantity field. Default: `Quantity`.
+Customizes the label text next to the quantity input field.
 
 | Possible values |
 | :-------------- |
@@ -398,7 +399,7 @@ Allows for customizing the label text next to the quantity field. Default: `Quan
 
 ## `show_featured_only`
 
-Determines whether to show only the feature image. By default, all product images will show as thumbnails below the featured image. Default: `false`.
+Determines whether to only show the product feature image. By default, all product images will show as thumbnails below the featured image.
 
 | Possible values |
 | :-------------- |
@@ -413,7 +414,7 @@ Determines whether to show only the feature image. By default, all product image
 
 ## `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
-Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md). Default: `false`.
+Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md).
 
 | Possible values |
 | :-------------- |
@@ -428,7 +429,7 @@ Determines whether to enable product image zooming. When enabled, zoom will be t
 
 ## `pagination`
 
-Determines whether to hide or show pagination. Default: `true`.
+Determines whether to hide or show pagination.
 
 | Possible values |
 | :-------------- |
@@ -441,39 +442,9 @@ Determines whether to hide or show pagination. Default: `true`.
 [wps_products pagination="false"]
 ```
 
-## `pagination_page_size`
-
-Determines whether to hide or show the pagination page size functionality. Default: `false`.
-
-| Possible values |
-| :-------------- |
-| true            |
-| false           |
-
-**Example**
-
-```js
-[wps_products pagination_page_size="true"]
-```
-
-## `pagination_load_more`
-
-Determines whether to hide or show the pagination load more functionality. Default: `true`.
-
-| Possible values |
-| :-------------- |
-| true            |
-| false           |
-
-**Example**
-
-```js
-[wps_products pagination_load_more="false"]
-```
-
 ## `no_results_text`
 
-The text to show when no products are found. Default: `No products found`.
+The text to show when no products are found.
 
 | Possible values |
 | :-------------- |
@@ -487,7 +458,7 @@ The text to show when no products are found. Default: `No products found`.
 
 ## `infinite_scroll`
 
-When turned on, the next page of items will automatically append to the container. Only works when pagination is used. Default: `false`.
+When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
 | Possible values |
 | :-------------- |
@@ -502,7 +473,7 @@ When turned on, the next page of items will automatically append to the containe
 
 ## `infinite_scroll_offset`
 
-Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value. Default: `-200`.
+Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 
 | Possible values                 |
 | :------------------------------ |
@@ -512,32 +483,6 @@ Determines the offset from the edge of the items container. For example, a value
 
 ```js
 [wps_products infinite_scroll_offset="-100"]
-```
-
-## `dropzone_pagination`
-
-When `pagination` is set to true, this allows for specifying a custom location in the DOM to place the overall pagination component. Takes any valid CSS selector. When set to false, the pagination component will be placed directly below the products output. Default: `false`.
-
-> [!NOTE|className:info sm]
-> The HTML element specified will be completely emptied and replaced with the pagination.
-
-**Example**
-
-```js
-[wps_products dropzone_pagination="#my-custom-pagination-container"]
-```
-
-## `dropzone_page_size`
-
-When `pagination` is set to true, this allows for specifying a custom location in the DOM to place the pagination "page size" controls component. Takes any valid CSS selector. When set to false, the page size controls will be placed directly below the products output. Default: `false`.
-
-> [!NOTE|className:info sm]
-> The HTML element specified will be completely emptied and replaced with the page size component.
-
-**Example**
-
-```js
-[wps_products dropzone_page_size="#my-custom-page-size-container"]
 ```
 
 ## `dropzone_load_more`
@@ -551,19 +496,4 @@ When `pagination` is set to true, this allows for specifying a custom location i
 
 ```js
 [wps_products dropzone_load_more="#my-custom-load-more-container"]
-```
-
-## `render_from_server`
-
-Determines whether to render the title on the client or server. Must have lite sync disabled. [Learn more](/getting-started/displaying). Default: `false`
-
-| Possible values |
-| :-------------- |
-| true            |
-| false           |
-
-**Example**
-
-```js
-[wps_products render_from_server="true"]
 ```
