@@ -1,14 +1,14 @@
 # JavaScript Actions: Products
 
-Before getting started, please [read our JavaScript hooks guide](guides/javascript-hooks.md).
+Please first read our [Getting started with JavaScript Hooks](guides/javascript-hooks.md) guide.
 
-## before.product.addToCart
+## `before.product.addToCart`
 
 Fires after all available variants are selected but before adding to the cart.
 
-| Parameters     | Description                                                                |
-| :------------- | :------------------------------------------------------------------------- |
-| buyButtonState | Represents the buy button state. Contains reference to the product object. |
+| Parameters     | Description                                                |
+| :------------- | :--------------------------------------------------------- |
+| buyButtonState | Represents the buy button state and contains product data. |
 
 **Example**
 
@@ -18,7 +18,7 @@ wp.hooks.addAction('before.product.addToCart', 'wpshopify', function(buyButtonSt
 })
 ```
 
-## on.product.addToCart
+## `on.product.addToCart`
 
 Fires when a product is added to the cart.
 
@@ -35,7 +35,7 @@ wp.hooks.addAction('on.product.addToCart', 'wpshopify', function(lineItem, produ
 })
 ```
 
-## on.product.variant.selection
+## `on.product.variant.selection`
 
 Fires each time a product variant is selected.
 

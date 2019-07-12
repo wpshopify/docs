@@ -15,6 +15,10 @@
    display: none;
 }
 
+.content table + p {
+   margin-top: 1.4em;
+}
+
 [data-page*='getting-started/wp-shopify-pro'] table td:first-of-type {
    width: 240px;
 }
@@ -23,6 +27,8 @@
    width: 150px;
 }
 
+[data-page*='js/filters'] .markdown-section pre[data-lang],
+[data-page*='js/actions'] .markdown-section pre[data-lang],
 [data-page*='shortcodes'] .markdown-section pre[data-lang] {
    margin-bottom: 5em;
 }
@@ -93,6 +99,11 @@ img[alt='wpshopify'] {
 .markdown-section td {
    border: 1px solid #ddd;
    /* font-weight: bold; */
+}
+
+[data-page*='js/filters'] .markdown-section td:first-child,
+[data-page*='js/actions'] .markdown-section td:first-child {
+   min-width: 150px;
 }
 
 .anchor {
@@ -480,11 +491,7 @@ body .docsify-copy-code-button:after {
    background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%); */
 }
 
-[data-page*='shortcodes'] .content h2 {
-   border: none;
-   margin: 0;
-}
-
+[data-page*='js/filters'] .content .heading-section,
 [data-page*='js/actions'] .content .heading-section,
 [data-page*='shortcodes'] .content .heading-section {
    padding-bottom: 10px;
@@ -500,6 +507,20 @@ body .docsify-copy-code-button:after {
    margin-bottom: 0;
 }
 
+[data-page*='js/filters'] .content h2:first-of-type,
+[data-page*='js/actions'] .content h2:first-of-type {
+   margin-top: 2em;
+}
+
+[data-page*='js/filters'] .content h2,
+[data-page*='js/actions'] .content h2,
+[data-page*='shortcodes'] .content h2 {
+   border: none;
+   margin: 0;
+}
+
+[data-page*='js/filters'] .content h2 code,
+[data-page*='js/actions'] .content h2 code,
 [data-page*='shortcodes'] .content h2 code {
    padding: 0.3em 0.7em 0.4em 0.7em !important;
    border: none !important;
@@ -508,6 +529,10 @@ body .docsify-copy-code-button:after {
    background: #415aff !important;
 }
 
+[data-page*='js/filters'] .content h2 a:hover,
+[data-page*='js/filters'] .content h2 code:hover,
+[data-page*='js/actions'] .content h2 a:hover,
+[data-page*='js/actions'] .content h2 code:hover,
 [data-page*='shortcodes'] .content h2 a:hover,
 [data-page*='shortcodes'] .content h2 code:hover {
    cursor: pointer;

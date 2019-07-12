@@ -1,8 +1,10 @@
 # JavaScript Actions: Checkout
 
-## set.checkout.attributes
+Please first read our [Getting started with JavaScript Hooks](guides/javascript-hooks.md) guide.
 
-Allows for setting new checkout attributes. Will completely replace the entire list of attributes. The attributes object that you pass must have a property called key and a property called value.
+## `set.checkout.attributes`
+
+Allows for setting new checkout attributes. Will completely replace the entire list of attributes. The attributes object that you pass must have a property called `key` and a property called `value`.
 
 | Parameters | Description                                              |
 | :--------- | :------------------------------------------------------- |
@@ -17,7 +19,7 @@ wp.hooks.doAction('set.checkout.attributes', {
 })
 ```
 
-## update.checkout.attributes
+## `update.checkout.attributes`
 
 Allows for updating existing checkout attributes. Will append the attribute to the overall checkout attributes list.
 
@@ -30,7 +32,7 @@ wp.hooks.doAction('update.checkout.attributes', {
 })
 ```
 
-## set.checkout.note
+## `set.checkout.note`
 
 Allows for setting a new checkout note. Will completely replace any existing checkout note.
 
@@ -44,7 +46,7 @@ Allows for setting a new checkout note. Will completely replace any existing che
 wp.hooks.doAction('set.checkout.note', 'This is a custom note!')
 ```
 
-# on.checkout
+## `on.checkout`
 
 Fires when the checkout button is clicked.
 

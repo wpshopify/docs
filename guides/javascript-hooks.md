@@ -1,7 +1,7 @@
 # Getting started with JavaScript Hooks
 
 > [!NOTE|className:info sm]
-> JavaScript Hooks require that WordPress 5.0 or higher be installed.
+> JavaScript Hooks require WordPress 5.0 or higher
 
 JavaScript hooks were introduce to WordPress in version 5.0 with the advent of the highly anticipated Gutenberg release. These are very similar to the standard PHP hooks that WordPress developers have been familiar with for years.
 
@@ -11,17 +11,21 @@ WP Shopify provides many different JavaScript hooks which allow you to hook into
 
 ## 1. Bootstrapping
 
-Any hook you add needs to be encapsulated within the `after.ready` action. This action runs when WP Shopify is done bootstrapping. So begin your customizations with the following:
+The process is a bit different depending on whether you're using an action or filter.
+
+Any _action_ hook needs to be encapsulated within the `after.ready` action. This action runs when WP Shopify is done bootstrapping. So if you're using an action, begin your customizations with the following.
 
 ```js
 wp.hooks.addAction('after.ready', 'wpshopify', function() {
-   // Your custom actions and filters go here
+   // Your custom actions go here
 })
 ```
 
-## 2. Adding a hook
+Any _filter_ hook can be used without the `after.ready` action.
 
-Let's say we wanted to detect when a product was added to the cart so we could make some customizations. We can do this by hooking into the [after.product.addToCart](js/actions/products?id=afterproductaddtocart) action like this:
+## 2. Adding an action hook
+
+Let's say we want to detect when a product is added to the cart. We can do this by hooking into the [after.product.addToCart](js/actions/products?id=afterproductaddtocart) action like this:
 
 ```js
 wp.hooks.addAction('after.ready', 'wpshopify', function() {
@@ -34,3 +38,23 @@ wp.hooks.addAction('after.ready', 'wpshopify', function() {
 The `after.product.addToCart` action is given two parameters `lineItem` and `productVariant` that you can inspect. Each hook will have useful parameters like this to aid you along the way.
 
 We've listed all of the [available JavaScript hooks](js/actions/init) in this documentation.
+
+## 2. Adding a filter hook
+
+Let's say we want to customize the checkout button text. We can do this by hooking into the [default.cart.checkout.text](js/filters/cart?id=defaultcartcheckouttext) filter like this:
+
+```js
+wp.hooks.addFilter('default.cart.checkout.text', 'wpshopify', buttonText => {
+   return 'New checkout button text'
+})
+```
+
+## 3. Getting the order right
+
+WP Shopify injects it's JavaScript in the footer to improve performance. However it's possible that your theme's JavaScript may run _before_ WP Shopify. If this occurs none of the JavaScript hooks will work.
+
+To get around this, be sure to set `wpshopify-scripts-frontend` as a dependency in your theme's wp_enqueue_script call like this:
+
+```php
+wp_enqueue_script( 'your-js', '<your path>/stuff.js', ['wpshopify-scripts-frontend'], true);
+```

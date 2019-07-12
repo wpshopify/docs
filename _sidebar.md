@@ -38,8 +38,10 @@
 -  <span class="section section-actions">JavaScript Filters</span>
 
    -  [Cart](js/filters/cart.md)
+   -  [Products](js/filters/products.md)
+   -  [Storefront](js/filters/storefront.md)
 
--  <span class="section section-actions">PHP Actions</span>
+<!-- -  <span class="section section-actions">PHP Actions</span>
 
    -  [Products](actions/products.md)
    -  [Collections](actions/collections.md)
@@ -53,11 +55,14 @@
    -  [Collections](filters/collections.md)
    -  [Search](filters/search.md)
    -  [Cart](filters/cart.md)
-   -  [Storefront](filters/storefront.md)
+   -  [Storefront](filters/storefront.md) -->
 
 -  <span class="section section-templates">Templates</span>
 
-   -  [products/title](templates/products/title.md)
+   -  [products/single](templates/products/single.md)
+   -  [products/all](templates/products/all.md)
+   -  [collections/single](templates/collections/single.md)
+   -  [collections/all](templates/collections/all.md)
 
 -  <span class="section section-render-api">Render API</span>
 

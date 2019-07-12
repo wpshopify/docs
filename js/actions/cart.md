@@ -1,12 +1,12 @@
 # JavaScript Actions: Cart
 
-Before getting started, please [read our JavaScript hooks guide](guides/javascript-hooks.md).
+Please first read our [Getting started with JavaScript Hooks](guides/javascript-hooks.md) guide.
 
-## on.cart.open
+## `on.cart.open`
 
 Fires after the cart opens.
 
-| Parameters  | Description                     |
+| Parameter   | Description                     |
 | :---------- | :------------------------------ |
 | cartElement | Represents the cart DOM element |
 
@@ -18,11 +18,11 @@ wp.hooks.addAction('on.cart.open', 'wpshopify', function(cartElement) {
 })
 ```
 
-## on.cart.close
+## `on.cart.close`
 
 Fires after the cart closes.
 
-| Parameters  | Description                     |
+| Parameter   | Description                     |
 | :---------- | :------------------------------ |
 | cartElement | Represents the cart DOM element |
 
