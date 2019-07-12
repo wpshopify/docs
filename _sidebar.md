@@ -27,6 +27,8 @@
 
    -  [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
    -  [JavaScript Hooks](guides/javascript-hooks.md)
+   -  [Template Overriding](guides/template-overriding.md)
+   -  [Migrating to 2.x](guides/migrating-to-2x.md)
 
 -  <span class="section section-actions">JavaScript Actions</span>
 
