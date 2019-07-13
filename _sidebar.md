@@ -19,9 +19,9 @@
    -  [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
    -  [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
    -  [[wps_collections]](shortcodes/wps_collections.md)
-   -  [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
    -  [[wps_search]](shortcodes/wps_search.md)
    -  [[wps_storefront]](shortcodes/wps_storefront.md)
+   -  [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
 
 -  <span class="section section-guides">Guides</span>
 
@@ -29,19 +29,20 @@
    -  [JavaScript Hooks](guides/javascript-hooks.md)
    -  [Template Overriding](guides/template-overriding.md)
    -  [Migrating to 2.x](guides/migrating-to-2x.md)
+   -  [Render API](guides/render-api.md)
 
 -  <span class="section section-actions">JavaScript Actions</span>
 
-   -  [Cart](js/actions/cart.md)
-   -  [Checkout](js/actions/checkout.md)
    -  [Init](js/actions/init.md)
    -  [Products](js/actions/products.md)
+   -  [Checkout](js/actions/checkout.md)
+   -  [Cart](js/actions/cart.md)
 
--  <span class="section section-actions">JavaScript Filters</span>
+*  <span class="section section-actions">JavaScript Filters</span>
 
-   -  [Cart](js/filters/cart.md)
    -  [Products](js/filters/products.md)
    -  [Storefront](js/filters/storefront.md)
+   -  [Cart](js/filters/cart.md)
 
 <!-- -  <span class="section section-actions">PHP Actions</span>
 
@@ -61,11 +62,15 @@
 
 -  <span class="section section-templates">Templates</span>
 
-   -  [products/single](templates/products/single.md)
    -  [products/all](templates/products/all.md)
-   -  [collections/single](templates/collections/single.md)
+   -  [products/single](templates/products/single.md)
    -  [collections/all](templates/collections/all.md)
+   -  [collections/single](templates/collections/single.md)
 
 -  <span class="section section-render-api">Render API</span>
 
    -  [Products](render-api/products.md)
+   -  [Collections](render-api/collections.md)
+   -  [Search](render-api/search.md)
+   -  [Storefront](render-api/storefront.md)
+   -  [Cart Icon](render-api/cart-icon.md)

@@ -1,6 +1,6 @@
 # [wps_search]
 
-Displays the search component.<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
+Displays the search component. Only available in [WP Shopify Pro](https://wpshopify-web.loc/purchase/).<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
 <span class="heading-section">📍 Example Usage</span>
 

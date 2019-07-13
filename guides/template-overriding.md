@@ -1,6 +1,6 @@
 # Template Overriding
 
-WP Shopify Pro comes with PHP templates that you can use to override various parts of the plugin's layout. Our templates work very similar to how the WooCommerce templates behave.
+[WP Shopify Pro](https://wpshopify-web.loc/purchase/) comes with PHP templates that you can use to override various parts of the plugin's layout. Our templates are very similar to how the WooCommerce templates work.
 
 ## Setting up your theme
 

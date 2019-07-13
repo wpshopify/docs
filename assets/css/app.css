@@ -8,7 +8,7 @@
    --base-line-height: 1.5;
    --table-row-odd-background: #f4f6f8;
    --sidebar-nav-link-color: #000;
-   /* --code-inline-background: hsl(0, 0%, 95%); */
+   --code-inline-background: #eee;
 }
 
 .markdown-section pre[data-lang]::after {
@@ -29,7 +29,12 @@
 
 [data-page*='js/filters'] .markdown-section pre[data-lang],
 [data-page*='js/actions'] .markdown-section pre[data-lang],
-[data-page*='shortcodes'] .markdown-section pre[data-lang] {
+[data-page*='shortcodes'] .markdown-section pre[data-lang],
+[data-page*='render-api/products'] .markdown-section pre[data-lang],
+[data-page*='render-api/collections'] .markdown-section pre[data-lang],
+[data-page*='render-api/search'] .markdown-section pre[data-lang],
+[data-page*='render-api/storefront'] .markdown-section pre[data-lang],
+[data-page*='render-api/cart'] .markdown-section pre[data-lang] {
    margin-bottom: 5em;
 }
 
@@ -332,7 +337,14 @@ body .docsify-copy-code-button:after {
    font-size: 20px;
 } */
 
-[data-page*='shortcodes'] .content p:first-of-type {
+.pro-only-heading {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+[data-page^='render-api'] .content article > p:first-of-type,
+[data-page*='shortcodes'] .content article > p:first-of-type {
    margin-bottom: 2.5em;
 }
 
@@ -449,55 +461,14 @@ body .docsify-copy-code-button:after {
    margin-top: 2em;
 }
 
-[data-page*='getting-started'] .content h1 span,
-.section-getting-started {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff6ca), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #fff6ca 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #fff6ca 50%, transparent 50%); */
-}
-
-/* [data-page*='filters'] .content h1 .anchor span, */
-
-[data-page*='shortcodes'] .content h1 span,
-.section-shortcodes {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #a9f8ff), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #a9f8ff 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #a9f8ff 50%, transparent 50%); */
-}
-
-[data-page*='render-api'] .content h1 span,
-.section-render-api {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e5e0ff), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #e5e0ff 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #e5e0ff 50%, transparent 50%); */
-}
-
-[data-page*='guides'] .content h1 span,
-.section-guides {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffd1df), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #ffd1df 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #ffd1df 50%, transparent 50%); */
-}
-
-[data-page*='templates'] .content h1 span,
-.section-templates {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #beffcf), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #beffcf 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #beffcf 50%, transparent 50%); */
-}
-
-[data-page*='actions'] .content h1 span,
-[data-page*='filters'] .content h1 span,
-.section-actions,
-.section-filters {
-   /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f0f0f0), color-stop(50%, transparent));
-   background-image: -webkit-linear-gradient(bottom, #f0f0f0 50%, transparent 50%);
-   background-image: linear-gradient(0deg, #f0f0f0 50%, transparent 50%); */
-}
-
 [data-page*='js/filters'] .content .heading-section,
 [data-page*='js/actions'] .content .heading-section,
-[data-page*='shortcodes'] .content .heading-section {
+[data-page*='shortcodes'] .content .heading-section,
+[data-page*='render-api/products'] .content .heading-section,
+[data-page*='render-api/collections'] .content .heading-section,
+[data-page*='render-api/search'] .content .heading-section,
+[data-page*='render-api/storefront'] .content .heading-section,
+[data-page*='render-api/cart'] .content .heading-section {
    padding-bottom: 10px;
    font-family: 'IBM Plex Sans';
    font-size: 24px;
@@ -518,14 +489,24 @@ body .docsify-copy-code-button:after {
 
 [data-page*='js/filters'] .content h2,
 [data-page*='js/actions'] .content h2,
-[data-page*='shortcodes'] .content h2 {
+[data-page*='shortcodes'] .content h2,
+[data-page*='render-api/products'] .content h2,
+[data-page*='render-api/collections'] .content h2,
+[data-page*='render-api/search'] .content h2,
+[data-page*='render-api/storefront'] .content h2,
+[data-page*='render-api/cart'] .content h2 {
    border: none;
    margin: 0;
 }
 
 [data-page*='js/filters'] .content h2 code,
 [data-page*='js/actions'] .content h2 code,
-[data-page*='shortcodes'] .content h2 code {
+[data-page*='shortcodes'] .content h2 code,
+[data-page*='render-api/products'] .content h2 code,
+[data-page*='render-api/collections'] .content h2 code,
+[data-page*='render-api/search'] .content h2 code,
+[data-page*='render-api/storefront'] .content h2 code,
+[data-page*='render-api/cart'] .content h2 code {
    padding: 0.3em 0.7em 0.4em 0.7em !important;
    border: none !important;
    font-weight: bold !important;
@@ -538,14 +519,24 @@ body .docsify-copy-code-button:after {
 [data-page*='js/actions'] .content h2 a:hover,
 [data-page*='js/actions'] .content h2 code:hover,
 [data-page*='shortcodes'] .content h2 a:hover,
-[data-page*='shortcodes'] .content h2 code:hover {
+[data-page*='shortcodes'] .content h2 code:hover,
+[data-page*='render-api/products'] .content h2 a:hover,
+[data-page*='render-api/products'] .content h2 code:hover,
+[data-page*='render-api/collections'] .content h2 a:hover,
+[data-page*='render-api/collections'] .content h2 code:hover,
+[data-page*='render-api/search'] .content h2 a:hover,
+[data-page*='render-api/search'] .content h2 code:hover,
+[data-page*='render-api/storefront'] .content h2 a:hover,
+[data-page*='render-api/storefront'] .content h2 code:hover,
+[data-page*='render-api/cart'] .content h2 a:hover,
+[data-page*='render-api/cart'] .content h2 code:hover {
    cursor: pointer;
    text-decoration: none;
 }
 
 .markdown-section p > code {
-   font-weight: bold;
-   color: #242424;
+   /* font-weight: bold; */
+   color: #000;
    background: #eee;
 }
 

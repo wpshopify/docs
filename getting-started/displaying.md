@@ -33,9 +33,9 @@ For example, each shortcode has a wide array of attributes that you can use to t
 -  [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
 -  [[wps_collections]](shortcodes/wps_collections.md)
 -  [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
--  [[wps_search]](shortcodes/wps_search.md)
--  [[wps_storefront]](shortcodes/wps_storefront.md)
+-  [[wps_search]](shortcodes/wps_search.md) (pro only)
+-  [[wps_storefront]](shortcodes/wps_storefront.md) (pro only)
 
 ## Programmatically
 
-WP Shopify comes with a [Render API](render-api/products) that allows you to display products using PHP.
+WP Shopify comes with a [Render API](guides/render-api.md) that allows you to display products using PHP.
