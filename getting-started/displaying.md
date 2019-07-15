@@ -1,6 +1,6 @@
 # Displaying
 
-Once you're finished syncing, WP Shopify comes with three different methods for displaying your products and collections. You can either use the [default pages](#default-pages), [shortcodes](#shortcodes), or [programmatically](#programmatically).
+Once you're finished syncing, WP Shopify comes with three different methods for displaying your products and collections. You can either use [default pages](#default-pages), [shortcodes](#shortcodes), or the [Render API](#programmatically).
 
 ## Default pages
 
@@ -13,15 +13,15 @@ You can change the slug of these URLs from within the plugin Settings.
 
 ![WP Shopify change default page URLs](http://localhost:4000/assets/change-default-pages.png)
 
-If you prefer to disable these pages all together, you can turn them off from within the settings as well.
+If you prefer to disable these pages all together, you can turn them off by setting the [disable default pages](getting-started/settings?id=disable-default-pages) setting.
 
 ![WP Shopify disable default pages](http://localhost:4000/assets/displaying-disabled-pages.png)
 
 ## Shortcodes
 
-The WP Shopify shortcodes allow you to customize your products and collections in ways that the defaults pages cannot.
+The WP Shopify shortcodes allow you to customize products in ways that defaults pages cannot.
 
-For example, each shortcode has a wide array of attributes that you can use to tweak various settings. Everything from filtering products by title or tags, to enabling infinite scrolling and image zooming.
+For example, each shortcode has a wide array of attributes which you can use to tweak various settings. Everything from filtering products by tags, to enabling infinite scrolling and image zooming for [Pro users](https://wpshop.io/purchase).
 
 **Below is the full list of provided shortcodes:**
 
@@ -36,6 +36,6 @@ For example, each shortcode has a wide array of attributes that you can use to t
 -  [[wps_search]](shortcodes/wps_search.md) (pro only)
 -  [[wps_storefront]](shortcodes/wps_storefront.md) (pro only)
 
-## Programmatically
+## Render API
 
 WP Shopify comes with a [Render API](guides/render-api.md) that allows you to display products using PHP.

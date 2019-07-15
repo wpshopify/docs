@@ -27,6 +27,10 @@
    width: 150px;
 }
 
+.markdown-section h3 + blockquote {
+   margin-top: 10px;
+}
+
 [data-page*='js/filters'] .markdown-section pre[data-lang],
 [data-page*='js/actions'] .markdown-section pre[data-lang],
 [data-page*='shortcodes'] .markdown-section pre[data-lang],

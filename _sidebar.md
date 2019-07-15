@@ -2,13 +2,15 @@
 
    -  [Syncing](getting-started/syncing.md)
    -  [Displaying](getting-started/displaying.md)
-   -  [Settings](getting-started/settings.md)
    -  [Common Issues](getting-started/common-issues.md)
+   -  [Settings](getting-started/settings.md)
+   -  [Tools](getting-started/tools.md)
    -  [Requirements](getting-started/requirements.md)
    -  [WP Shopify Pro](getting-started/wp-shopify-pro.md)
    -  [License](getting-started/license.md)
    -  [FAQs](https://wpshop.io/faq)
    -  [Changelog](https://wpshop.io/changelog)
+   -  [Example Sites](https://wpshopify-web.loc/examples/)
 
 -  <span class="section section-shortcodes">:electric_plug: Shortcodes</span>
 

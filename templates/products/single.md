@@ -1,6 +1,10 @@
 # products/single
 
-This template controls the default product single pages.
+Please first read our [Template Overriding](guides/template-overriding.md) guide.
 
-Plugin Path: `wp-shopify-pro/public/templates/products-single.php`<br>
-Override Path: `<your-theme>/wps-templates/products-single.php`
+This template controls the product single pages. Will only run when [Sync posts](getting-started/settings?id=sync-posts) is turned on.
+
+### Template Paths
+
+> Copy from: `wp-shopify-pro/public/templates/products-single.php`<br>
+> Copy to: `<your-theme>/wps-templates/products-single.php`

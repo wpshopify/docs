@@ -1,6 +1,6 @@
 # Syncing
 
-Syncing your Shopify store to WordPress is pretty straight forward. However it does require a little bit of configuration within Shopify beforehand. We've made a short video below that will walk you through the entire process.
+Syncing your Shopify store to WordPress is pretty straight forward. However it does require a little bit of configuration. We've made a short video below that will walk you through the entire process.
 
 <iframe width="860" height="515" src="https://www.youtube.com/embed/lYm6G35e8sI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -36,16 +36,16 @@ Next, fill in the "Private app name" field. This can be anything you want. We'll
 
 ### Step 6.
 
-Make sure that all Admin API permissions are set to "Read and write". You'll also need to click the "Review disabled Admin permissions" to see the rest. 
+Make sure that all Admin API permissions are set to "Read and write". You'll also need to click the "Review disabled Admin permissions" to see the rest.
 
 If a permission does not have "Read and write" as an option, choose "Read" instead.
 
 The following permissions can remain set to "No access":
 
-- Shopify payments balance & payouts
-- Shopify payments disputes
-- Shopify payments bank accounts
-- Shopify payments account, settings, and banking details
+-  Shopify payments balance & payouts
+-  Shopify payments disputes
+-  Shopify payments bank accounts
+-  Shopify payments account, settings, and banking details
 
 You can leave "Webhook API version" alone.
 
@@ -53,7 +53,7 @@ You can leave "Webhook API version" alone.
 
 ### Step 7.
 
-Almost done! 
+Almost done!
 
 Scroll to the bottom to find the section titled, "Storefront API". Click the checkbox that says: "Allow this app to access your storefront data using the Storefront API". Then, make sure all of the checkboxes are enabled including "Read product tags" and "Read customer tags". Click save.
 
@@ -80,12 +80,11 @@ Next, go back to WordPress and begin filling in the API credentials generated fr
 
 ### Step 11.
 
-The plugin should begin syncing your store data. Depending on how many products you have, the syncing process can take anywhere from 30 seconds to 10minutes. Once the syncing is finished you should see a "completed" message. 
+The plugin should begin syncing your store data. Depending on how many products you have, the syncing process can take anywhere from 30 seconds to 10minutes. Once the syncing is finished you should see a "completed" message.
 
 You're now ready to start showing your products.
 
 ![WP Shopify Syncing Step 11](http://localhost:4000/assets/syncing-step11.png)
-
 
 <br><br><br>
 Next: :point_right: [Displaying your products](getting-started/displaying)
