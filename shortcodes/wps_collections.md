@@ -237,7 +237,7 @@ When [single](#single) is set to true, this allows for specifying a custom locat
 [wps_collections single="true" dropzone_collection_products="#products-container"]
 ```
 
-## `infinite_scroll`
+## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 When turned on, the next page of collections will automatically append to the container. Only works when pagination is used.
 
@@ -252,7 +252,7 @@ When turned on, the next page of collections will automatically append to the co
 [wps_collections infinite_scroll="true"]
 ```
 
-## `infinite_scroll_offset`
+## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 Determines the offset from the edge of the collections container. For example, a value of `-100` will begin loading additional collections 100px before the end of the collections container. Offset can be a positive or negative value.
 
@@ -562,7 +562,7 @@ The text to show when no products are found.
 [wps_collections single="true" products_no_results_text="Nothing found! 🙃"]
 ```
 
-## `products_infinite_scroll`
+## `products_infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
@@ -577,7 +577,7 @@ When turned on, the next page of items will automatically append to the containe
 [wps_collections single="true" products_infinite_scroll="true"]
 ```
 
-## `products_infinite_scroll_offset`
+## `products_infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 
