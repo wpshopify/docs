@@ -77,12 +77,11 @@ Display products based on one or more product type(s).
 
 ## `available_for_sale`
 
-Display products based on their availability. Setting to `available` will only show products that are in stock. Setting to `unavailable` will only show products that are _out_ of stock. Setting to `any` will show both.
+Display products based on their availability. Setting to `available` will only show products that are in stock.
 
 | Possible values |
 | :-------------- |
 | available       |
-| unavailable     |
 | any (default)   |
 
 **Example**

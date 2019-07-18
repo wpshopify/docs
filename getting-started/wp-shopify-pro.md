@@ -4,21 +4,22 @@ WP Shopify comes in two versions; Free and Pro. The free version can be found on
 
 Below is a feature chart comparing each version:
 
-| Feature            | WP Shopify                     | WP Shopify Pro                 |
-| :----------------- | :----------------------------- | :----------------------------- |
-| Automatic Syncing  | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Image resizing     | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Shortcodes         | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Light Sync         | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Fixed cart icon    | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Plugin Updates     | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
-| Product Searching  | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Product Filtering  | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Image Zoom         | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Infinite Scrolling | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Selective Syncing  | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Order Notes        | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Cart Attributes    | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| PHP Templates      | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Dedicated Support  | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
-| Webhooks           | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Feature                                 | WP Shopify                     | WP Shopify Pro                 |
+| :-------------------------------------- | :----------------------------- | :----------------------------- |
+| Automatic Syncing                       | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| Image resizing                          | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| Basic Shortcodes                        | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| Light Sync                              | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| Fixed cart icon                         | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| Plugin Updates                          | <span class="icon-l">✅</span> | <span class="icon-l">✅</span> |
+| [Search](shortcodes/wps_search)         | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| [Storefront](shortcodes/wps_storefront) | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Image Zoom                              | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Infinite Scrolling                      | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Selective Syncing                       | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Cart Notes                              | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Cart Terms                              | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Cart Attributes                         | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| PHP Templates                           | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Dedicated Support                       | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
+| Webhooks                                | <span class="icon-l">🚫</span> | <span class="icon-l">✅</span> |
