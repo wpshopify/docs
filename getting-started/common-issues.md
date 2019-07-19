@@ -2,6 +2,8 @@
 
 Below are the most common issues that users have when using the plugin. If you don't find and answer here, please email us [hello@wpshop.io](mailto:hello@wpshop.io)
 
+<iframe width="860" height="515" src="https://www.youtube.com/embed/qUX-5pjvODk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Products not showing
 
 Usually this means that you just need to assign your products to the Shopify Sales Channel. This "Sales Channel" is created automatically when you [initially setup your private app](getting-started/syncing) and will have the same name. It's used to control what products are visible in WP Shopify. Below are the steps for assigning your products to the Sales Channel.

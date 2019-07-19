@@ -3,6 +3,8 @@
 Displays the main products component. Useful for showing a general list of products.
 <br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
+<iframe width="860" height="515" src="https://www.youtube.com/embed/kvRYOiJAXJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <span class="heading-section">📍 Example Usage</span>
 
 ```js

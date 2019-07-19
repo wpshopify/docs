@@ -2,7 +2,7 @@
 
 Syncing your Shopify store to WordPress is pretty straight forward. However it does require a little bit of configuration. We've made a short video below that will walk you through the entire process.
 
-<iframe width="860" height="515" src="https://www.youtube.com/embed/lYm6G35e8sI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="860" height="515" src="https://www.youtube.com/embed/v3AC2SPK40o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Step 1.
 

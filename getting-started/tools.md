@@ -2,6 +2,8 @@
 
 WP Shopify comes with various Tools to improve the plugin's flexibility. These can be found within the settings page under the "Tools" tab.
 
+<iframe width="860" height="515" src="https://www.youtube.com/embed/0sCqDjl8uWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Resync Shopify
 
 Allows you to sync your Shopify data. Similar to the initial sync found within the Connect tab, but it skips various steps like saving the Shopify connection.

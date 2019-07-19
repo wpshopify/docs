@@ -20,26 +20,6 @@
       <div id="app"></div>
 
       <script>
-         // function getCollapsables() {
-         //    return document.querySelectorAll('.collapsable')
-         // }
-
-         // function collapsableEvents(elements) {
-         //    elements.forEach(el =>
-         //       el.addEventListener('click', function(event) {
-         //          el.classList.remove('is-collapsed')
-         //          event.target.add('is-collapsed')
-         //       })
-         //    )
-         // }
-         // function whenEachDone() {
-         //    return collapsableEvents(getCollapsables())
-         // }
-
-         // function afterEach() {
-         //    return collapsableEvents(getCollapsables())
-         // }
-
          window.$docsify = {
             loadSidebar: true,
             loadNavbar: true,
@@ -55,13 +35,7 @@
             logo: 'assets/logov3.svg',
             'flexible-alerts': {
                style: 'callout'
-            },
-            plugins: [
-               function(hook, vm) {
-                  // hook.ready(whenEachDone)
-                  // hook.doneEach(whenEachDone)
-               }
-            ]
+            }
          }
       </script>
 

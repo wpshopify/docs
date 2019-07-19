@@ -2,6 +2,8 @@
 
 Once you're finished syncing, WP Shopify comes with three different methods for displaying your products and collections. You can either use [default pages](#default-pages), [shortcodes](#shortcodes), or the [Render API](#programmatically).
 
+<iframe width="860" height="515" src="https://www.youtube.com/embed/8-TbA0HHoBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Default pages
 
 We provide two default pages that show your products out-of-the box. These pages are:
