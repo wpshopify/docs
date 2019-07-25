@@ -2,7 +2,7 @@
 
 WP Shopify comes in two versions; Free and Pro. The free version can be found on the official [WordPress repository](https://wordpress.org/plugins/wpshopify/) and the Pro version can be [purchased here](https://wpshop.io/purchase).
 
-We've also created a dedicated page detailing each [Pro feature](https://wpshop.io/pro/).
+We've also created a dedicated page detailing each [Pro feature](https://wpshop.io/pro-features/).
 
 | Feature                                 | WP Shopify                     | WP Shopify Pro                 |
 | :-------------------------------------- | :----------------------------- | :----------------------------- |
