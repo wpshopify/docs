@@ -8,31 +8,31 @@ Syncing your Shopify store to WordPress is pretty straight forward. However it d
 
 Install WP Shopify and navigate to the "Connect" tab within the plugin Settings.
 
-![WP Shopify Syncing Step 1](http://localhost:4000/assets/syncing-step1.png)
+![WP Shopify Syncing Step 1](https://docs.wpshop.io/assets/syncing-step1.png)
 
 ### Step 2.
 
 Open your Shopify dashboard and click "Apps" within the side menu.
 
-![WP Shopify Syncing Step 2](http://localhost:4000/assets/syncing-step2.png)
+![WP Shopify Syncing Step 2](https://docs.wpshop.io/assets/syncing-step2.png)
 
 ### Step 3.
 
 Next, click on the "Manage private apps" link towards the bottom of the new screen.
 
-![WP Shopify Syncing Step 3](http://localhost:4000/assets/syncing-step3.png)
+![WP Shopify Syncing Step 3](https://docs.wpshop.io/assets/syncing-step3.png)
 
 ### Step 4.
 
 Click "Create a new private app"
 
-![WP Shopify Syncing Step 4](http://localhost:4000/assets/syncing-step4.png)
+![WP Shopify Syncing Step 4](https://docs.wpshop.io/assets/syncing-step4.png)
 
 ### Step 5.
 
 Next, fill in the "Private app name" field. This can be anything you want. We'll use "WP Shopify" so it's easy to distinguish itself from other apps. Fill in your own email within the "Emergency developer email" field.
 
-![WP Shopify Syncing Step 5](http://localhost:4000/assets/syncing-step5.png)
+![WP Shopify Syncing Step 5](https://docs.wpshop.io/assets/syncing-step5.png)
 
 ### Step 6.
 
@@ -49,7 +49,7 @@ The following permissions can remain set to "No access":
 
 You can leave "Webhook API version" alone.
 
-![WP Shopify Syncing Step 6](http://localhost:4000/assets/syncing-step6.png)
+![WP Shopify Syncing Step 6](https://docs.wpshop.io/assets/syncing-step6.png)
 
 ### Step 7.
 
@@ -57,26 +57,26 @@ Almost done!
 
 Scroll to the bottom to find the section titled, "Storefront API". Click the checkbox that says: "Allow this app to access your storefront data using the Storefront API". Then, make sure all of the checkboxes are enabled including "Read product tags" and "Read customer tags". Click save.
 
-![WP Shopify Syncing Step 7](http://localhost:4000/assets/syncing-step7.png)
+![WP Shopify Syncing Step 7](https://docs.wpshop.io/assets/syncing-step7.png)
 
 ### Step 8.
 
 A modal should appear asking you to confirm. Click "I understand, create the app.".
 
-![WP Shopify Syncing Step 8](http://localhost:4000/assets/syncing-step8.png)
+![WP Shopify Syncing Step 8](https://docs.wpshop.io/assets/syncing-step8.png)
 
 ### Step 9.
 
 You should see a newly created Storefront access token. Take note of this value.
 
-![WP Shopify Syncing Step 9](http://localhost:4000/assets/syncing-step9.png)
+![WP Shopify Syncing Step 9](https://docs.wpshop.io/assets/syncing-step9.png)
 
 ### Step 10.
 
 Next, go back to WordPress and begin filling in the API credentials generated from the Private App. Once done, click "Connect your Shopify store".
 
-![WP Shopify Syncing Step 10](http://localhost:4000/assets/syncing-step10.png)
-![WP Shopify Syncing Step 10-2](http://localhost:4000/assets/syncing-step10-2.png)
+![WP Shopify Syncing Step 10](https://docs.wpshop.io/assets/syncing-step10.png)
+![WP Shopify Syncing Step 10-2](https://docs.wpshop.io/assets/syncing-step10-2.png)
 
 ### Step 11.
 
@@ -84,7 +84,7 @@ The plugin should begin syncing your store data. Depending on how many products 
 
 You're now ready to start showing your products.
 
-![WP Shopify Syncing Step 11](http://localhost:4000/assets/syncing-step11.png)
+![WP Shopify Syncing Step 11](https://docs.wpshop.io/assets/syncing-step11.png)
 
 <br><br><br>
 Next: :point_right: [Displaying your products](getting-started/displaying)

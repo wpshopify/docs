@@ -15,7 +15,7 @@ Once you have the license key, you will need activate it to receive plugin updat
 
 If you're running into problems, please send us a message in Slack or shoot us an email.
 
-![WP Shopify Pro license key setup](http://localhost:4000/assets/license-setup.png)
+![WP Shopify Pro license key setup](https://docs.wpshop.io/assets/license-setup.png)
 
 ## Working with localhost
 

@@ -13,11 +13,11 @@ We provide two default pages that show your products out-of-the box. These pages
 
 You can change the slug of these URLs from within the plugin Settings.
 
-![WP Shopify change default page URLs](http://localhost:4000/assets/change-default-pages.png)
+![WP Shopify change default page URLs](https://docs.wpshop.io/assets/change-default-pages.png)
 
 If you prefer to disable these pages all together, you can turn them off by setting the [disable default pages](getting-started/settings?id=disable-default-pages) setting.
 
-![WP Shopify disable default pages](http://localhost:4000/assets/displaying-disabled-pages.png)
+![WP Shopify disable default pages](https://docs.wpshop.io/assets/displaying-disabled-pages.png)
 
 ## Shortcodes
 
