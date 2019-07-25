@@ -1,6 +1,6 @@
 # License
 
-When you purchase [WP Shopify Pro](https://wpshopify-web.loc/purchase/) you're given a single license key. This key gives you access to:
+When you purchase [WP Shopify Pro](https://wpshop.io/purchase/) you're given a single license key. This key gives you access to:
 
 -  Pro-only features
 -  Plugin updates

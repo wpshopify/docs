@@ -10,7 +10,7 @@
    -  [License](getting-started/license.md)
    -  [FAQs](https://wpshop.io/faq)
    -  [Changelog](https://wpshop.io/changelog)
-   -  [Example Sites](https://wpshopify-web.loc/examples/)
+   -  [Example Sites](https://wpshop.io/examples/)
 
 -  <span class="section section-shortcodes">:electric_plug: Shortcodes</span>
 

@@ -80,11 +80,11 @@ This error is usually returned when the private Shopify app you created was dele
 
 #### 402 Error: The requested shop is currently frozen.
 
-This error is sent when a shop is either unavailable (no payment on record at Shopify), or when it doesn't have access to a specific feature. Make sure that you have an active Shopify plan and that the private app you created has been given read _and_ write access for each&nbsp;scope&nbsp;<a href="https://wpshop.io/docs/connecting" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process. Once this has been updated, resync your store from the WP Shopify settings page.
+This error is sent when a shop is either unavailable (no payment on record at Shopify), or when it doesn't have access to a specific feature. Make sure that you have an active Shopify plan and that the private app you created has been given read _and_ write access for each&nbsp;scope&nbsp;<a href="https://docs.wpshop.io" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process. Once this has been updated, resync your store from the WP Shopify settings page.
 
 #### 403 Error: The server is refusing to respond to the request.
 
-This error is sent when WP Shopify doesn't have access to a specific scope of your private app. Make sure that the private app you created has been given read _and_ write access for each&nbsp;scope <a href="https://wpshop.io/docs/connecting" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process.&nbsp;Once this has been updated, resync your store from the WP Shopify settings page.
+This error is sent when WP Shopify doesn't have access to a specific scope of your private app. Make sure that the private app you created has been given read _and_ write access for each&nbsp;scope <a href="https://docs.wpshop.io" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process.&nbsp;Once this has been updated, resync your store from the WP Shopify settings page.
 
 #### 404 Error: The requested resource was not found.
 
@@ -108,7 +108,7 @@ If you receive this error you should try disconnecting and reconnecting from wit
 
 #### 501 Error: The requested endpoint is not available on that particular shop.
 
-If you're receiving this error make sure that the private app you created has been given read _and_ write access for each&nbsp;scope <a href="https://wpshop.io/docs/connecting" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process. Once this has been updated, resync your store from the WP Shopify settings page.<br><br>If this doesn't work,&nbsp;please check your PHP / Apache / Nginx logs to see if any additional information is shown and send this information to us in the <a href="https://wpshop.io/purchase" target="_blank" rel="noopener">official Slack channel</a>. Here's a resource explaining how to <a href="https://codex.wordpress.org/Debugging_in_WordPress" target="_blank" rel="noopener">enable the PHP debug logging</a> if you're not sure whether it's already enabled.<br>
+If you're receiving this error make sure that the private app you created has been given read _and_ write access for each&nbsp;scope <a href="https://docs.wpshop.io" target="_blank" rel="noopener">as described in Step 6.</a> of the connecting process. Once this has been updated, resync your store from the WP Shopify settings page.<br><br>If this doesn't work,&nbsp;please check your PHP / Apache / Nginx logs to see if any additional information is shown and send this information to us in the <a href="https://wpshop.io/purchase" target="_blank" rel="noopener">official Slack channel</a>. Here's a resource explaining how to <a href="https://codex.wordpress.org/Debugging_in_WordPress" target="_blank" rel="noopener">enable the PHP debug logging</a> if you're not sure whether it's already enabled.<br>
 
 #### 503 Error: The server is currently unavailable.
 
