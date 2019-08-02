@@ -24,7 +24,9 @@ Determines how many products to show per page. Defaults to the standard WordPres
 
 #### Products link to Shopify
 
-When enabled, all products will link directly to their corresponding Shopify product detail page (PDP). By default, the product title and product images will contain the link.
+When enabled, all products will link directly to their corresponding Shopify product detail page (PDP). By default, the product title and product images will contain the link. Toggling this on/off will require you to clear the WP Shopify cache.
+
+Note: will not work when Shopify store is password protected, if product is not assigned to the Online Store sales channel, or if using the Shopify Lite plan.
 
 ## Syncing
 
@@ -116,7 +118,7 @@ Changes the heading found on the default Products page.
 
 #### Show image zoom
 
-When enabled, will turn on an "image zoom" feature for product images. An example of how it looks [can be found here](https://imgix.github.io/drift/). 
+When enabled, will turn on an "image zoom" feature for product images. An example of how it looks [can be found here](https://imgix.github.io/drift/).
 
 #### Custom sizing
 
