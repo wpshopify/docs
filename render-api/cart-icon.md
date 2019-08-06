@@ -5,7 +5,7 @@ Please first read our [Render API](guides/render-api.md) guide first.
 <span class="heading-section">📍 Building Example</span>
 
 ```php
-$Cart_Icon = WPS\Factories\Render\Cart\Cart_Factory::build();
+$Cart_Icon = WP_Shopify\Factories\Render\Cart\Cart_Factory::build();
 ```
 
 <span class="heading-section">🎚 Available Methods</span>

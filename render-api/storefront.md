@@ -5,7 +5,7 @@ Please first read our [Render API](guides/render-api.md) guide first.
 <span class="heading-section">📍 Building Example</span>
 
 ```php
-$Storefront = WPS\Factories\Render\Storefront\Storefront_Factory::build();
+$Storefront = WP_Shopify\Factories\Render\Storefront\Storefront_Factory::build();
 ```
 
 <span class="heading-section">🎚 Available Methods</span>

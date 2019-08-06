@@ -30,12 +30,6 @@ Note: will not work when Shopify store is password protected, if product is not 
 
 ## Syncing
 
-#### Webhooks callback URL
-
-The Webhooks callback URL will be the location where Shopify sends it's updates. For example, after changing Product information within Shopify, the updated data will be sent here.
-
-You most likely want this to be the same domain as the WordPress site. This _must_ be publicly accesible. You can change this to a proxy URL during local development using something like [ngrok](https://ngrok.com/). Also, if you have WordPress installed in a subdirectory be sure to include that in the url, e.g., `https://localhost:3000/wp`
-
 #### Items per request
 
 Determines the number of "items" (products, collections, etc) that are transfered per second during the syncing process. Reduce this number if you're running into syncing issues.
@@ -61,6 +55,12 @@ Determines which type of Shopify data to sync. Defaults to `products` and `colle
 #### Sync products by collection
 
 Allows for syncing products that only belong to one or more specific collections.
+
+#### Webhooks domain
+
+The Webhooks callback URL will be the location where Shopify sends it's updates. For example, after changing Product information within Shopify, the updated data will be sent here.
+
+You most likely want this to be the same domain as the WordPress site. This _must_ be publicly accesible. You can change this to a proxy URL during local development using something like [ngrok](https://ngrok.com/). Also, if you have WordPress installed in a subdirectory be sure to include that in the url, e.g., `https://localhost:3000/wp`
 
 ## Pricing
 

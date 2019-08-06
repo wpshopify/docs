@@ -5,7 +5,7 @@ Please first read our [Render API](guides/render-api.md) guide first.
 <span class="heading-section">📍 Building Example</span>
 
 ```php
-$Search = WPS\Factories\Render\Search\Search_Factory::build();
+$Search = WP_Shopify\Factories\Render\Search\Search_Factory::build();
 ```
 
 <span class="heading-section">🎚 Available Methods</span>

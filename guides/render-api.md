@@ -11,7 +11,7 @@ The Render API is built using a factory pattern. Therefore before we use the cla
 Start by placing the following near the top of your file:
 
 ```php
-$Products = WPS\Factories\Render\Products\Products_Factory::build();
+$Products = WP_Shopify\Factories\Render\Products\Products_Factory::build();
 ```
 
 The `$Products` variable is now assigned an "instance" of the Render API's Products class. The build method takes no parameters and should be called directly.

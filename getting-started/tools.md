@@ -20,6 +20,8 @@ Things stored in the cache are: various shortcode settings, global settings, and
 
 This will remove all WP Shopify data from WordPress. Nothing will be changed in Shopify. Useful for removing any lingering data without reinstalling the plugin. (Note: this can take up to 60 seconds and will delete product posts and any active webhooks).
 
-## Reconnect Automatic Syncing
+## Reconnect Automatic Post Syncing
 
-This will reconnect the Shopify webhooks which are responsible for the automatic sync feature. Useful if you notice your data not auto syncing correctly or if you've upgraded from the free version.
+This will reconnect the Shopify webhooks which are responsible for keeping WordPress Posts automatically in sync with Shopify. 
+
+_This does not take effect if you're using [Lite sync](getting-started/settings?id=lite-sync)_. However if you have [Sync posts](getting-started/settings?id=sync-posts) enabled, and wish to keep this data in sync with Shopify, you can use this tool to keep the syncing updated automatically.
