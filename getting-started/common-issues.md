@@ -32,13 +32,14 @@ We've taken great steps to ensure that the syncing process works across multiple
 
 1. Make sure you've set the proper [API permissions](getting-started/syncing?id=step-6) for your Shopify private app. Specifically, ensure that `Read and Write` is selected for "Product Information".
 2. Try changing the [Items per request](getting-started/settings?id=items-per-request) setting to **25** and turn on [Synchronous Requests](getting-started/settings?id=synchronous-requests). After these are updated try [resyncing](getting-started/tools?id=resync-shopify).
-3. Sometimes the syncing can fail due to plugin conflicts. Try deactivating all your other plugins besides WP Shopify and then [resync](getting-started/tools?id=resync-shopify).
-4. Ensure your permalinks are _not_ set to Plain. Try setting them to "Post name" or "Custom structure" instead.
-5. Ensure you meet the WP Shopify [minimum requirements](/getting-started/requirements).
-6. Make sure you have a working SSL certificate on your WordPress site
-7. Check your PHP and Apache/Nginx logs for any errors. If you don't know how to do this, contact your web host and ask them to look on your behalf. If you find any errors, please send them to us by email or in the private Slack channel for further help.
-8. Ask your web host if they have a firewall enabled that restricts numerous third-party API requests during a short period of time.
-9. If they do have a firewall, ask them to make an exception for requests sent to ".myshopify.com".
+3. Make sure your site is not password protected. Sometimes managed WordPress hosts like WP Engine or Flywheel will have this turned on by default.
+4. Sometimes the syncing can fail due to plugin conflicts. Try deactivating all your other plugins besides WP Shopify and then [resync](getting-started/tools?id=resync-shopify).
+5. Ensure your permalinks are _not_ set to Plain. Try setting them to "Post name" or "Custom structure" instead.
+6. Ensure you meet the WP Shopify [minimum requirements](/getting-started/requirements).
+7. Make sure you have a working SSL certificate on your WordPress site
+8. Check your PHP and Apache/Nginx logs for any errors. If you don't know how to do this, contact your web host and ask them to look on your behalf. If you find any errors, please send them to us by email or in the private Slack channel for further help.
+9. Ask your web host if they have a firewall enabled that restricts numerous third-party API requests during a short period of time.
+10.   If they do have a firewall, ask them to make an exception for requests sent to ".myshopify.com".
 
 ### Specific Syncing Errors
 
