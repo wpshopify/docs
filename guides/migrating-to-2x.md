@@ -42,13 +42,13 @@ All instances of `WPS` need to be changed to `WP_Shopify`. For example:
 
 _Old_
 
-```js
+```php
 $Products = WPS\Factories\DB\Products_Factory::build();
 ```
 
 _New_
 
-```js
+```php
 $Products = WP_Shopify\Factories\DB\Products_Factory::build();
 ```
 
