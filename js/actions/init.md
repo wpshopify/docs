@@ -14,7 +14,7 @@ Fires before the application is ready to use.
 
 ```js
 wp.hooks.addAction('before.ready', 'wpshopify', function(pluginSettings) {
-   // Do something after add to cart ...
+   // Do something before the plugin is finished loading ...
 })
 ```
 
@@ -30,6 +30,6 @@ Fires after the application is finished initializing and is ready to use.
 
 ```js
 wp.hooks.addAction('after.ready', 'wpshopify', function(pluginSettings) {
-   // Do something after add to cart ...
+   // Do something after the plugin is finished loading ...
 })
 ```
