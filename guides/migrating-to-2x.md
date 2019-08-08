@@ -24,12 +24,33 @@ We tried our best to avoid breaking changes, but we ultimately decided that it w
 
 **List of breaking changes:**
 
+-  The PHP namespace `WPS` has changed to `WP_Shopify`
 -  Various template overrides no longer work
 -  Various PHP hooks no longer work
 -  Removed related products on product single pages
 
 > [!NOTE|className:info sm]
 > We plan on rolling out server-side PHP rendering similar to version 1.x as an _opt-in_ feature later this year.
+
+## Namespace change
+
+In order to be compatible with the WordPress.org repository, we had to change the namespace of the plugin from `WPS` to `WP_Shopify`. This is so that we don't conflict with other plugins.
+
+However for those who were using the template overrides in 1.x, this means you need to update your templates to reflect the new namespace.
+
+All instances of `WPS` need to be changed to `WP_Shopify`. For example:
+
+Old
+
+```
+$Products = WPS\Factories\DB\Products_Factory::build();
+```
+
+New
+
+```
+$Products = WP_Shopify\Factories\DB\Products_Factory::build();
+```
 
 ## Changed shortcode attributes
 
