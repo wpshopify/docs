@@ -268,7 +268,7 @@ Determines the offset from the edge of the collections container. For example, a
 
 ## `products_sort_by`
 
-Determines the products sort order within a collection. Corresponds to the [Shopify Storefront API](https://help.shopify.com/en/api/storefront-api/reference/enum/productcollectionsortkeys). Default: `title`
+Determines the products sort order within a collection. Corresponds to the [Shopify Storefront API](https://help.shopify.com/en/api/storefront-api/reference/enum/productcollectionsortkeys). Default: `collection_default`
 
 | Values             |
 | :----------------- |
