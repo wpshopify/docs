@@ -77,4 +77,4 @@
    -  [Storefront](render-api/storefront.md)
    -  [Cart Icon](render-api/cart-icon.md)
 
-[![Shopify has everything you need to sell online, anywhere. Start for free.](https://docs.wpshop.io/assets/Sell-online-300x600.png)](https://www.shopify.com/?ref=wps)
+[![Shopify has everything you need to sell online, anywhere. Start for free.](https://docs.wpshop.io/assets/banner.png)](https://www.shopify.com/?ref=wps)
