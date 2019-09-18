@@ -46,22 +46,6 @@
    -  [Storefront](js/filters/storefront.md)
    -  [Cart](js/filters/cart.md)
 
-<!-- -  <span class="section section-actions">PHP Actions</span>
-
-   -  [Products](actions/products.md)
-   -  [Collections](actions/collections.md)
-   -  [Search](actions/search.md)
-   -  [Cart](actions/cart.md)
-   -  [Storefront](actions/storefront.md)
-
--  <span class="section section-filters">PHP Filters</span>
-
-   -  [Products](filters/products.md)
-   -  [Collections](filters/collections.md)
-   -  [Search](filters/search.md)
-   -  [Cart](filters/cart.md)
-   -  [Storefront](filters/storefront.md) -->
-
 -  <span class="section section-templates">Templates</span>
 
    -  [products/all](templates/products/all.md)
