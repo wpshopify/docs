@@ -1,49 +1,49 @@
 :root {
-   --sidebar-width: 350px;
-   --content-max-width: 950px;
-   --sidebar-nav-indent: 20px;
-   --code-block-border-radius: 5px;
-   --code-inline-border-radius: 5px;
-   /* --copycode-background: #242f3f; */
-   --base-line-height: 1.5;
-   --table-row-odd-background: #f4f6f8;
-   --sidebar-nav-link-color: #000;
-   --code-inline-background: #eee;
+  --sidebar-width: 350px;
+  --content-max-width: 950px;
+  --sidebar-nav-indent: 20px;
+  --code-block-border-radius: 5px;
+  --code-inline-border-radius: 5px;
+  /* --copycode-background: #242f3f; */
+  --base-line-height: 1.5;
+  --table-row-odd-background: #f4f6f8;
+  --sidebar-nav-link-color: #000;
+  --code-inline-background: #eee;
 }
 
 .markdown-section pre[data-lang]::after {
-   display: none;
+  display: none;
 }
 
 .content table + p {
-   margin-top: 1.4em;
+  margin-top: 1.4em;
 }
 
-[data-page*='getting-started/wp-shopify-pro'] table td:first-of-type {
-   width: 240px;
+[data-page*="getting-started/wp-shopify-pro"] table td:first-of-type {
+  width: 240px;
 }
 
-[data-page*='getting-started/wp-shopify-pro'] table td:nth-of-type(2) {
-   width: 150px;
+[data-page*="getting-started/wp-shopify-pro"] table td:nth-of-type(2) {
+  width: 150px;
 }
 
 .markdown-section h3 + blockquote {
-   margin-top: 10px;
+  margin-top: 10px;
 }
 
-[data-page*='js/filters'] .markdown-section pre[data-lang],
-[data-page*='js/actions'] .markdown-section pre[data-lang],
-[data-page*='shortcodes'] .markdown-section pre[data-lang],
-[data-page*='render-api/products'] .markdown-section pre[data-lang],
-[data-page*='render-api/collections'] .markdown-section pre[data-lang],
-[data-page*='render-api/search'] .markdown-section pre[data-lang],
-[data-page*='render-api/storefront'] .markdown-section pre[data-lang],
-[data-page*='render-api/cart'] .markdown-section pre[data-lang] {
-   margin-bottom: 5em;
+[data-page*="js/filters"] .markdown-section pre[data-lang],
+[data-page*="js/actions"] .markdown-section pre[data-lang],
+[data-page*="shortcodes"] .markdown-section pre[data-lang],
+[data-page*="render-api/products"] .markdown-section pre[data-lang],
+[data-page*="render-api/collections"] .markdown-section pre[data-lang],
+[data-page*="render-api/search"] .markdown-section pre[data-lang],
+[data-page*="render-api/storefront"] .markdown-section pre[data-lang],
+[data-page*="render-api/cart"] .markdown-section pre[data-lang] {
+  margin-bottom: 5em;
 }
 
 p + .alert {
-   margin-top: 2em;
+  margin-top: 2em;
 }
 
 /* pre[v-pre] {
@@ -52,122 +52,122 @@ p + .alert {
 
 li > code,
 span > code {
-   /* box-shadow: 0 2px 4px 1px hsla(0, 0%, 55%, 0.23); */
+  /* box-shadow: 0 2px 4px 1px hsla(0, 0%, 55%, 0.23); */
 }
 
 .content ol li,
 .content ul li {
-   margin-bottom: 0.7em;
-   font-size: 18px;
+  margin-bottom: 0.7em;
+  font-size: 18px;
 }
 
 .content li a,
 .content p a {
-   color: #415aff;
+  color: #415aff;
 }
 
 .content li a:hover,
 .content p a:hover {
-   opacity: 0.7;
-   color: #415aff;
+  opacity: 0.7;
+  color: #415aff;
 }
 
 .content .alert .title {
-   font-size: 18px;
-   margin: 0;
+  font-size: 18px;
+  margin: 0;
 }
 
 @keyframes rotating {
-   from {
-      transform: rotate(0deg);
-   }
-   to {
-      transform: rotate(360deg);
-   }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .app-name-link {
-   display: block;
-   border-radius: 50%;
-   /* background: linear-gradient(to right, #04121c, #152a51); */
-   /* background: linear-gradient(to right, #414345, #232526); */
-   /* background: linear-gradient(to right, #415aff, #33b8eb); */
-   padding: 0px;
-   /* width: 70px;
+  display: block;
+  border-radius: 50%;
+  /* background: linear-gradient(to right, #04121c, #152a51); */
+  /* background: linear-gradient(to right, #414345, #232526); */
+  /* background: linear-gradient(to right, #415aff, #33b8eb); */
+  padding: 0px;
+  /* width: 70px;
    height: 70px; */
 }
-img[alt='wpshopify'] {
-   /* animation: rotating 12s linear infinite; */
-   /* background: black;
+img[alt="wpshopify"] {
+  /* animation: rotating 12s linear infinite; */
+  /* background: black;
    background: linear-gradient(to right, #348ac7, #7474bf); */
 
-   /* border-radius: 5px; */
-   /* max-width: 90px !important; */
-   max-width: 100%;
-   position: relative;
-   top: 0;
-   left: 0;
+  /* border-radius: 5px; */
+  /* max-width: 90px !important; */
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .markdown-section td {
-   border: 1px solid #ddd;
-   /* font-weight: bold; */
+  border: 1px solid #ddd;
+  /* font-weight: bold; */
 }
 
-[data-page*='js/filters'] .markdown-section td:first-child,
-[data-page*='js/actions'] .markdown-section td:first-child {
-   min-width: 150px;
+[data-page*="js/filters"] .markdown-section td:first-child,
+[data-page*="js/actions"] .markdown-section td:first-child {
+  min-width: 150px;
 }
 
 .anchor {
-   position: relative;
+  position: relative;
 }
 
 .attr-type {
-   position: absolute;
-   right: -84px;
-   font-size: 75%;
-   top: 4px;
+  position: absolute;
+  right: -84px;
+  font-size: 75%;
+  top: 4px;
 }
 
 .attr-type-pro-only {
-   color: #4951cf;
-   font-weight: 400;
+  color: #4951cf;
+  font-weight: 400;
 }
 
 .attr-type-required {
-   color: red;
-   font-weight: 400;
+  color: red;
+  font-weight: 400;
 }
 
 .attr-type-optional {
-   color: #858585;
-   font-weight: 400;
+  color: #858585;
+  font-weight: 400;
 }
 
 thead th {
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .markdown-section th {
-   padding-left: 0;
+  padding-left: 0;
 }
 
 .sidebar {
-   /* background-color: #f3f3f3; */
-   padding-right: 0;
-   border-right: 1px solid #ddd;
+  /* background-color: #f3f3f3; */
+  padding-right: 0;
+  border-right: 1px solid #ddd;
 }
 
 .sidebar::-webkit-scrollbar {
-   width: 1em;
+  width: 1em;
 }
 
 .markdown-section code,
 .markdown-section pre,
 .markdown-section pre > code {
-   background-color: #011627;
-   color: #fff;
+  background-color: #011627;
+  color: #fff;
 }
 
 /* .markdown-section code:not([class*='lang-']):not([class*='language-']) {
@@ -183,16 +183,16 @@ thead th {
 
 body .docsify-copy-code-button,
 body .docsify-copy-code-button:after {
-   background: #011626;
+  background: #011626;
 }
 
 .markdown-section h3 a.anchor:hover {
-   transform: scale(0.8);
-   text-decoration: none;
+  transform: scale(0.8);
+  text-decoration: none;
 }
 
 .content > article {
-   padding-bottom: 10em;
+  padding-bottom: 10em;
 }
 
 /* @font-face {
@@ -218,13 +218,13 @@ body .docsify-copy-code-button:after {
 
 .sidebar-nav ul ul,
 .sidebar nav ul ul {
-   margin-left: 0;
+  margin-left: 0;
 }
 
 .collapsable {
-   margin-bottom: 0 !important;
-   margin-top: 0 !important;
-   line-height: 1 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  line-height: 1 !important;
 }
 
 /* .sidebar-nav li > ul > li > .collapsable.is-collapsed + ul {
@@ -236,73 +236,73 @@ body .docsify-copy-code-button:after {
 } */
 
 .sidebar-nav > ul li > ul li > ul {
-   margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .sidebar-nav > ul li > ul li > ul li a {
-   padding-left: 1.4em !important;
-   font-size: 16px;
+  padding-left: 1.4em !important;
+  font-size: 16px;
 }
 
 .sidebar-nav > ul li > ul li > ul li a code {
-   background: transparent;
-   font-family: 'Open Sans', sans-serif;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
 }
 
 .sidebar-nav > ul li > ul li > ul li a code + span {
-   display: none;
+  display: none;
 }
 
 .sidebar-nav > ul li > ul li > ul li.active a {
-   transition: all 0.2s ease;
-   background: #eeeeee;
-   border-radius: 5px;
-   text-decoration: none;
+  transition: all 0.2s ease;
+  background: #eeeeee;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .sidebar-nav > ul li > ul li > ul li.active:before {
-   left: 2em;
+  left: 2em;
 }
 
 .sidebar li > p {
-   /* font-weight: 700; */
-   margin: 25px 0 5px;
-   color: #000;
-   font-size: 22px;
-   /* font-size: 19px; */
-   font-weight: bold;
-   font-family: 'IBM Plex Sans';
+  /* font-weight: 700; */
+  margin: 25px 0 5px;
+  color: #000;
+  font-size: 22px;
+  /* font-size: 19px; */
+  font-weight: bold;
+  font-family: "IBM Plex Sans";
 
-   /* font-family: 'Bitter', serif; */
-   /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Bitter', serif; */
+  /* font-family: 'Playfair Display', serif; */
 }
 
 .sidebar li a {
-   font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .sidebar li > ul > li {
-   font-size: 17px;
+  font-size: 17px;
 }
 
 .sidebar-nav ul li ul > a {
-   padding-left: var(--sidebar-nav-indent);
+  padding-left: var(--sidebar-nav-indent);
 }
 
 .sidebar li.active {
-   position: relative;
+  position: relative;
 }
 
 .sidebar-nav li.active > a {
-   /* color: #415aff; */
-   font-weight: bold;
-   text-decoration: none;
+  /* color: #415aff; */
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .sidebar-nav ul > li > ul > li.active > a {
-   /* color: #415aff; */
-   font-weight: normal;
-   /* text-decoration: none; */
+  /* color: #415aff; */
+  font-weight: normal;
+  /* text-decoration: none; */
 }
 
 /* .sidebar-nav li.active:before {
@@ -318,22 +318,22 @@ body .docsify-copy-code-button:after {
 } */
 
 .sidebar-nav ul > li:first-child:before {
-   top: 10px;
+  top: 10px;
 }
 
 .sidebar {
-   line-height: 1.4;
+  line-height: 1.4;
 }
 .logo {
-   max-width: 230px;
+  max-width: 230px;
 }
 .content p {
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .content h1 + .alert {
-   margin-top: 1em;
-   margin-bottom: 2em !important;
+  margin-top: 1em;
+  margin-bottom: 2em !important;
 }
 
 /* [data-page*='shortcodes'] .content p:first-of-type,
@@ -342,64 +342,64 @@ body .docsify-copy-code-button:after {
 } */
 
 .pro-only-heading {
-   position: absolute;
-   top: 0;
-   right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-[data-page^='render-api'] .content article > p:first-of-type,
-[data-page*='shortcodes'] .content article > p:first-of-type {
-   margin-bottom: 2.5em;
+[data-page^="render-api"] .content article > p:first-of-type,
+[data-page*="shortcodes"] .content article > p:first-of-type {
+  margin-bottom: 2.5em;
 }
 
 .content h1,
 .content h2 {
-   font-size: 42px;
-   font-weight: bold;
-   font-family: 'IBM Plex Sans';
-   /* font-family: 'Bitter', serif; */
-   /* font-family: 'Playfair Display', serif; */
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans";
+  /* font-family: 'Bitter', serif; */
+  /* font-family: 'Playfair Display', serif; */
 }
 .content p {
-   font-family: 'Open Sans', sans-serif;
-   /* font-weight: bold; */
+  font-family: "Open Sans", sans-serif;
+  /* font-weight: bold; */
 }
 
 .sidebar::-webkit-scrollbar {
-   width: 0 !important;
+  width: 0 !important;
 }
 
 .content h2,
 .content h3,
 .content h4 {
-   font-weight: bold;
+  font-weight: bold;
 }
 
 .content h2 {
-   font-size: 24px;
-   border-bottom: 1px solid #ddd;
-   margin-bottom: 1em;
-   padding-bottom: 5px;
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
 }
 
 .content .heading-section {
-   font-size: 24px;
-   border-bottom: 1px solid #ddd;
-   margin-bottom: 1em;
-   padding-bottom: 5px;
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
 }
 
 .content h3 {
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .alert.sm p,
 .alert.sm .title {
-   font-size: 16px;
+  font-size: 16px;
 }
 
 .alert.sm {
-   border-radius: var(--code-block-border-radius);
+  border-radius: var(--code-block-border-radius);
 }
 
 /* .sidebar-toggle {
@@ -408,158 +408,162 @@ body .docsify-copy-code-button:after {
 
 .content h2 code,
 .content h3 code {
-   font-size: 17px;
-   position: relative;
-   left: -7px;
-   font-weight: bold;
-   box-shadow: none;
-   user-select: text;
+  font-size: 17px;
+  position: relative;
+  left: -7px;
+  font-weight: bold;
+  box-shadow: none;
+  user-select: text;
 }
 
 .content h2 code:hover,
 .content h3 code:hover {
-   cursor: text;
+  cursor: text;
 }
 
 .content h4 {
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .content h1:hover a.anchor:hover {
-   text-decoration: none;
-   cursor: text;
+  text-decoration: none;
+  cursor: text;
 }
 
 .docs-social-link {
-   max-width: 40px;
-   display: inline-block;
+  max-width: 40px;
+  display: inline-block;
 }
 
 .app-name-link {
-   display: block;
-   text-align: left;
-   position: relative;
-   top: 15px;
-   max-width: 50px;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: 15px;
+  max-width: 50px;
 }
 
 .sidebar > h1 img {
-   max-width: 250px;
+  max-width: 250px;
 }
 
 #main {
-   margin-left: 4vw;
+  margin-left: 4vw;
 }
 .close #main {
-   margin-left: auto;
+  margin-left: auto;
 }
 
 .section > .emoji {
-   width: 25px;
-   height: 25px;
-   right: 22px;
-   position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 22px;
+  position: absolute;
 }
 
 .markdown-section h3 {
-   margin-top: 2em;
+  margin-top: 2em;
 }
 
-[data-page*='js/filters'] .content .heading-section,
-[data-page*='js/actions'] .content .heading-section,
-[data-page*='shortcodes'] .content .heading-section,
-[data-page*='render-api/products'] .content .heading-section,
-[data-page*='render-api/collections'] .content .heading-section,
-[data-page*='render-api/search'] .content .heading-section,
-[data-page*='render-api/storefront'] .content .heading-section,
-[data-page*='render-api/cart'] .content .heading-section {
-   padding-bottom: 10px;
-   font-family: 'IBM Plex Sans';
-   font-size: 24px;
-   border-bottom: 1px solid #ddd;
-   margin-bottom: 1em;
-   display: block;
-   font-weight: bold;
+[data-page*="js/filters"] .content .heading-section,
+[data-page*="js/actions"] .content .heading-section,
+[data-page*="shortcodes"] .content .heading-section,
+[data-page*="render-api/products"] .content .heading-section,
+[data-page*="render-api/collections"] .content .heading-section,
+[data-page*="render-api/search"] .content .heading-section,
+[data-page*="render-api/storefront"] .content .heading-section,
+[data-page*="render-api/cart"] .content .heading-section {
+  padding-bottom: 10px;
+  font-family: "IBM Plex Sans";
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  display: block;
+  font-weight: bold;
 }
 
 .alert.flat.info .title {
-   margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-[data-page*='js/filters'] .content h2:first-of-type,
-[data-page*='js/actions'] .content h2:first-of-type {
-   margin-top: 2em;
+[data-page*="js/filters"] .content h2:first-of-type,
+[data-page*="js/actions"] .content h2:first-of-type {
+  margin-top: 2em;
 }
 
-[data-page*='js/filters'] .content h2,
-[data-page*='js/actions'] .content h2,
-[data-page*='shortcodes'] .content h2,
-[data-page*='render-api/products'] .content h2,
-[data-page*='render-api/collections'] .content h2,
-[data-page*='render-api/search'] .content h2,
-[data-page*='render-api/storefront'] .content h2,
-[data-page*='render-api/cart'] .content h2 {
-   border: none;
-   margin: 0;
+[data-page*="js/filters"] .content h2,
+[data-page*="js/actions"] .content h2,
+[data-page*="shortcodes"] .content h2,
+[data-page*="render-api/products"] .content h2,
+[data-page*="render-api/collections"] .content h2,
+[data-page*="render-api/search"] .content h2,
+[data-page*="render-api/storefront"] .content h2,
+[data-page*="render-api/cart"] .content h2 {
+  border: none;
+  margin: 0;
 }
 
-[data-page*='js/filters'] .content h2 code,
-[data-page*='js/actions'] .content h2 code,
-[data-page*='shortcodes'] .content h2 code,
-[data-page*='render-api/products'] .content h2 code,
-[data-page*='render-api/collections'] .content h2 code,
-[data-page*='render-api/search'] .content h2 code,
-[data-page*='render-api/storefront'] .content h2 code,
-[data-page*='render-api/cart'] .content h2 code {
-   padding: 0.3em 0.7em 0.4em 0.7em !important;
-   border: none !important;
-   font-weight: bold !important;
-   color: white !important;
-   background: #415aff !important;
+[data-page*="js/filters"] .content h2 code,
+[data-page*="js/actions"] .content h2 code,
+[data-page*="shortcodes"] .content h2 code,
+[data-page*="render-api/products"] .content h2 code,
+[data-page*="render-api/collections"] .content h2 code,
+[data-page*="render-api/search"] .content h2 code,
+[data-page*="render-api/storefront"] .content h2 code,
+[data-page*="render-api/cart"] .content h2 code {
+  padding: 0.3em 0.7em 0.4em 0.7em !important;
+  border: none !important;
+  font-weight: bold !important;
+  color: white !important;
+  background: #415aff !important;
 }
 
-[data-page*='js/filters'] .content h2 a:hover,
-[data-page*='js/filters'] .content h2 code:hover,
-[data-page*='js/actions'] .content h2 a:hover,
-[data-page*='js/actions'] .content h2 code:hover,
-[data-page*='shortcodes'] .content h2 a:hover,
-[data-page*='shortcodes'] .content h2 code:hover,
-[data-page*='render-api/products'] .content h2 a:hover,
-[data-page*='render-api/products'] .content h2 code:hover,
-[data-page*='render-api/collections'] .content h2 a:hover,
-[data-page*='render-api/collections'] .content h2 code:hover,
-[data-page*='render-api/search'] .content h2 a:hover,
-[data-page*='render-api/search'] .content h2 code:hover,
-[data-page*='render-api/storefront'] .content h2 a:hover,
-[data-page*='render-api/storefront'] .content h2 code:hover,
-[data-page*='render-api/cart'] .content h2 a:hover,
-[data-page*='render-api/cart'] .content h2 code:hover {
-   cursor: pointer;
-   text-decoration: none;
+[data-page*="js/filters"] .content h2 a:hover,
+[data-page*="js/filters"] .content h2 code:hover,
+[data-page*="js/actions"] .content h2 a:hover,
+[data-page*="js/actions"] .content h2 code:hover,
+[data-page*="shortcodes"] .content h2 a:hover,
+[data-page*="shortcodes"] .content h2 code:hover,
+[data-page*="render-api/products"] .content h2 a:hover,
+[data-page*="render-api/products"] .content h2 code:hover,
+[data-page*="render-api/collections"] .content h2 a:hover,
+[data-page*="render-api/collections"] .content h2 code:hover,
+[data-page*="render-api/search"] .content h2 a:hover,
+[data-page*="render-api/search"] .content h2 code:hover,
+[data-page*="render-api/storefront"] .content h2 a:hover,
+[data-page*="render-api/storefront"] .content h2 code:hover,
+[data-page*="render-api/cart"] .content h2 a:hover,
+[data-page*="render-api/cart"] .content h2 code:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .markdown-section p > code {
-   /* font-weight: bold; */
-   color: #000;
-   background: #eee;
+  /* font-weight: bold; */
+  color: #000;
+  background: #eee;
 }
 
 ::-moz-selection {
-   background: #001625;
-   color: white;
+  background: #001625;
+  color: white;
 }
 ::selection {
-   background: #001625;
-   color: white;
+  background: #001625;
+  color: white;
 }
 
 .money-button {
-   position: fixed !important;
-   z-index: 999999 !important;
-   bottom: 0 !important;
-   right: 0 !important;
+  position: fixed !important;
+  z-index: 999999 !important;
+  bottom: 0 !important;
+  right: 0 !important;
 }
 
 .icon-l {
-   font-size: 20px;
+  font-size: 20px;
+}
+
+.sidebar-nav .emoji {
+  font-size: 8px;
 }

@@ -9,9 +9,10 @@
   - [WP Shopify Pro](getting-started/wp-shopify-pro.md)
   - [License](getting-started/license.md)
   - [Requirements](getting-started/requirements.md)
-  - [FAQs](https://wpshop.io/faq)
-  - [Changelog](https://wpshop.io/changelog)
-  - [Example Sites](https://wpshop.io/examples/)
+  - [:link: Demo](https://demo.wpshop.io)
+  - [:link: Example Sites](https://wpshop.io/examples/)
+  - [:link: FAQs](https://wpshop.io/faq)
+  - [:link: Changelog](https://wpshop.io/changelog)
 
 - <span class="section section-shortcodes">🧩 Shortcodes</span>
 

@@ -6,7 +6,7 @@ Displays the search component. Only available in [WP Shopify Pro](https://wpshop
 
 ```js
 // Drops the search results into a container with the id of #search-container
-[wps_search dropzone="#search-container"]
+[wps_search dropzone_form="#search-container"]
 
 ```
 

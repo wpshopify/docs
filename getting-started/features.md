@@ -1,6 +1,6 @@
 # WP Shopify Features
 
-WP Shopify comes with many unique features. Below is a non-comprehensive list of the most popular features with a description of how they work. If you have questions please [email us](mailto:hello@wpshop.io)!
+WP Shopify comes with many unique features. Below is a list of the most popular with a description of how they work. If you have questions please [email us](mailto:hello@wpshop.io)!
 
 ## Automatic syncing
 
@@ -33,7 +33,7 @@ Shortcodes are in both plugin versions. The exceptions are [[wps_search]](shortc
 
 ## Built-in cart experience
 
-WP Shopify comes with a built-in cart experience. The cart has a slide-out affect which you can see on [our demo page](http://demo.wpshop.io).
+WP Shopify comes with a built-in cart experience. The cart has a slide-out effect which you can see on [our demo page](http://demo.wpshop.io). The cart does not have a dedicated page.
 
 When the user is ready to pay and click "Checkout", they're taken to the default Shopify checkout page like normal.
 
@@ -57,7 +57,7 @@ This feature is in both plugin versions.
 
 ## Fixed cart icon
 
-Like all eCommerce sites, WP Shopify allows you to place a "cart icon" anywhere on your site. You can also enable a "fixed" icon that locks to the side of the page. This fixed cart icon follows the user as they scroll for easy of use.
+Like all eCommerce sites, WP Shopify allows you to place a "cart icon" anywhere on your site. You can also enable a "fixed" icon that locks to the side of the page. This fixed cart icon follows the user as they scroll.
 
 You can see a live example on [our demo page](https://demo.wpshop.io).
 
@@ -65,72 +65,132 @@ This feature is in both plugin versions.
 
 ## Image crop and sizing
 
-Disconnect your Shopify store
+WP Shopify comes with the ability to adjust the size and crop of both product and collection images. Within the plugin settings, you can set the image dimensions of the product featured images and thumbnails seperately.
+
+In addition to dimensions, you can set the [crop](http://localhost:4000/#/getting-started/settings?id=crop-position) location. For example, if you set crop to "center", the plugin will attempt to resize the image while keeping the image centered.
+
+If you set the [scale](http://localhost:4000/#/getting-started/settings?id=scale) property, you can choose to load a higher-resolution version of your image. Setting scale to `2` will load an image twice as large, setting to `3` will load an image three times as large. For example, a 200x200 image becomes 400x400 and 600x600 respectfully.
 
 This feature is in both plugin versions.
 
 ## Link to Shopify
 
-Links products and collections to Shopify detail pages
+WP Shopify allows you to link your products and collections to the default Shopify detail pages. This is useful if you want to leverage both platforms instead of using the WP Shopify product single pages.
+
+Also useful if you want to embed a couple products and link them back to Shopify.
 
 This feature is in both plugin versions.
 
 ## Custom button colors
 
-Links products and collections to Shopify detail pages
+WP Shopify allows you to customize the colors of the add to cart button, variant dropdowns, and cart icons. You can set these colors individually within the plugin settings.
 
 This feature is in both plugin versions.
 
 ## Plugin updates
 
-Disconnect your Shopify store
+WP Shopify releases plugin updates on a bi-weekly cadence.
 
 This feature is in both plugin versions.
 
 ## Search shortcode <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+WP Shopify Pro provides a [search shortcode](https://docs.wpshop.io/#/shortcodes/wps_search) that allows you to display a dedicated search form on any WordPress page.
+
+You can configure the search form to search by Title, Tag, Vendor, Product Type, and Variants Title.
+
+By default, the search will be "fuzzy", meaning partial words will still match a full word. You can configure the search to be "exact" instead.
+
+You can see a live example on [our demo page](https://demo.wpshop.io/search-example/).
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Storefront shortcode <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+WP Shopify Pro provides a [storefront shortcode](https://docs.wpshop.io/#/shortcodes/wps_storefront) that allows you to display a fully-featured "storefront" with filtering and sorting options.
+
+You can configure the storefront to filter by Tags, Vendors, an Product Types. By default, the shortcode has three required attributes: `dropzone_payload`, `dropzone_options`, `dropzone_selections`.
+
+You can see a live example on [our demo page](https://demo.wpshop.io/search-example/).
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Image zoom <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+WP Shopify Pro allows you to turn on "image zooming" for product feature images. When enabled, this will zoom the image on hover and when the user taps on mobile.
+
+We use the Drift library from Imgix. You can see a [live demo here](https://imgix.github.io/drift).
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Infinite scrolling <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+WP Shopify Pro provides infinite scrolling as an alternative form of pagination. When turned on, the plugin will automatically load the "next page" of products and append them to the bottom.
+
+Any existing pagination settings that you have configured will be taken into consideration. For example, customizing the default page size from 10 to 20 will load 20 instead of 10.
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Selective syncing <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+The selective syncing feature allows you to choose what "type" of data gets synced as native WordPress posts.
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Sync by collection <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+Instead of syncing _all products_, WP Shopify Pro allows you to sync by one or more collections instead. This is useful if you have many products and only want to pull over a certain segment.
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Cart notes <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+WP Shopify Pro allows you to add a "notes" section to the slide-out cart. The customer can add their own order notes before they checkout.
+
+You can see a [live demo here](https://demo.wpshop.io).
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Cart terms <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+WP Shopify Pro allows you to add a "terms and conditions" checkbox to the cart. This will prevent the user from checking out until they agree to the terms. You can add custom HTML to the label text which allows you to provide a custon link to your own unique terms and conditions page.
+
+You can see a [live demo here](https://demo.wpshop.io).
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Cart attributes <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+WP Shopify Pro enables you to provide "custom data" to orders. We use the native Shopify "cart attributes" to achieve this [which you can learn more about here](https://help.shopify.com/en/themes/customization/cart/get-more-information-with-cart-attributes).
+
+At the moment, adding the custom data requires writing custom JavaScript to your WordPress theme. For more information on this, read through our [JavaScript hooks guide](http://localhost:4000/#/guides/javascript-hooks).
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## PHP templates <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+WP Shopify Pro allows you to customize four PHP templates that the plugin uses. The four templates correspond to the "product all", "product single", "collection all", and "collection single" pages.
+
+Customizing these templates works similar to many other plugins. First, you need to create a folder in your theme called `wps-templates`. Then, you can copy the template files from the plugin foldder into the `wps-templates` folder.
+
+You can find the plugin template files at this location: `plugins/wp-shopify-pro/public/templates`. Currently only `products-all.php`, `products-single.php`, `collections-all.php`, and `collections-single.php` work.
+
+Any customizations you make to the files in `wps-templates` will not revert during plugin or theme updates and is the recommended way of customizing the plugin.
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Dedicated support <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
+When you purchase WP Shopify Pro you gain access to dedicated live support via our private Slack channel. In addition to chatting in real-time, your questions will take priority over thousands of other users on the free version.
+
+We can also help with minor coding and theme customizations.
+
 This is a [Pro-only feature](https://wpshop.io/purchase).
 
 ## Cross-domain tracking <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+WP Shopify Pro provides cross-domain tracking via Google Analytics. WP Shopify integrates with the GA Linker plugin and takes care of storing the tracking cookie during checkout redirect.
+
+You will still need to add the corrosponding google analytics code to both Shopify and WordPress.
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
