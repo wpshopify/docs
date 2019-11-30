@@ -194,3 +194,13 @@ WP Shopify Pro provides cross-domain tracking via Google Analytics. WP Shopify i
 You will still need to add the corrosponding google analytics code to both Shopify and WordPress.
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
+
+## Direct checkout <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+Direct Checkout allows you to replace the "add to cart" buttons with a link that takes the user directly to the checkout page. This is great if you don't need a cart experience and simply want to send users to pay immediately.
+
+The main limitation with this feature at the moment is that it only works with single products. Meaning, you can’t use this to checkout with more than one product at a time. If you have two products side-by-side, both using direct checkout, they won’t share the “same” line items. Each button will take the user to a unique checkout page.
+
+Direct Checkout can be enabled globally within the plugin settings under the "Checkout" subnav, or by using the new shortcode attribute `direct_checkout="true"`
+
+This is a [Pro-only feature](https://wpshop.io/purchase).
