@@ -76,9 +76,13 @@ When enabled, shows a product's range of variant prices. E.g., "From $1.00 - $5.
 
 Determines the currency display style. For example: setting to "symbol" will display 19.99 as \$19.99. Setting to "code" will display 19.99 as USD 19.99. Setting to "name" will display 19.99 as 19.99 US dollars.
 
--  `symbol` \$19.99
--  `code` USD 19.99
--  `name` 19.99 US dollars
+- `symbol` \$19.99
+- `code` USD 19.99
+- `name` 19.99 US dollars
+
+#### Hide decimals
+
+When enabled, will hide the decimals of prices. Useful if you want to turn your `$60.00` into `$60`.
 
 #### Enable local currency
 
@@ -259,6 +263,14 @@ When enabled, will use your custom primary domain (e.g., yourstore.com) when red
 #### Checkout button target
 
 Determines whether the checkout button will open a new tab or not. Only applicable to desktop. Mobile will always open checkout page in the current tab.
+
+#### Direct Checkout
+
+Direct Checkout allows you to replace the "add to cart" buttons with a link that takes the user directly to the checkout page. This is great if you don't need a cart experience and simply want to send users to pay immediately.
+
+The main limitation with this feature at the moment is that it only works with single products. Meaning, you can’t use this to checkout with more than one product at a time. If you have two products side-by-side, both using direct checkout, they won’t share the “same” line items. Each button will take the user to a unique checkout page.
+
+Direct Checkout can be enabled globally within the plugin settings under the "Checkout" subnav, or by using the new shortcode attribute `direct_checkout="true"`
 
 ## Plugin
 
