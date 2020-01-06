@@ -34,7 +34,7 @@
   - [Template Overriding](guides/template-overriding.md)
   - [Migrating to 2.x](guides/migrating-to-2x.md)
   - [Render API](guides/render-api.md)
-  - [Share Usage Data](guides/share-data.md)
+  - [Share plugin usage data](guides/share-data.md)
 
 - <span class="section section-actions">🔥 JavaScript Actions</span>
 
