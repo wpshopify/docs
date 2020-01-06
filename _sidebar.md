@@ -9,10 +9,10 @@
   - [WP Shopify Pro](getting-started/wp-shopify-pro.md)
   - [License](getting-started/license.md)
   - [Requirements](getting-started/requirements.md)
-  - [:link: Demo](https://demo.wpshop.io)
-  - [:link: Example Sites](https://wpshop.io/examples/)
-  - [:link: FAQs](https://wpshop.io/faq)
-  - [:link: Changelog](https://wpshop.io/changelog)
+  - [Demo :link:](https://demo.wpshop.io)
+  - [Example Sites :link:](https://wpshop.io/examples/)
+  - [FAQs :link:](https://wpshop.io/faq)
+  - [Changelog :link:](https://wpshop.io/changelog)
 
 - <span class="section section-shortcodes">🧩 Shortcodes</span>
 
@@ -34,6 +34,7 @@
   - [Template Overriding](guides/template-overriding.md)
   - [Migrating to 2.x](guides/migrating-to-2x.md)
   - [Render API](guides/render-api.md)
+  - [Share Usage Data](guides/share-data.md)
 
 - <span class="section section-actions">🔥 JavaScript Actions</span>
 

@@ -204,3 +204,11 @@ The main limitation with this feature at the moment is that it only works with s
 Direct Checkout can be enabled globally within the plugin settings under the "Checkout" subnav, or by using the new shortcode attribute `direct_checkout="true"`
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
+
+## Sync featured images <span class="attr-type attr-type-pro-only">(Pro only)</span>
+
+Sync featured images will allow you to sync your Shopify images as native WordPress featured images. The image itself will be uploaded into the WordPress media library, allowing you to use standard functions like `the_post_thumbnail` and `get_the_post_thumbnail_url`.
+
+This is turned off by default and only the featured images inside Shopify will be uploaded.
+
+This is a [Pro-only feature](https://wpshop.io/purchase).

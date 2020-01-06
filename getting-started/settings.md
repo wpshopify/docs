@@ -62,6 +62,10 @@ The Webhooks callback URL will be the location where Shopify sends it's updates.
 
 You most likely want this to be the same domain as the WordPress site. This _must_ be publicly accesible. You can change this to a proxy URL during local development using something like [ngrok](https://ngrok.com/). Also, if you have WordPress installed in a subdirectory be sure to include that in the url, e.g., `https://localhost:3000/wp`
 
+#### Sync featured images
+
+Sync featured images will allow you to sync your Shopify images as native WordPress featured images. The image itself will be uploaded into the WordPress media library, allowing you to use standard functions like `the_post_thumbnail` and `get_the_post_thumbnail_url`.
+
 ## Pricing
 
 #### Show compare at pricing
