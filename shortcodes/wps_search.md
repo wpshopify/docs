@@ -30,7 +30,7 @@ Determines the products sort order. Corresponds to the [Shopify API values](http
 **Example**
 
 ```js
-[wps_products sort_by="price"]
+[wps_search sort_by="price"]
 ```
 
 ## `reverse`
@@ -46,7 +46,7 @@ Reverses the order of products. Useful when used in combination with `sort_by`.
 
 ```js
 // Smallest to largest (A to Z) (old to new)
-[wps_products sort_by="title" reverse="true"]
+[wps_search sort_by="title" reverse="true"]
 ```
 
 ## `page_size`
@@ -61,7 +61,7 @@ Determines the number of products to show per page. Only applicable when paginat
 
 ```js
 // Shows 4 products per page
-[wps_products page_size="4"]
+[wps_search page_size="4"]
 ```
 
 ## `limit`
@@ -76,10 +76,10 @@ Limits the overall number of products that show. Max limit is `250`.
 
 ```js
 // Show two products per page, up to 10
-[wps_products page_size="2" limit="10"]
+[wps_search page_size="2" limit="10"]
 
 // Only show one product
-[wps_products limit="1"]
+[wps_search limit="1"]
 ```
 
 ## `excludes`
@@ -98,7 +98,7 @@ Allows for excluding certain product components like the title, description, etc
 
 ```js
 // Don't show the title or pricing
-[wps_products excludes="title, pricing"]
+[wps_search excludes="title, pricing"]
 ```
 
 ## `items_per_row`
@@ -112,7 +112,7 @@ Determines how many products will appear in each row.
 **Example**
 
 ```js
-[wps_products items_per_row="5"]
+[wps_search items_per_row="5"]
 ```
 
 ## `pagination`
@@ -127,7 +127,7 @@ Determines whether to hide or show pagination.
 **Example**
 
 ```js
-[wps_products pagination="false"]
+[wps_search pagination="false"]
 ```
 
 ## `no_results_text`
@@ -141,7 +141,7 @@ The text to show when no products are found.
 **Example**
 
 ```js
-[wps_products no_results_text="Nothing found! 🙃"]
+[wps_search no_results_text="Nothing found! 🙃"]
 ```
 
 ## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
@@ -156,7 +156,7 @@ When turned on, the next page of items will automatically append to the containe
 **Example**
 
 ```js
-[wps_products infinite_scroll="true"]
+[wps_search infinite_scroll="true"]
 ```
 
 ## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
@@ -170,7 +170,7 @@ Determines the offset from the edge of the items container. For example, a value
 **Example**
 
 ```js
-[wps_products infinite_scroll_offset="-100"]
+[wps_search infinite_scroll_offset="-100"]
 ```
 
 ## `no_results_text` <span class="attr-type attr-type-optional">(optional)</span>
@@ -201,7 +201,7 @@ When `pagination` is set to true, this allows for specifying a custom location i
 **Example**
 
 ```js
-[wps_products dropzone_load_more="#my-custom-load-more-container"]
+[wps_search dropzone_load_more="#my-custom-load-more-container"]
 ```
 
 ## `dropzone_payload`
