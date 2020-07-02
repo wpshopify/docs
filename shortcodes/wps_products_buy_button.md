@@ -60,6 +60,20 @@ Display products based on one or more product vendor(s).
 [wps_products_buy_button vendor="Vendor A, Vendor B"]
 ```
 
+## `collection`
+
+Display products based on a single collection.
+
+| Possible                         |
+| :------------------------------- |
+| Any valid collection name vendor |
+
+**Example**
+
+```js
+[wps_products collection="Featured Products"]
+```
+
 ## `product_type`
 
 Display products based on one or more product type(s).
@@ -76,17 +90,17 @@ Display products based on one or more product type(s).
 
 ## `available_for_sale`
 
-Display products based on their availability. Setting to `available` will only show products that are in stock.
+Display products based on their availability. Setting to `true` will only show products that are in stock.
 
 | Possible values |
 | :-------------- |
-| available       |
+| true            |
 | any (default)   |
 
 **Example**
 
 ```js
-[wps_products_buy_button available_for_sale="available"]
+[wps_products_buy_button available_for_sale="true"]
 ```
 
 ## `created_at`

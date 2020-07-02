@@ -67,9 +67,9 @@ This feature is in both plugin versions.
 
 WP Shopify comes with the ability to adjust the size and crop of both product and collection images. Within the plugin settings, you can set the image dimensions of the product featured images and thumbnails seperately.
 
-In addition to dimensions, you can set the [crop](http://localhost:4000/#/getting-started/settings?id=crop-position) location. For example, if you set crop to "center", the plugin will attempt to resize the image while keeping the image centered.
+In addition to dimensions, you can set the [crop](getting-started/settings?id=crop-position) location. For example, if you set crop to "center", the plugin will attempt to resize the image while keeping the image centered.
 
-If you set the [scale](http://localhost:4000/#/getting-started/settings?id=scale) property, you can choose to load a higher-resolution version of your image. Setting scale to `2` will load an image twice as large, setting to `3` will load an image three times as large. For example, a 200x200 image becomes 400x400 and 600x600 respectfully.
+If you set the [scale](getting-started/settings?id=scale) property, you can choose to load a higher-resolution version of your image. Setting scale to `2` will load an image twice as large, setting to `3` will load an image three times as large. For example, a 200x200 image becomes 400x400 and 600x600 respectfully.
 
 This feature is in both plugin versions.
 
@@ -163,7 +163,7 @@ This is a [Pro-only feature](https://wpshop.io/purchase).
 
 WP Shopify Pro enables you to provide "custom data" to orders. We use the native Shopify "cart attributes" to achieve this [which you can learn more about here](https://help.shopify.com/en/themes/customization/cart/get-more-information-with-cart-attributes).
 
-At the moment, adding the custom data requires writing custom JavaScript to your WordPress theme. For more information on this, read through our [JavaScript hooks guide](http://localhost:4000/#/guides/javascript-hooks).
+At the moment, adding the custom data requires writing custom JavaScript to your WordPress theme. For more information on this, read through our [JavaScript hooks guide](/guides/javascript-hooks).
 
 This is a [Pro-only feature](https://wpshop.io/purchase).
 

@@ -1,4 +1,4 @@
-<a href="https://travis-ci.com/arobbins/wp-shopify-pro" class="docs-travis-build" target="_blank">
+<a href="https://wpshop.io" class="docs-travis-build" target="_blank">
    <img src="https://travis-ci.com/arobbins/wp-shopify-pro.svg?token=FmC2p6cxqRrxLpZfViYm&amp;branch=master" alt="WP Shopify Travis CI Build Status">
 </a>
 

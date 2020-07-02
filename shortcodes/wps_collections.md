@@ -520,7 +520,7 @@ Determines whether to only show the product feature image. By default, all produ
 
 ## `products_show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
-Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md).
+Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
 | Possible values |
 | :-------------- |

@@ -63,6 +63,20 @@ Display products based on one or more product vendor(s).
 [wps_products vendor="Vendor A, Vendor B"]
 ```
 
+## `collection`
+
+Display products based on a single collection.
+
+| Possible                         |
+| :------------------------------- |
+| Any valid collection name vendor |
+
+**Example**
+
+```js
+[wps_products collection="Featured Products"]
+```
+
 ## `product_type`
 
 Display products based on one or more product type(s).
@@ -79,17 +93,17 @@ Display products based on one or more product type(s).
 
 ## `available_for_sale`
 
-Display products based on their availability. Setting to `available` will only show products that are in stock.
+Display products based on their availability. Setting to `true` will only show products that are in stock.
 
 | Possible values |
 | :-------------- |
-| available       |
+| true            |
 | any (default)   |
 
 **Example**
 
 ```js
-[wps_products available_for_sale="available"]
+[wps_products_buy_button available_for_sale="true"]
 ```
 
 ## `created_at`
@@ -415,7 +429,7 @@ Determines whether to only show the product feature image. By default, all produ
 
 ## `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
-Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](/getting-started/wp-shopify-pro.md).
+Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
 | Possible values |
 | :-------------- |

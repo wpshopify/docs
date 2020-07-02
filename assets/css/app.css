@@ -19,11 +19,11 @@
   margin-top: 1.4em;
 }
 
-[data-page*="getting-started/wp-shopify-pro"] table td:first-of-type {
+[data-page*='getting-started/wp-shopify-pro'] table td:first-of-type {
   width: 240px;
 }
 
-[data-page*="getting-started/wp-shopify-pro"] table td:nth-of-type(2) {
+[data-page*='getting-started/wp-shopify-pro'] table td:nth-of-type(2) {
   width: 150px;
 }
 
@@ -31,14 +31,14 @@
   margin-top: 10px;
 }
 
-[data-page*="js/filters"] .markdown-section pre[data-lang],
-[data-page*="js/actions"] .markdown-section pre[data-lang],
-[data-page*="shortcodes"] .markdown-section pre[data-lang],
-[data-page*="render-api/products"] .markdown-section pre[data-lang],
-[data-page*="render-api/collections"] .markdown-section pre[data-lang],
-[data-page*="render-api/search"] .markdown-section pre[data-lang],
-[data-page*="render-api/storefront"] .markdown-section pre[data-lang],
-[data-page*="render-api/cart"] .markdown-section pre[data-lang] {
+[data-page*='js/filters'] .markdown-section pre[data-lang],
+[data-page*='js/actions'] .markdown-section pre[data-lang],
+[data-page*='shortcodes'] .markdown-section pre[data-lang],
+[data-page*='render-api/products'] .markdown-section pre[data-lang],
+[data-page*='render-api/collections'] .markdown-section pre[data-lang],
+[data-page*='render-api/search'] .markdown-section pre[data-lang],
+[data-page*='render-api/storefront'] .markdown-section pre[data-lang],
+[data-page*='render-api/cart'] .markdown-section pre[data-lang] {
   margin-bottom: 5em;
 }
 
@@ -96,7 +96,7 @@ span > code {
   /* width: 70px;
    height: 70px; */
 }
-img[alt="wpshopify"] {
+img[alt='wpshopify'] {
   /* animation: rotating 12s linear infinite; */
   /* background: black;
    background: linear-gradient(to right, #348ac7, #7474bf); */
@@ -114,8 +114,8 @@ img[alt="wpshopify"] {
   /* font-weight: bold; */
 }
 
-[data-page*="js/filters"] .markdown-section td:first-child,
-[data-page*="js/actions"] .markdown-section td:first-child {
+[data-page*='js/filters'] .markdown-section td:first-child,
+[data-page*='js/actions'] .markdown-section td:first-child {
   min-width: 150px;
 }
 
@@ -246,7 +246,7 @@ body .docsify-copy-code-button:after {
 
 .sidebar-nav > ul li > ul li > ul li a code {
   background: transparent;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar-nav > ul li > ul li > ul li a code + span {
@@ -271,14 +271,14 @@ body .docsify-copy-code-button:after {
   font-size: 22px;
   /* font-size: 19px; */
   font-weight: bold;
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
 
   /* font-family: 'Bitter', serif; */
   /* font-family: 'Playfair Display', serif; */
 }
 
 .sidebar li a {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar li > ul > li {
@@ -347,8 +347,8 @@ body .docsify-copy-code-button:after {
   right: 0;
 }
 
-[data-page^="render-api"] .content article > p:first-of-type,
-[data-page*="shortcodes"] .content article > p:first-of-type {
+[data-page^='render-api'] .content article > p:first-of-type,
+[data-page*='shortcodes'] .content article > p:first-of-type {
   margin-bottom: 2.5em;
 }
 
@@ -356,12 +356,12 @@ body .docsify-copy-code-button:after {
 .content h2 {
   font-size: 42px;
   font-weight: bold;
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
   /* font-family: 'Bitter', serif; */
   /* font-family: 'Playfair Display', serif; */
 }
 .content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* font-weight: bold; */
 }
 
@@ -447,6 +447,10 @@ body .docsify-copy-code-button:after {
   max-width: 250px;
 }
 
+.sidebar .spacer {
+  margin-top: 1em;
+}
+
 #main {
   margin-left: 4vw;
 }
@@ -465,16 +469,16 @@ body .docsify-copy-code-button:after {
   margin-top: 2em;
 }
 
-[data-page*="js/filters"] .content .heading-section,
-[data-page*="js/actions"] .content .heading-section,
-[data-page*="shortcodes"] .content .heading-section,
-[data-page*="render-api/products"] .content .heading-section,
-[data-page*="render-api/collections"] .content .heading-section,
-[data-page*="render-api/search"] .content .heading-section,
-[data-page*="render-api/storefront"] .content .heading-section,
-[data-page*="render-api/cart"] .content .heading-section {
+[data-page*='js/filters'] .content .heading-section,
+[data-page*='js/actions'] .content .heading-section,
+[data-page*='shortcodes'] .content .heading-section,
+[data-page*='render-api/products'] .content .heading-section,
+[data-page*='render-api/collections'] .content .heading-section,
+[data-page*='render-api/search'] .content .heading-section,
+[data-page*='render-api/storefront'] .content .heading-section,
+[data-page*='render-api/cart'] .content .heading-section {
   padding-bottom: 10px;
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
   font-size: 24px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1em;
@@ -486,31 +490,31 @@ body .docsify-copy-code-button:after {
   margin-bottom: 0;
 }
 
-[data-page*="js/filters"] .content h2:first-of-type,
-[data-page*="js/actions"] .content h2:first-of-type {
+[data-page*='js/filters'] .content h2:first-of-type,
+[data-page*='js/actions'] .content h2:first-of-type {
   margin-top: 2em;
 }
 
-[data-page*="js/filters"] .content h2,
-[data-page*="js/actions"] .content h2,
-[data-page*="shortcodes"] .content h2,
-[data-page*="render-api/products"] .content h2,
-[data-page*="render-api/collections"] .content h2,
-[data-page*="render-api/search"] .content h2,
-[data-page*="render-api/storefront"] .content h2,
-[data-page*="render-api/cart"] .content h2 {
+[data-page*='js/filters'] .content h2,
+[data-page*='js/actions'] .content h2,
+[data-page*='shortcodes'] .content h2,
+[data-page*='render-api/products'] .content h2,
+[data-page*='render-api/collections'] .content h2,
+[data-page*='render-api/search'] .content h2,
+[data-page*='render-api/storefront'] .content h2,
+[data-page*='render-api/cart'] .content h2 {
   border: none;
   margin: 0;
 }
 
-[data-page*="js/filters"] .content h2 code,
-[data-page*="js/actions"] .content h2 code,
-[data-page*="shortcodes"] .content h2 code,
-[data-page*="render-api/products"] .content h2 code,
-[data-page*="render-api/collections"] .content h2 code,
-[data-page*="render-api/search"] .content h2 code,
-[data-page*="render-api/storefront"] .content h2 code,
-[data-page*="render-api/cart"] .content h2 code {
+[data-page*='js/filters'] .content h2 code,
+[data-page*='js/actions'] .content h2 code,
+[data-page*='shortcodes'] .content h2 code,
+[data-page*='render-api/products'] .content h2 code,
+[data-page*='render-api/collections'] .content h2 code,
+[data-page*='render-api/search'] .content h2 code,
+[data-page*='render-api/storefront'] .content h2 code,
+[data-page*='render-api/cart'] .content h2 code {
   padding: 0.3em 0.7em 0.4em 0.7em !important;
   border: none !important;
   font-weight: bold !important;
@@ -518,22 +522,22 @@ body .docsify-copy-code-button:after {
   background: #415aff !important;
 }
 
-[data-page*="js/filters"] .content h2 a:hover,
-[data-page*="js/filters"] .content h2 code:hover,
-[data-page*="js/actions"] .content h2 a:hover,
-[data-page*="js/actions"] .content h2 code:hover,
-[data-page*="shortcodes"] .content h2 a:hover,
-[data-page*="shortcodes"] .content h2 code:hover,
-[data-page*="render-api/products"] .content h2 a:hover,
-[data-page*="render-api/products"] .content h2 code:hover,
-[data-page*="render-api/collections"] .content h2 a:hover,
-[data-page*="render-api/collections"] .content h2 code:hover,
-[data-page*="render-api/search"] .content h2 a:hover,
-[data-page*="render-api/search"] .content h2 code:hover,
-[data-page*="render-api/storefront"] .content h2 a:hover,
-[data-page*="render-api/storefront"] .content h2 code:hover,
-[data-page*="render-api/cart"] .content h2 a:hover,
-[data-page*="render-api/cart"] .content h2 code:hover {
+[data-page*='js/filters'] .content h2 a:hover,
+[data-page*='js/filters'] .content h2 code:hover,
+[data-page*='js/actions'] .content h2 a:hover,
+[data-page*='js/actions'] .content h2 code:hover,
+[data-page*='shortcodes'] .content h2 a:hover,
+[data-page*='shortcodes'] .content h2 code:hover,
+[data-page*='render-api/products'] .content h2 a:hover,
+[data-page*='render-api/products'] .content h2 code:hover,
+[data-page*='render-api/collections'] .content h2 a:hover,
+[data-page*='render-api/collections'] .content h2 code:hover,
+[data-page*='render-api/search'] .content h2 a:hover,
+[data-page*='render-api/search'] .content h2 code:hover,
+[data-page*='render-api/storefront'] .content h2 a:hover,
+[data-page*='render-api/storefront'] .content h2 code:hover,
+[data-page*='render-api/cart'] .content h2 a:hover,
+[data-page*='render-api/cart'] .content h2 code:hover {
   cursor: pointer;
   text-decoration: none;
 }

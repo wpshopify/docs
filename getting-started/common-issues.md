@@ -24,7 +24,7 @@ Under Product availability, click manage and ensure that your product is assigne
 
 Now head back to WordPress to see if the product shows up. Sometimes this can take up to 60 seconds.
 
-## Syncing Issues
+## Fixing Syncing Issues
 
 We've taken great steps to ensure that the syncing process works across multiple different environments. However if you're running into trouble, try going through these steps one by one.
 
@@ -35,23 +35,72 @@ We've taken great steps to ensure that the syncing process works across multiple
 3. Make sure your site is not password protected. Sometimes managed WordPress hosts like WP Engine or Flywheel will have this turned on by default.
 4. Sometimes the syncing can fail due to plugin conflicts. Try deactivating all your other plugins besides WP Shopify and then [resync](getting-started/tools?id=resync-shopify).
 5. Ensure your permalinks are _not_ set to Plain. Try setting them to "Post name" or "Custom structure" instead.
-6. Ensure you meet the WP Shopify [minimum requirements](/getting-started/requirements).
+6. Ensure you meet the WP Shopify [minimum requirements](getting-started/requirements).
 7. Make sure you have a working SSL certificate on your WordPress site
 8. Check your PHP and Apache/Nginx logs for any errors. If you don't know how to do this, contact your web host and ask them to look on your behalf. If you find any errors, please send them to us by email or in the private Slack channel for further help.
 9. Ask your web host if they have a firewall enabled that restricts numerous third-party API requests during a short period of time.
-10.   If they do have a firewall, ask them to make an exception for requests sent to ".myshopify.com".
+10. If they do have a firewall, ask them to make an exception for requests sent to ".myshopify.com".
 
 ### Specific Syncing Errors
+
+#### No route was found matching the url and request method ...
+
+This error usually occurs when you have your permalinks set to "Plain".
+
+To fix, go to your permalinks settings by opening your WordPress Dashboard and clicking Settings - Permalinks. Once open, change the setting from "Plain" to "Post name". Click save and try syncing the plugin again.
+
+#### Couldn't find any Shopify data to sync
+
+When you see this error, it's usually because the plugin was unable to create it's custom database tables during installation.
+
+The easiest fix is to simply deactivate and reactivate the plugin. Then try resyncing.
+
+#### Not Found Tried calling URL. This occured while calling: WP_Shopify\HTTP::request on line 299
+
+When you encounter this error it's usually because your myshopify.com domain is incorect or one of your API keys is wrong. Try going back into your Shopify private app and triple checking that these values are copied exactly.
+
+#### Plugin loads endlessly
+
+Sometimes this can happen because of caching rules set by the plugin, and potentially other plugins.
+
+The first thing to do is go into WP Shopify - Settings - Cache, and turn off the cache altogether. This should fix things.
+
+However, also check to see if you have a caching plugin installed. If you do, make sure it’s not caching or interfering with the plugin’s JavaScript files.
+
+#### while calling undefined. Error status code 503
+
+Usually this is caused by a plugin conflict. Try deactivating all your other plugins besides WP Shopify, and then [resync](getting-started/tools?id=resync-shopify).
+
+#### while calling undefined. Error status code 504
+
+When you receive this error, there's a good chance it's because your web server is running out of memory, OR it has hit the max execution time during the syncing process. Both of these things can be increased below:
+
+To increase the Max Execution Time: https://wpastra.com/docs/increase-php-time-limit-wordpress-sites
+To increase the Memory Limit: https://wpastra.com/docs/increasing-php-memory-limit-website/
+
+#### Failed to assign Shopify ID 0
+
+This can be fixed by using the `Remove all synced data` tool followed by a `Sync Products`.
+
+Note: this will remove any custom fields applied to your product posts, and any product post menu items.
+
+#### Couldn't find any Shopify data to sync!
+
+If you see this error, there's a goodd chance that the plugin's custom tables need to be refreshed. To do this, go to the main WordPress plugins page and deactivate the plugin. Then reactivate. Once this is done, try syncing again.
+
+#### [API] Invalid Username provided for Basic Auth API access
+
+This error occurs if you try connecting with incorrect Shopify API keys. Go back to your Shopify Private App and triple check that you're entering the correct values. Make sure you're not missing a character when you copy / paste.
 
 #### [API] This action requires merchant approval
 
 This error occurs when you have have the incorrect permissions set for your Shopify private app. WP Shopify requires that following to be set to "Read and write":
 
--  Product Information
--  Customer details and customer groups
--  Orders, transactions and fulfillments
--  Price rules
--  Products, variants and collections
+- Product Information
+- Customer details and customer groups
+- Orders, transactions and fulfillments
+- Price rules
+- Products, variants and collections
 
 Be sure these permissions are set correctly and then perform a [Resync](getting-started/tools?id=resync-shopify) from within WP Shopify.
 
