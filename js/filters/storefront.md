@@ -1,6 +1,6 @@
-# JavaScript Filters: Storefront
+# Storefront JavaScript Filters
 
-Please first read our [Getting started with JavaScript Hooks](guides/javascript-hooks.md) guide.
+You may want to read our [Getting started with JavaScript Hooks](guides/javascript-hooks.md) guide first.
 
 ## `default.storefront.tags.heading`
 
@@ -13,8 +13,8 @@ Allows for changing the heading found within the "Tags" section of the Storefron
 **Example**
 
 ```js
-wp.hooks.addFilter('default.storefront.tags.heading', 'wpshopify', tagsHeading => {
-   return 'New heading'
+wp.hooks.addFilter('default.storefront.tags.heading', 'wpshopify', function (tagsHeading) {
+  return 'New heading'
 })
 ```
 
@@ -29,8 +29,8 @@ Allows for changing the heading found within the "Vendors" section of the Storef
 **Example**
 
 ```js
-wp.hooks.addFilter('default.storefront.vendors.heading', 'wpshopify', vendorsHeading => {
-   return 'New heading'
+wp.hooks.addFilter('default.storefront.vendors.heading', 'wpshopify', function (vendorsHeading) {
+  return 'New heading'
 })
 ```
 
@@ -45,7 +45,41 @@ Allows for changing the heading found within the "Types" section of the Storefro
 **Example**
 
 ```js
-wp.hooks.addFilter('default.storefront.types.heading', 'wpshopify', defaultHeading => {
-   return defaultHeading + ' new!'
+wp.hooks.addFilter('default.storefront.types.heading', 'wpshopify', function (defaultHeading) {
+  return defaultHeading + ' new!'
 })
 ```
+
+## `storefront.filter.text`
+
+## `storefront.group.loading.text`
+
+## `storefront.selections.filter.label`
+
+## `storefront.selections.clear.text`
+
+## `storefront.selections.type.text`
+
+## `storefront.selections.available.text`
+
+## `storefront.sorting.label.text`
+
+## `storefront.sorting.default.text`
+
+## `storefront.sorting.price.text`
+
+## `storefront.sorting.priceReverse.text`
+
+## `storefront.sorting.newArrival.text`
+
+## `storefront.sorting.bestSelling.text`
+
+## `storefront.sorting.title.text`
+
+## `storefront.sorting.titleReverse.text`
+
+## `default.storefront.tags.heading`
+
+## `default.storefront.types.heading`
+
+## `default.storefront.vendors.heading`

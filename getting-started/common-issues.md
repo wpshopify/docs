@@ -41,6 +41,11 @@ We've taken great steps to ensure that the syncing process works across multiple
 9. Ask your web host if they have a firewall enabled that restricts numerous third-party API requests during a short period of time.
 10. If they do have a firewall, ask them to make an exception for requests sent to ".myshopify.com".
 
+### Known issues with Third-party plugins
+
+1. WordFence
+2. EWWW
+
 ### Specific Syncing Errors
 
 #### No route was found matching the url and request method ...

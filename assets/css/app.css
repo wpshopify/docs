@@ -411,7 +411,7 @@ body .docsify-copy-code-button:after {
   font-size: 17px;
   position: relative;
   left: -7px;
-  font-weight: bold;
+  font-weight: 100;
   box-shadow: none;
   user-select: text;
 }
@@ -517,7 +517,6 @@ body .docsify-copy-code-button:after {
 [data-page*='render-api/cart'] .content h2 code {
   padding: 0.3em 0.7em 0.4em 0.7em !important;
   border: none !important;
-  font-weight: bold !important;
   color: white !important;
   background: #415aff !important;
 }

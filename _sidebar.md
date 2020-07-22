@@ -40,6 +40,7 @@
   - [Share plugin usage data](guides/share-data.md)
   - [Hide cart tab when empty](guides/hide-cart-tab-when-empty.md)
   - [Using color swatches](guides/using-color-swatches.md)
+  - [Change selected button colors](guides/change-selected-button-colors.md)
 
 * <span class="section section-actions">JavaScript Actions</span>
 
@@ -50,9 +51,17 @@
 
 - <span class="section section-actions">JavaScript Filters</span>
 
-  - [Products](js/filters/products.md)
+  - [Product Title](js/filters/product-title.md)
+  - [Product Buy Button](js/filters/product-buy-button.md)
+  - [Product Images](js/filters/product-images.md)
+  - [Product Pricing](js/filters/product-pricing.md)
   - [Storefront](js/filters/storefront.md)
+  - [Search](js/filters/search.md)
   - [Cart](js/filters/cart.md)
+  - [Checkout](js/filters/checkout.md)
+  - [Misc](js/filters/misc.md)
+  - [Notices](js/filters/notices.md)
+  - [Global](js/filters/global.md)
 
 * <span class="section section-templates">PHP Templates</span>
 

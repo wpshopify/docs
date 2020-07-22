@@ -16,8 +16,8 @@ The process is a bit different depending on whether you're using an action or fi
 Any _action_ hook needs to be encapsulated within the `after.ready` action. This action runs when WP Shopify is done bootstrapping. So if you're using an action, begin your customizations with the following.
 
 ```js
-wp.hooks.addAction('after.ready', 'wpshopify', function() {
-   // Your custom actions go here
+wp.hooks.addAction('after.ready', 'wpshopify', function () {
+  // Your custom actions go here
 })
 ```
 
@@ -28,10 +28,10 @@ Any _filter_ hook can be used without the `after.ready` action.
 Let's say we want to detect when a product is added to the cart. We can do this by hooking into the [after.product.addToCart](js/actions/products?id=afterproductaddtocart) action like this:
 
 ```js
-wp.hooks.addAction('after.ready', 'wpshopify', function() {
-   wp.hooks.addAction('after.product.addToCart', 'wpshopify', function(lineItem, productVariant) {
-      // Do something after adding to cart ...
-   })
+wp.hooks.addAction('after.ready', 'wpshopify', function () {
+  wp.hooks.addAction('after.product.addToCart', 'wpshopify', function (lineItem, productVariant) {
+    // Do something after adding to cart ...
+  })
 })
 ```
 
@@ -44,8 +44,8 @@ We've listed all of the [available JavaScript hooks](js/actions/init) in this do
 Let's say we want to change the text of the checkout button. We can do this by hooking into the [default.cart.checkout.text](js/filters/cart?id=defaultcartcheckouttext) filter like this:
 
 ```js
-wp.hooks.addFilter('default.cart.checkout.text', 'wpshopify', buttonText => {
-   return 'New checkout button text'
+wp.hooks.addFilter('default.cart.checkout.text', 'wpshopify', function (buttonText) {
+  return 'New checkout button text'
 })
 ```
 
@@ -53,33 +53,33 @@ wp.hooks.addFilter('default.cart.checkout.text', 'wpshopify', buttonText => {
 
 WP Shopify injects it's JavaScript in the footer to improve performance. However it's possible that your theme's JavaScript may run _before_ WP Shopify. If this occurs, none of the custom JavaScript hooks you write will work.
 
-To get around this, be sure to set `wpshopify-scripts-frontend` as a dependency in your theme's wp_enqueue_script, like this:
+To get around this, be sure to set `wpshopify-public` as a dependency in your theme's wp_enqueue_script, like this:
 
 ```php
-wp_enqueue_script( 'your-js', '<your path>/stuff.js', ['wpshopify-scripts-frontend'], true);
+wp_enqueue_script( 'your-js', '<your path>/stuff.js', ['wpshopify-public'], true);
 ```
 
 ## List of available hooks
 
 ### Actions
 
--  [on.cart.open](/)
--  [on.cart.close](/)
--  [set.checkout.attributes](/)
--  [update.checkout.attributes](/)
--  [set.checkout.note](/)
--  [on.checkout](/)
--  [before.ready](/)
--  [after.ready](/)
--  [before.product.addToCart](/)
--  [on.product.addToCart](/)
--  [on.product.variant.selection](/)
+- [on.cart.open](/)
+- [on.cart.close](/)
+- [set.checkout.attributes](/)
+- [update.checkout.attributes](/)
+- [set.checkout.note](/)
+- [on.checkout](/)
+- [before.ready](/)
+- [after.ready](/)
+- [before.product.addToCart](/)
+- [on.product.addToCart](/)
+- [on.product.variant.selection](/)
 
 ### Filters
 
--  [default.cart.title](/)
--  [default.cart.checkout.text](/)
--  [product.title.class](/)
--  [default.storefront.tags.heading](/)
--  [default.storefront.vendors.heading](/)
--  [default.storefront.types.heading](/)
+- [default.cart.title](/)
+- [default.cart.checkout.text](/)
+- [product.title.class](/)
+- [default.storefront.tags.heading](/)
+- [default.storefront.vendors.heading](/)
+- [default.storefront.types.heading](/)
