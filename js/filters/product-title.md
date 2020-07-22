@@ -30,7 +30,7 @@ Allows for filtering the product title.
 
 ```js
 wp.hooks.addFilter('product.title.text', 'wpshopify', function (productTitle) {
-  return productTitle
+  return 'Custom product title'
 })
 ```
 

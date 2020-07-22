@@ -95,12 +95,103 @@ wp.hooks.addFilter('product.variant.styles.colorSwatch.value', 'wpshopify', func
 
 ## `product.variant.styles`
 
+Allows for customizing the CSS of the variant. Must return the new CSS as a string.
+
+| Parameters    | Description                                    |
+| :------------ | :--------------------------------------------- |
+| defaultStyles | Represents the default variant CSS as a string |
+
+**Example**
+
+```js
+wp.hooks.addFilter('product.variant.styles', 'wpshopify', function (defaultStyles) {
+  return defaultStyles
+})
+```
+
 ## `product.addToCart.text`
+
+Allows for customizing the add to cart text
+
+| Parameters         | Description                                               |
+| :----------------- | :-------------------------------------------------------- |
+| defaultTextElement | Represents the default text element as a React element    |
+| defaultText        | Represents the default text value. Default: `Add to cart` |
+
+**Example**
+
+```js
+wp.hooks.addFilter('product.addToCart.text', 'wpshopify', function (
+  defaultTextElement,
+  defaultText
+) {
+  return 'Custom text'
+})
+```
 
 ## `product.missingSelection.text`
 
+Allows for customizing the missing selections text
+
+| Parameters  | Description                                                                                 |
+| :---------- | :------------------------------------------------------------------------------------------ |
+| defaultText | Represents the default text of the missing selections. Default: `Please select a variation` |
+
+**Example**
+
+```js
+wp.hooks.addFilter('product.missingSelection.text', 'wpshopify', function (defaultText) {
+  return 'Custom missing selections text'
+})
+```
+
 ## `before.product.buyButton`
+
+Allows for adding arbitrary HTML before the product's buy button.
+
+| Parameters   | Description                                             |
+| :----------- | :------------------------------------------------------ |
+| defaultValue | Represents the before buy button HTML. Default: `false` |
+| productState | Represents the product state                            |
+
+**Example**
+
+```js
+wp.hooks.addFilter('before.product.buyButton', 'wpshopify', function (defaultValue, productState) {
+  return '<p>Before HTML</p>'
+})
+```
 
 ## `after.product.buyButton`
 
+Allows for adding arbitrary HTML after the product's buy button.
+
+| Parameters   | Description                                            |
+| :----------- | :----------------------------------------------------- |
+| defaultValue | Represents the after buy button HTML. Default: `false` |
+| productState | Represents the product state                           |
+
+**Example**
+
+```js
+wp.hooks.addFilter('after.product.buyButton', 'wpshopify', function (defaultValue, productState) {
+  return '<p>After HTML</p>'
+})
+```
+
 ## `buyButton.quantityStep`
+
+Allows for customizing the "step" of the quantity field. For example, returning `2` will only allow the user to increment the quanaity field by steps of 2. E.g., `2`, `4,`, `6`, ...etc.
+
+| Parameters     | Description                                 |
+| :------------- | :------------------------------------------ |
+| defaultStep    | Represents the after step. Default: `false` |
+| buyButtonState | Represents the buy button state             |
+
+**Example**
+
+```js
+wp.hooks.addFilter('buyButton.quantityStep', 'wpshopify', function (defaultStep, buyButtonState) {
+  return 2
+})
+```

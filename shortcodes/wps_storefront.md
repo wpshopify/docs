@@ -244,3 +244,18 @@ Specifies whether to show the default "Filter by" options heading.
 ```js
 [wps_storefront show_options_heading="false"]
 ```
+
+## `available_for_sale`
+
+Display products based on their availability. Setting to `true` will only show products that are in stock.
+
+| Possible values |
+| :-------------- |
+| true            |
+| any (default)   |
+
+**Example**
+
+```js
+[wps_storefront available_for_sale="true"]
+```
