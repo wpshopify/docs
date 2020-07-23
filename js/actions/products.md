@@ -13,14 +13,17 @@ Fires after all available variants are selected but before adding to the cart.
 **Example**
 
 ```js
-wp.hooks.addAction('before.product.addToCart', 'wpshopify', function(buyButtonState) {
-   // Do something
+wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
+  wp.hooks.addAction('before.product.addToCart', 'wpshopify', function (buyButtonState) {
+    // Do something
+    console.log('WP Shopify Event 💥 before.product.addToCart', buyButtonState)
+  })
 })
 ```
 
-## `on.product.addToCart`
+## `after.product.addToCart`
 
-Fires when a product is added to the cart.
+Fires after a product variant is added to the cart.
 
 | Parameters     | Description                                           |
 | :------------- | :---------------------------------------------------- |
@@ -30,24 +33,55 @@ Fires when a product is added to the cart.
 **Example**
 
 ```js
-wp.hooks.addAction('on.product.addToCart', 'wpshopify', function(lineItem, productVariant) {
-   // Do something
+wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
+  wp.hooks.addAction('after.product.addToCart', 'wpshopify', function (lineItems, variant) {
+    console.log('WP Shopify Event 💥 after.product.addToCart', buyButtonState)
+  })
 })
 ```
 
-## `on.product.variant.selection`
+## `before.product.variantDropdown.toggle`
 
-Fires each time a product variant is selected.
+Fires before the variant dropdown opens
 
-| Parameters         | Description                          |
-| :----------------- | :----------------------------------- |
-| selectedVariant    | Represents the selected variant data |
-| productOptionState | Represents the product data          |
+| Parameters         | Description                              |
+| :----------------- | :--------------------------------------- |
+| productOptionState | Represents the product option state data |
 
 **Example**
 
 ```js
-wp.hooks.addAction('on.product.variant.selection', 'wpshopify', function(selectedVariant, productOptionState) {
-   // Do something
+wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
+  wp.hooks.addAction('before.product.variantDropdown.toggle', 'wpshopify', function (
+    productOptionState
+  ) {
+    console.log('WP Shopify Event 💥 before.product.variantDropdown.toggle', productOptionState)
+  })
+})
+```
+
+## `after.product.variant.selection`
+
+Fires after a product variant is selected
+
+| Parameters         | Description                         |
+| :----------------- | :---------------------------------- |
+| selectedVariant    | Represents the product variant data |
+| productOptionState | Represents the product option state |
+
+**Example**
+
+```js
+wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
+  wp.hooks.addAction('after.product.variant.selection', 'wpshopify', function (
+    selectedVariant,
+    productOptionState
+  ) {
+    console.log(
+      'WP Shopify Event 💥 after.product.variant.selection',
+      selectedVariant,
+      productOptionState
+    )
+  })
 })
 ```

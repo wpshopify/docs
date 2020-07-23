@@ -15,19 +15,6 @@
   - [FAQs :link:](https://wpshop.io/faq)
   - [Changelog :link:](https://wpshop.io/changelog)
 
-* <span class="section section-shortcodes">Shortcodes</span>
-
-  - [[wps_products]](shortcodes/wps_products.md)</span>
-  - [[wps_products_title]](shortcodes/wps_products_title.md)
-  - [[wps_products_description]](shortcodes/wps_products_description.md)
-  - [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
-  - [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
-  - [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
-  - [[wps_collections]](shortcodes/wps_collections.md)
-  - [[wps_search]](shortcodes/wps_search.md)
-  - [[wps_storefront]](shortcodes/wps_storefront.md)
-  - [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
-
 * <span class="section section-guides">Guides</span>
 
   - [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
@@ -42,12 +29,25 @@
   - [Using color swatches](guides/using-color-swatches.md)
   - [Change selected button colors](guides/change-selected-button-colors.md)
 
+* <span class="section section-shortcodes">Shortcodes</span>
+
+  - [[wps_products]](shortcodes/wps_products.md)</span>
+  - [[wps_products_title]](shortcodes/wps_products_title.md)
+  - [[wps_products_description]](shortcodes/wps_products_description.md)
+  - [[wps_products_pricing]](shortcodes/wps_products_pricing.md)
+  - [[wps_products_buy_button]](shortcodes/wps_products_buy_button.md)
+  - [[wps_products_gallery]](shortcodes/wps_products_gallery.md)
+  - [[wps_collections]](shortcodes/wps_collections.md)
+  - [[wps_search]](shortcodes/wps_search.md)
+  - [[wps_storefront]](shortcodes/wps_storefront.md)
+  - [[wps_cart_icon]](shortcodes/wps_cart_icon.md)
+
 * <span class="section section-actions">JavaScript Actions</span>
 
-  - [Init](js/actions/init.md)
   - [Products](js/actions/products.md)
   - [Checkout](js/actions/checkout.md)
   - [Cart](js/actions/cart.md)
+  - [Misc](js/actions/misc.md)
 
 - <span class="section section-actions">JavaScript Filters</span>
 
@@ -59,6 +59,7 @@
   - [Search](js/filters/search.md)
   - [Cart](js/filters/cart.md)
   - [Checkout](js/filters/checkout.md)
+  - [Pagination](js/filters/pagination.md)
   - [Misc](js/filters/misc.md)
   - [Notices](js/filters/notices.md)
   - [Global](js/filters/global.md)
