@@ -6,7 +6,6 @@
   - [Settings](getting-started/settings.md)
   - [Tools](getting-started/tools.md)
   - [Features](getting-started/features.md)
-  - [WP Shopify Pro](getting-started/wp-shopify-pro.md)
   - [License](getting-started/license.md)
   - [Requirements](getting-started/requirements.md)
   - <div class="spacer"></div>
@@ -20,7 +19,7 @@
   - [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
   - [JavaScript Hooks](guides/javascript-hooks.md)
   - [Template Overriding](guides/template-overriding.md)
-  - [Migrating to 2.x](guides/migrating-to-2x.md)
+  - [Add Cart Icon to WordPress Menu](guides/add-cart-icon-to-nav.md)
   - [Creating Product Detail Pages](guides/product-detail-pages.md)
   - [Using Default Pages](guides/default-pages.md)
   - [Render API](guides/render-api.md)
@@ -70,6 +69,10 @@
   - [products/single](templates/products/single.md)
   - [collections/all](templates/collections/all.md)
   - [collections/single](templates/collections/single.md)
+
+* <span class="section section-templates">PHP Functions</span>
+
+  - [Products](php-functions/products.md)
 
 * <span class="section section-render-api">Render API</span>
 
