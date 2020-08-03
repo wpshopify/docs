@@ -21,6 +21,7 @@
   - [Template Overriding](guides/template-overriding.md)
   - [Add filter and sorting to Products](guides/add-filter-and-sorting-products.md)
   - [Add Cart Icon to WordPress Menu](guides/add-cart-icon-to-nav.md)
+  - [Fix SG Optimizer conflict](guides/fix-sg-optimizer-conflict.md)
   - [Creating Product Detail Pages](guides/product-detail-pages.md)
   - [Using Default Pages](guides/default-pages.md)
   - [Render API](guides/render-api.md)
