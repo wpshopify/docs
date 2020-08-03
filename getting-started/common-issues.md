@@ -52,7 +52,15 @@ We've taken great steps to ensure that the syncing process works across multiple
 
 This error usually occurs when you have your permalinks set to "Plain".
 
-To fix, go to your permalinks settings by opening your WordPress Dashboard and clicking Settings - Permalinks. Once open, change the setting from "Plain" to "Post name". Click save and try syncing the plugin again.
+To fix, go to your permalinks settings by opening your WordPress Dashboard and clicking Settings - Permalinks. Once open, change the setting from `Plain` to `Post name`. Click save and try syncing the plugin again.
+
+If that doesn't work, try turning off your other plugins temporarily and sync again to rule out a plugin conflict.
+
+#### Error code 6
+
+This error usually occurs due to a conflict with another plugin.
+
+To fix, try turning off your other plugins temporarily and then sync again.
 
 #### Couldn't find any Shopify data to sync
 
@@ -92,6 +100,12 @@ Note: this will remove any custom fields applied to your product posts, and any 
 #### Couldn't find any Shopify data to sync!
 
 If you see this error, there's a goodd chance that the plugin's custom tables need to be refreshed. To do this, go to the main WordPress plugins page and deactivate the plugin. Then reactivate. Once this is done, try syncing again.
+
+### while calling internal_server_error. Please clear the plugin transient cache and try again. Error status code: 500
+
+If you see this error, there's a good chance that you'll need to completely re-install the plugin. Sometimes when you initially add the plugin, the custom tables that the plugin creates will not be added correctly.
+
+So you'll need to delete and re-install the plugin.
 
 #### [API] Invalid Username provided for Basic Auth API access
 

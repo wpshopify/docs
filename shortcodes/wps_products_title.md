@@ -268,6 +268,36 @@ Determines whether to hide or show pagination.
 [wps_products_title pagination="false"]
 ```
 
+## `title_size`
+
+Allows for customizing the font size of the product title.
+
+| Possible values          |
+| :----------------------- |
+| Any valid CSS size value |
+
+**Example**
+
+```js
+[wps_products title_size="20px"]
+[wps_products title_size="2em"]
+```
+
+## `title_color`
+
+Allows for customizing the font color of the product title.
+
+| Possible values           |
+| :------------------------ |
+| Any valid CSS color value |
+
+**Example**
+
+```js
+[wps_products title_color="red"]
+[wps_products title_color="#000000"]
+```
+
 ## `no_results_text`
 
 The text to show when no products are found.

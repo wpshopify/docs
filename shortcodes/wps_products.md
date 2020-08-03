@@ -243,6 +243,36 @@ The "connective" attribute determines how the products are found when combining 
 [wps_products tag="Tag1, Tag2" connective="and"]
 ```
 
+## `title_size`
+
+Allows for customizing the font size of the product title.
+
+| Possible values          |
+| :----------------------- |
+| Any valid CSS size value |
+
+**Example**
+
+```js
+[wps_products title_size="20px"]
+[wps_products title_size="2em"]
+```
+
+## `title_color`
+
+Allows for customizing the font color of the product title.
+
+| Possible values           |
+| :------------------------ |
+| Any valid CSS color value |
+
+**Example**
+
+```js
+[wps_products title_color="red"]
+[wps_products title_color="#000000"]
+```
+
 ## `add_to_cart_button_color`
 
 Determines the buy button color. Default: `#14273b`.

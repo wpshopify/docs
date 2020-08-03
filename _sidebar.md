@@ -19,6 +19,7 @@
   - [Upgrading to WP Shopify Pro](guides/upgrading-to-pro.md)
   - [JavaScript Hooks](guides/javascript-hooks.md)
   - [Template Overriding](guides/template-overriding.md)
+  - [Add filter and sorting to Products](guides/add-filter-and-sorting-products.md)
   - [Add Cart Icon to WordPress Menu](guides/add-cart-icon-to-nav.md)
   - [Creating Product Detail Pages](guides/product-detail-pages.md)
   - [Using Default Pages](guides/default-pages.md)
