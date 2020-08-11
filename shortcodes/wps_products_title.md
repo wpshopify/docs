@@ -150,6 +150,20 @@ You can base64 decode the above value and get a string such as `gid://shopify/Pr
 [wps_products_title product_id="2216928411696, 93283473232"]
 ```
 
+## `post_id`
+
+Display products based on one or more product post id(s).
+
+| Possible values           |
+| :------------------------ |
+| Any valid product post id |
+
+**Example**
+
+```js
+[wps_products product_id="35421, 35418"]
+```
+
 ## `sort_by`
 
 Determines the products sort order. Corresponds to the [Shopify API values](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/productsortkeys).
