@@ -302,6 +302,20 @@ The text to show when no products are found.
 [wps_products_description no_results_text="Nothing found! 🙃"]
 ```
 
+## `description_length`
+
+Determines how long the product description should be in characters. Useful for only showing a specific excerpt.
+
+| Possible values                                  |
+| :----------------------------------------------- |
+| Number of characters to limit the description by |
+
+**Example**
+
+```js
+[wps_products_description description_length="50"]
+```
+
 ## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.

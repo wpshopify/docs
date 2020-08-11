@@ -183,15 +183,14 @@ wp.hooks.addFilter('after.product.buyButton', 'wpshopify', function (defaultValu
 
 Allows for customizing the "step" of the quantity field. For example, returning `2` will only allow the user to increment the quanaity field by steps of 2. E.g., `2`, `4,`, `6`, ...etc.
 
-| Parameters     | Description                                 |
-| :------------- | :------------------------------------------ |
-| defaultStep    | Represents the after step. Default: `false` |
-| buyButtonState | Represents the buy button state             |
+| Parameters  | Description                                 |
+| :---------- | :------------------------------------------ |
+| defaultStep | Represents the after step. Default: `false` |
 
 **Example**
 
 ```js
-wp.hooks.addFilter('buyButton.quantityStep', 'wpshopify', function (defaultStep, buyButtonState) {
+wp.hooks.addFilter('buyButton.quantityStep', 'wpshopify', function (defaultStep) {
   return 2
 })
 ```

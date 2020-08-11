@@ -34,6 +34,23 @@ wp.hooks.addFilter('misc.link.target', 'wpshopify', function (defaultTarget) {
 })
 ```
 
+## `misc.link.href`
+
+Allows you to customize the link for a product or collection
+
+| Parameter     | Description                                             |
+| :------------ | :------------------------------------------------------ |
+| defaultTarget | Represents the default href for links.                  |
+| type          | Represents the type of link `products` or `collections` |
+
+**Example**
+
+```js
+wp.hooks.addFilter('misc.link.href', 'wpshopify', function (defaultLink, type) {
+  return 'https://mysite.com/newlink'
+})
+```
+
 ## `misc.layout.mobileColumns`
 
 Allows you to customize the number of columns that products are listed within the mobile layout

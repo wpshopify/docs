@@ -32,7 +32,7 @@ We've taken great steps to ensure that the syncing process works across multiple
 
 1. Make sure you've set the proper [API permissions](getting-started/syncing?id=step-6) for your Shopify private app. Specifically, ensure that `Read and Write` is selected for "Product Information".
 2. Try changing the [Items per request](getting-started/settings?id=items-per-request) setting to **25** and turn on [Synchronous Requests](getting-started/settings?id=synchronous-requests). After these are updated try [resyncing](getting-started/tools?id=resync-shopify).
-3. Make sure your site is not password protected. Sometimes managed WordPress hosts like WP Engine or Flywheel will have this turned on by default.
+3. Make sure your site is not password protected. Sometimes managed WordPress hosts like WP Engine or Flywheel will have this turned on by default. The syncing may timeout if your site is password protected.
 4. Sometimes the syncing can fail due to plugin conflicts. Try deactivating all your other plugins besides WP Shopify and then [resync](getting-started/tools?id=resync-shopify).
 5. Ensure your permalinks are _not_ set to Plain. Try setting them to "Post name" or "Custom structure" instead.
 6. Ensure you meet the WP Shopify [minimum requirements](getting-started/requirements).
