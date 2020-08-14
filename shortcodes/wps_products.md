@@ -525,8 +525,9 @@ Determines how long the product description should be in characters. Useful for 
 
 **Example**
 
-````js
+```js
 [wps_products_description description_length="50"]
+```
 
 ## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
@@ -541,7 +542,7 @@ When turned on, the next page of items will automatically append to the containe
 
 ```js
 [wps_products infinite_scroll="true"]
-````
+```
 
 ## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
 
