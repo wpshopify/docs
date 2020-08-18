@@ -18,3 +18,19 @@ wp.hooks.addFilter('before.checkout.lineItems', 'wpshopify', function (lineItems
   return lineItems
 })
 ```
+
+## `checkout.url`
+
+Allows you to filter the checkout URL before the redirect happens
+
+| Parameter | Description              |
+| :-------- | :----------------------- |
+| url       | The default checkout URL |
+
+**Example**
+
+```js
+wp.hooks.addFilter('checkout.url', 'wpshopify', function (url) {
+  return url
+})
+```
