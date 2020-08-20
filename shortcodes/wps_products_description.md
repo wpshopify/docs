@@ -371,3 +371,18 @@ When `pagination` is set to true, this allows for specifying a custom location i
 ```js
 [wps_products_description dropzone_load_more="#my-custom-load-more-container"]
 ```
+
+## `full_width`
+
+When set to `true`, will force the product to span the width of its container.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products full_width="true"]
+```
