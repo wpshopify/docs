@@ -14,8 +14,8 @@ Runs before the cart state has been initialized during initial page load.
 
 ```js
 wp.hooks.addAction('before.cart.ready', 'wpshopify', function (cartState) {
-  console.log('cartState :: ', cartState)
-})
+  console.log('cartState :: ', cartState);
+});
 ```
 
 ## `after.cart.ready`
@@ -30,8 +30,8 @@ Runs after the cart state has been initialized during initial page load.
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
-  console.log('cartState :: ', cartState)
-})
+  console.log('cartState :: ', cartState);
+});
 ```
 
 ## `on.cart.toggle`
@@ -47,8 +47,8 @@ Fires when the cart opens / closes
 ```js
 wp.hooks.addAction('on.cart.toggle', 'wpshopify', function (openState) {
   // Do something when the cart opens or closes
-  console.log('openState :: ', openState)
-})
+  console.log('openState :: ', openState);
+});
 ```
 
 ## `cart.toggle`
@@ -64,15 +64,15 @@ Allows for opening or closing the cart
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
   // Open the cart
-  wp.hooks.doAction('cart.toggle', 'open')
-})
+  wp.hooks.doAction('cart.toggle', 'open');
+});
 ```
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
   // Close the cart
-  wp.hooks.doAction('cart.toggle', 'close')
-})
+  wp.hooks.doAction('cart.toggle', 'close');
+});
 ```
 
 ## `show.cart.title`
@@ -87,8 +87,8 @@ Allows for hiding the title within the cart
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
-  wp.hooks.doAction('show.cart.title', false)
-})
+  wp.hooks.doAction('show.cart.title', false);
+});
 ```
 
 ## `show.cart.close`
@@ -103,6 +103,23 @@ Allows for hiding the close icon within the cart
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
-  wp.hooks.doAction('show.cart.close', false)
-})
+  wp.hooks.doAction('show.cart.close', false);
+});
+```
+
+## `after.cart.lineItem.remove`
+
+Runs after a line item is removed from the cart.
+
+| Argument  | Description                     |
+| :-------- | :------------------------------ |
+| lineItem  | The line item object            |
+| variantId | The variant id that was removed |
+
+**Example**
+
+```js
+wp.hooks.addAction('after.cart.lineItem.remove', 'wpshopify', function (lineItem, variantId) {
+  // Do something after line item is removed
+});
 ```
