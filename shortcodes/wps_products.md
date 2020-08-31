@@ -315,6 +315,23 @@ Determines the variant dropdown color. Default: `#52a7a6`.
 [wps_products variant_button_color="#000"]
 ```
 
+## `variant_style`
+
+Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
+
+Determines the visual style of variant controls. Default: `dropdown`.
+
+| Possible values |
+| :-------------- |
+| dropdown        |
+| buttons         |
+
+**Example**
+
+```js
+[wps_products variant_style="buttons"]
+```
+
 ## `add_to_cart_button_text`
 
 Determines the buy button text. Default: `Add to cart`.
@@ -327,6 +344,20 @@ Determines the buy button text. Default: `Add to cart`.
 
 ```js
 [wps_products add_to_cart_button_text="Add to bag"]
+```
+
+## `add_to_cart_button_text_color`
+
+Determines the buy button text color. Default: `#FFFFFF`.
+
+| Possible values     |
+| :------------------ |
+| Any valid CSS color |
+
+**Example**
+
+```js
+[wps_products add_to_cart_button_text_color="#000"]
 ```
 
 ## `hide_quantity`
@@ -471,9 +502,11 @@ Determines whether to only show the product feature image. By default, all produ
 [wps_products show_featured_only="true"]
 ```
 
-## `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `show_zoom`
 
-Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
+Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
+
+Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image.
 
 | Possible values |
 | :-------------- |
@@ -529,7 +562,9 @@ Determines how long the product description should be in characters. Useful for 
 [wps_products_description description_length="50"]
 ```
 
-## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll`
+
+Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
@@ -544,7 +579,9 @@ When turned on, the next page of items will automatically append to the containe
 [wps_products infinite_scroll="true"]
 ```
 
-## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll_offset`
+
+Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
 Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 
@@ -600,4 +637,35 @@ Allows for determining how the featured image is positioned horizontally. Defaul
 
 ```js
 [wps_products images_align="true"]
+```
+
+## `link_to`
+
+Allows for determining where products link, if anywhere. Default: `wordpress`.
+
+| Possible values |
+| :-------------- |
+| none            |
+| wordpress       |
+| shopify         |
+
+**Example**
+
+```js
+[wps_products link_to="none"]
+```
+
+## `link_with_buy_button`
+
+Allows for determining whether to show the buy button controls when linking to WordPress or Shopify. Default: `false`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products link_with_buy_button="true" link_to="wordpress"]
 ```

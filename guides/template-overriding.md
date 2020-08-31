@@ -45,13 +45,13 @@ When using `html_template` you must specify the name of a valid .php file you wi
 
 Shortcode:
 
-```
+```php
 [wps_products html_template="product.php"]
 ```
 
 Render API:
 
-```
+```php
 $Products = WP_Shopify\Factories\Render\Products\Products_Factory::build();
 
 $Products->products([ 'html_template' => 'product.php' ]);
@@ -63,7 +63,7 @@ Because you can specify any file to be used, you'll need to add your files to a 
 
 For example, if your template file is called `product.php`, the folder structure must look like this:
 
-```
+```php
 wp-content/my-theme/wps-templates/custom/product.php
 ```
 

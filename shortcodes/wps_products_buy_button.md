@@ -282,6 +282,23 @@ Determines the variant dropdown color. Default: `#52a7a6`.
 [wps_products_buy_button variant_button_color="#000"]
 ```
 
+## `variant_style`
+
+Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
+
+Determines the visual style of variant controls. Default: `dropdown`.
+
+| Possible values |
+| :-------------- |
+| dropdown        |
+| buttons         |
+
+**Example**
+
+```js
+[wps_products_buy_button variant_style="buttons"]
+```
+
 ## `add_to_cart_button_text`
 
 Determines the buy button text. Default: `Add to cart`.
@@ -294,6 +311,20 @@ Determines the buy button text. Default: `Add to cart`.
 
 ```js
 [wps_products_buy_button add_to_cart_button_text="Add to bag"]
+```
+
+## `add_to_cart_button_text_color`
+
+Determines the buy button text color. Default: `#FFFFFF`.
+
+| Possible values     |
+| :------------------ |
+| Any valid CSS color |
+
+**Example**
+
+```js
+[wps_products_buy_button add_to_cart_button_text_color="#000"]
 ```
 
 ## `hide_quantity`

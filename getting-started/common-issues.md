@@ -45,6 +45,7 @@ We've taken great steps to ensure that the syncing process works across multiple
 
 1. WordFence
 2. EWWW
+3. WP Rocket
 
 ### Specific Syncing Errors
 
