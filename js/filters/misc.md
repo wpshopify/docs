@@ -14,8 +14,8 @@ Allows you to customize the number threshold before the left in stock notice app
 
 ```js
 wp.hooks.addFilter('misc.inventory.leftInStock.total', 'wpshopify', function (leftInStockTotal) {
-  return 5
-})
+  return 5;
+});
 ```
 
 ## `misc.link.target`
@@ -30,8 +30,8 @@ Allows you to customize whether links open in a new tab / window
 
 ```js
 wp.hooks.addFilter('misc.link.target', 'wpshopify', function (defaultTarget) {
-  return '_blank'
-})
+  return '_blank';
+});
 ```
 
 ## `misc.link.href`
@@ -47,8 +47,8 @@ Allows you to customize the link for a product or collection
 
 ```js
 wp.hooks.addFilter('misc.link.href', 'wpshopify', function (defaultLink, type) {
-  return 'https://mysite.com/newlink'
-})
+  return 'https://mysite.com/newlink';
+});
 ```
 
 ## `misc.layout.mobileColumns`
@@ -63,6 +63,22 @@ Allows you to customize the number of columns that products are listed within th
 
 ```js
 wp.hooks.addFilter('misc.link.target', 'wpshopify', function (defaultMobileCols) {
-  return 2
-})
+  return 2;
+});
+```
+
+## `misc.pricing.defaultCurrencyCode`
+
+Allows for filtering the default currency code used to format money prices. Useful for changing things like the subtotal format into a different currency. Must return a valid [ISO 4217 Currency Code](https://www.xe.com/iso4217.php).
+
+| Parameters  | Description                                                   |
+| :---------- | :------------------------------------------------------------ |
+| defaultCode | Represents the default ISO 4217 Currency Code. Default: `USD` |
+
+**Example**
+
+```js
+wp.hooks.addFilter('misc.pricing.defaultCurrencyCode', 'wpshopify', function (defaultCode) {
+  return 'EUR';
+});
 ```
