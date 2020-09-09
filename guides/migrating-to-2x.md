@@ -4,11 +4,11 @@ WP Shopify 2.0 was released in July of 2019. With it came various backwards inco
 
 ## What changed?
 
-WP Shopify 2.x brings a completely new rendering system. Instead of rendering products on the server via PHP, mostly everything is now rendered in JavaScript. This solves the two main problems with version 1.x which are [syncing reliability](https://wpshop.io/blog/wp-shopify-2-0-has-launched/#limitations-of-v1) and [data accuracy](https://wpshop.io/blog/wp-shopify-2-0-has-launched/#limitations-of-v1). We've come to the conclusion that these two traits _need_ to exist for a store to be of any value.
+WP Shopify 2.x brings a completely new rendering system. Instead of rendering products on the server via PHP, mostly everything is now rendered in JavaScript. This solves the two main problems with version 1.x which are [syncing reliability](https://wpshop.io/blog/wp-shopify-2-0-has-launched/#limitations-of-v1?utm_medium=docs&utm_source=migrating&utm_campaign=onboarding) and [data accuracy](https://wpshop.io/blog/wp-shopify-2-0-has-launched/#limitations-of-v1?utm_medium=docs&utm_source=migrating&utm_campaign=onboarding). We've come to the conclusion that these two traits _need_ to exist for a store to be of any value.
 
 ## What's happening to version 1.x?
 
-Nothing! Version 1.x will continue to work like normal. For all [Pro customers](https://wpshop.io/purchase), we will only provide dedicated support for 2.x moving forward due to time restraints.
+Nothing! Version 1.x will continue to work like normal. For all [Pro customers](https://wpshop.io/purchase?utm_medium=docs&utm_source=migrating&utm_campaign=onboarding), we will only provide dedicated support for 2.x moving forward due to time restraints.
 
 ## How to update
 

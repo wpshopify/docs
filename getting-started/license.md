@@ -1,10 +1,10 @@
 # License
 
-When you purchase [WP Shopify Pro](https://wpshop.io/purchase/) you're given a single license key. This key gives you access to:
+When you purchase [WP Shopify Pro](https://wpshop.io/purchase?utm_medium=docs&utm_source=license&utm_campaign=upgrade) you're given a single license key. This key gives you access to:
 
--  Pro-only features
--  Plugin updates
--  Dedicated support
+- Pro-only features
+- Plugin updates
+- Dedicated support
 
 > [!NOTE|className:info sm]
 > To continue receiving access to the above features you must renew your key each year
@@ -21,12 +21,12 @@ If you're running into problems, please send us a message in Slack or shoot us a
 
 For developers: if you activate your WP Shopify license on a dev environment the system will not count it towards your activation limit. A development environment will be recognized when using one of the following domains patterns:
 
--  localhost
--  10.0.0.0/8
--  172.16.0.0/12
--  192.168.0.0/16
--  \*.dev
--  .\*local
--  dev.\_
--  staging.\_
--  staging-\*
+- localhost
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 192.168.0.0/16
+- \*.dev
+- .\*local
+- dev.\_
+- staging.\_
+- staging-\*

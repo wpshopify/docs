@@ -1,6 +1,6 @@
 # [wps_storefront]
 
-Displays the "storefront" component containing filtering, pagination, and sorting. Only available in [WP Shopify Pro](https://wpshop.io/purchase/). Take note that this shortcode contains three required attributes.<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
+Displays the "storefront" component containing filtering, pagination, and sorting. Only available in [WP Shopify Pro](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade). Take note that this shortcode contains three required attributes.<br><br>Watch our [quick video tutorial](https://www.youtube.com/watch?v=lYm6G35e8sI) to learn how to use this.
 
 <span class="heading-section">📍 Example Usage</span>
 

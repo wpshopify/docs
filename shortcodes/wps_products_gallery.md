@@ -237,7 +237,7 @@ Limits the overall number of products that show. Max limit is `250`.
 
 ## `connective`
 
-The "connective" attribute determines how the products are found when combining _other_ shortcode attributes. For example when set to `and`, every provided attribute must match the searched products. With `or`, _any_ provided attribute will return the matched products. Default: `or`.
+The "connective" attribute determines how the products are found when combining _other_ shortcode attributes. For example when set to `and`, every provided attribute must match the searched products. With `or`, _any_ provided attribute will return the matched products. Default: `and`.
 
 | Possible values |
 | :-------------- |

@@ -23,7 +23,7 @@ If you prefer to disable these pages all together, you can turn them off by sett
 
 WP Shopify comes with various shortcodes. These shortcodes allow you to control how your products look, which products show, and many other properties. This gives you flexibility to customize products in ways that the plugin default pages do not.
 
-For example, each shortcode has a wide variety of attributes which you can use to tweak different settings. Everything from filtering products by tags, custom sorting, hiding buttons or product descriptions, and even [infinite scrolling for Pro users](https://wpshop.io/purchase).
+For example, each shortcode has a wide variety of attributes which you can use to tweak different settings. Everything from filtering products by tags, custom sorting, hiding buttons or product descriptions, and even [infinite scrolling for Pro users](https://wpshop.io/purchase?utm_medium=docs&utm_source=displaying&utm_campaign=upgrade).
 
 **Below is the full list of provided shortcodes:**
 

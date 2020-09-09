@@ -38,25 +38,25 @@ As you can see, we're first getting access to the WordPress post title from the 
 
 We've conveniently matched the Render API method parameters with the [available shortcode attributes](shortcodes/wps_products). For example, all of the `[wps_products]` shortcode attributes will work with the `Products()` method. The _are_ some parameters available only to the class method that do not exist in the shortcode. These can be very useful so we'll cover some examples below.
 
-Finally, it's important to note that the `Products()` method is responsible for outputting one or more "full" products. By "full", we simply mean they contain all the _other_ product components like title, description, buy button, etc. Here is a [live demo](https://demo.wpshop.io/products-example/) of a "full" product.
+Finally, it's important to note that the `Products()` method is responsible for outputting one or more "full" products. By "full", we simply mean they contain all the _other_ product components like title, description, buy button, etc. Here is a [live demo](https://demo.wpshop.io/products-example?utm_medium=docs&utm_source=features&utm_campaign=info) of a "full" product.
 
 ## List of available classes
 
--  [Products](/)
--  [Collections](/)
--  [Search](/)
--  [Storefront](/)
--  [Cart Icon](/)
+- [Products](/)
+- [Collections](/)
+- [Search](/)
+- [Storefront](/)
+- [Cart Icon](/)
 
 ## List of available class methods
 
--  [Products->products()](/)
--  [Products->title()](/)
--  [Products->buy_button()](/)
--  [Products->description()](/)
--  [Products->pricing()](/)
--  [Products->gallery()](/)
--  [Collections->collections()](/)
--  [Search->search()](/)
--  [Storefront->storefront()](/)
--  [Cart->cart_icon()](/)
+- [Products->products()](/)
+- [Products->title()](/)
+- [Products->buy_button()](/)
+- [Products->description()](/)
+- [Products->pricing()](/)
+- [Products->gallery()](/)
+- [Collections->collections()](/)
+- [Search->search()](/)
+- [Storefront->storefront()](/)
+- [Cart->cart_icon()](/)
