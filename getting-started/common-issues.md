@@ -94,7 +94,11 @@ To increase the Memory Limit: https://wpastra.com/docs/increasing-php-memory-lim
 
 #### Failed to assign Shopify ID 0
 
-This can be fixed by using the `Remove all synced data` tool followed by a `Sync Products`.
+When you see this error, it's usually because a previous sync failed which resulted in stale data. To fix, you can follow these two steps:
+
+1. First, go to the Tools tab within the plugin settings and use the `Remove all synced data` button
+
+2. Once that’s done, use the `Sync Product & Collection Detail Pages` button once more.
 
 Note: this will remove any custom fields applied to your product posts, and any product post menu items.
 
