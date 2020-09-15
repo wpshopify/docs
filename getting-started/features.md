@@ -93,7 +93,7 @@ WP Shopify releases plugin updates on a bi-weekly cadence.
 
 This feature is in both plugin versions.
 
-## Search shortcode <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Search shortcode (Pro only)
 
 WP Shopify Pro provides a [search shortcode](https://docs.wpshop.io/#/shortcodes/wps_search) that allows you to display a dedicated search form on any WordPress page.
 
@@ -105,7 +105,7 @@ You can see a live example on [our demo page](https://demo.wpshop.io/search-exam
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Storefront shortcode <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Storefront shortcode (Pro only)
 
 WP Shopify Pro provides a [storefront shortcode](https://docs.wpshop.io/#/shortcodes/wps_storefront) that allows you to display a fully-featured "storefront" with filtering and sorting options.
 
@@ -115,7 +115,7 @@ You can see a live example on [our demo page](https://demo.wpshop.io/search-exam
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Image zoom <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Image zoom (Pro only)
 
 WP Shopify Pro allows you to turn on "image zooming" for product feature images. When enabled, this will zoom the image on hover and when the user taps on mobile.
 
@@ -123,7 +123,7 @@ We use the Drift library from Imgix. You can see a [live demo here](https://imgi
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Infinite scrolling <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Infinite scrolling (Pro only)
 
 WP Shopify Pro provides infinite scrolling as an alternative form of pagination. When turned on, the plugin will automatically load the "next page" of products and append them to the bottom.
 
@@ -131,19 +131,19 @@ Any existing pagination settings that you have configured will be taken into con
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Selective syncing <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Selective syncing (Pro only)
 
 The selective syncing feature allows you to choose what "type" of data gets synced as native WordPress posts.
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Sync by collection <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Sync by collection (Pro only)
 
 Instead of syncing _all products_, WP Shopify Pro allows you to sync by one or more collections instead. This is useful if you have many products and only want to pull over a certain segment.
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Cart notes <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Cart notes (Pro only)
 
 WP Shopify Pro allows you to add a "notes" section to the slide-out cart. The customer can add their own order notes before they checkout.
 
@@ -151,7 +151,7 @@ You can see a [live demo here](https://demo.wpshop.io?utm_medium=docs&utm_source
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Cart terms <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Cart terms (Pro only)
 
 WP Shopify Pro allows you to add a "terms and conditions" checkbox to the cart. This will prevent the user from checking out until they agree to the terms. You can add custom HTML to the label text which allows you to provide a custon link to your own unique terms and conditions page.
 
@@ -159,7 +159,7 @@ You can see a [live demo here](https://demo.wpshop.io?utm_medium=docs&utm_source
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Cart attributes <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Cart attributes (Pro only)
 
 WP Shopify Pro enables you to provide "custom data" to orders. We use the native Shopify "cart attributes" to achieve this [which you can learn more about here](https://help.shopify.com/en/themes/customization/cart/get-more-information-with-cart-attributes).
 
@@ -167,7 +167,7 @@ At the moment, adding the custom data requires writing custom JavaScript to your
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## PHP templates <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## PHP templates (Pro only)
 
 WP Shopify Pro allows you to customize four PHP templates that the plugin uses. The four templates correspond to the "product all", "product single", "collection all", and "collection single" pages.
 
@@ -179,7 +179,7 @@ Any customizations you make to the files in `wps-templates` will not revert duri
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Dedicated support <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Dedicated support (Pro only)
 
 When you purchase WP Shopify Pro you gain access to dedicated live support via our private Slack channel. In addition to chatting in real-time, your questions will take priority over thousands of other users on the free version.
 
@@ -187,7 +187,7 @@ We can also help with minor coding and theme customizations.
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Cross-domain tracking <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Cross-domain tracking (Pro only)
 
 WP Shopify Pro provides cross-domain tracking via Google Analytics. WP Shopify integrates with the GA Linker plugin and takes care of storing the tracking cookie during checkout redirect.
 
@@ -195,7 +195,7 @@ You will still need to add the corrosponding google analytics code to both Shopi
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Direct checkout <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Direct checkout (Pro only)
 
 Direct Checkout allows you to replace the "add to cart" buttons with a link that takes the user directly to the checkout page. This is great if you don't need a cart experience and simply want to send users to pay immediately.
 
@@ -205,7 +205,7 @@ Direct Checkout can be enabled globally within the plugin settings under the "Ch
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
-## Sync featured images <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## Sync featured images (Pro only)
 
 Sync featured images will allow you to sync your Shopify images as native WordPress featured images. The image itself will be uploaded into the WordPress media library, allowing you to use standard functions like `the_post_thumbnail` and `get_the_post_thumbnail_url`.
 

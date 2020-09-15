@@ -283,7 +283,7 @@ Determines whether to only show the product feature image. By default, all produ
 [wps_products_gallery show_featured_only="true"]
 ```
 
-## `show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `show_zoom` (Pro only)
 
 Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
@@ -327,7 +327,7 @@ The text to show when no products are found.
 [wps_products_gallery no_results_text="Nothing found! 🙃"]
 ```
 
-## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll` (Pro only)
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
@@ -342,7 +342,7 @@ When turned on, the next page of items will automatically append to the containe
 [wps_products_gallery infinite_scroll="true"]
 ```
 
-## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll_offset` (Pro only)
 
 Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 

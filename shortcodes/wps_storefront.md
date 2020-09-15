@@ -168,7 +168,7 @@ Specifies the text to use when no filter results are found. Default: `No results
 [wps_storefront no_results_text="Custom no results text with emojis 🚨"]
 ```
 
-## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll` (Pro only)
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
@@ -183,7 +183,7 @@ When turned on, the next page of items will automatically append to the containe
 [wps_storefront infinite_scroll="true"]
 ```
 
-## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll_offset` (Pro only)
 
 Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 

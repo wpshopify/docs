@@ -237,7 +237,7 @@ When [single](#single) is set to true, this allows for specifying a custom locat
 [wps_collections single="true" dropzone_collection_products="#products-container"]
 ```
 
-## `infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll` (Pro only)
 
 When turned on, the next page of collections will automatically append to the container. Only works when pagination is used.
 
@@ -252,7 +252,7 @@ When turned on, the next page of collections will automatically append to the co
 [wps_collections infinite_scroll="true"]
 ```
 
-## `infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `infinite_scroll_offset` (Pro only)
 
 Determines the offset from the edge of the collections container. For example, a value of `-100` will begin loading additional collections 100px before the end of the collections container. Offset can be a positive or negative value.
 
@@ -518,7 +518,7 @@ Determines whether to only show the product feature image. By default, all produ
 [wps_collections single="true" products_show_featured_only="true"]
 ```
 
-## `products_show_zoom` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `products_show_zoom` (Pro only)
 
 Determines whether to enable product image zooming. When enabled, zoom will be triggered on the featured image. Only available in [WP Shopify Pro](getting-started/wp-shopify-pro.md).
 
@@ -562,7 +562,7 @@ The text to show when no products are found.
 [wps_collections single="true" products_no_results_text="Nothing found! 🙃"]
 ```
 
-## `products_infinite_scroll` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `products_infinite_scroll` (Pro only)
 
 When turned on, the next page of items will automatically append to the container. Only works when pagination is used.
 
@@ -577,7 +577,7 @@ When turned on, the next page of items will automatically append to the containe
 [wps_collections single="true" products_infinite_scroll="true"]
 ```
 
-## `products_infinite_scroll_offset` <span class="attr-type attr-type-pro-only">(Pro only)</span>
+## `products_infinite_scroll_offset` (Pro only)
 
 Determines the offset from the edge of the items container. For example, a value of `-100` will begin loading additional items 100px before the end of the items container. Offset can be a positive or negative value.
 

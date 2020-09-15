@@ -359,8 +359,6 @@ body .docsify-copy-code-button:after {
   font-size: 42px;
   font-weight: bold;
   font-family: 'IBM Plex Sans';
-  /* font-family: 'Bitter', serif; */
-  /* font-family: 'Playfair Display', serif; */
 }
 .content p {
   font-family: 'Open Sans', sans-serif;
@@ -524,6 +522,18 @@ body .docsify-copy-code-button:after {
   border: none !important;
   color: white !important;
   background: #415aff !important;
+}
+
+[data-page*='js/filters'] .content h2 span,
+[data-page*='js/actions'] .content h2 span,
+[data-page*='shortcodes'] .content h2 span,
+[data-page*='php-functions'] .content h2 span,
+[data-page*='render-api/products'] .content h2 span,
+[data-page*='render-api/collections'] .content h2 span,
+[data-page*='render-api/search'] .content h2 span,
+[data-page*='render-api/storefront'] .content h2 span,
+[data-page*='render-api/cart'] .content h2 span {
+  font-size: 16px;
 }
 
 [data-page*='js/filters'] .content h2 a:hover,
