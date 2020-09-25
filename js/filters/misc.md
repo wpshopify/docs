@@ -82,3 +82,21 @@ wp.hooks.addFilter('misc.pricing.defaultCurrencyCode', 'wpshopify', function (de
   return 'EUR';
 });
 ```
+
+## `misc.shop.creds`
+
+Allows for customizing the Shopify API credentials at runtime. Useful if you want to customize the Shop's primary checkout domain.
+
+| Parameters | Description                                                                                                                                        |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| creds      | Represents the default Shopify credentials added within the Connect tab. Takes an object with two properties: _domain_ and _storefrontAccessToken_ |
+
+**Example**
+
+```js
+wp.hooks.addFilter('misc.shop.credentials', 'wpshopify', function (creds) {
+  creds.domain = 'custom domain goes here';
+
+  return creds;
+});
+```

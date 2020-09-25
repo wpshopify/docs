@@ -34,6 +34,8 @@
 [data-page*='js/filters'] .markdown-section pre[data-lang],
 [data-page*='js/actions'] .markdown-section pre[data-lang],
 [data-page*='php-functions'] .markdown-section pre[data-lang],
+[data-page*='php/filters'] .markdown-section pre[data-lang],
+[data-page*='php/actions'] .markdown-section pre[data-lang],
 [data-page*='shortcodes'] .markdown-section pre[data-lang],
 [data-page*='render-api/products'] .markdown-section pre[data-lang],
 [data-page*='render-api/collections'] .markdown-section pre[data-lang],
@@ -117,6 +119,8 @@ img[alt='wpshopify'] {
 
 [data-page*='js/filters'] .markdown-section td:first-child,
 [data-page*='js/actions'] .markdown-section td:first-child,
+[data-page*='php/filters'] .markdown-section td:first-child,
+[data-page*='php/actions'] .markdown-section td:first-child,
 [data-page*='php-functions'] .markdown-section td:first-child {
   min-width: 150px;
 }
@@ -471,6 +475,8 @@ body .docsify-copy-code-button:after {
 
 [data-page*='js/filters'] .content .heading-section,
 [data-page*='js/actions'] .content .heading-section,
+[data-page*='php/filters'] .content .heading-section,
+[data-page*='php/actions'] .content .heading-section,
 [data-page*='php-functions'] .content .heading-section,
 [data-page*='shortcodes'] .content .heading-section,
 [data-page*='render-api/products'] .content .heading-section,
@@ -492,12 +498,16 @@ body .docsify-copy-code-button:after {
 }
 
 [data-page*='js/filters'] .content h2:first-of-type,
-[data-page*='js/actions'] .content h2:first-of-type {
+[data-page*='js/actions'] .content h2:first-of-type,
+[data-page*='php/filters'] .content h2:first-of-type,
+[data-page*='php/actions'] .content h2:first-of-type {
   margin-top: 2em;
 }
 
 [data-page*='js/filters'] .content h2,
 [data-page*='js/actions'] .content h2,
+[data-page*='php/filters'] .content h2,
+[data-page*='php/actions'] .content h2,
 [data-page*='shortcodes'] .content h2,
 [data-page*='php-functions'] .content h2,
 [data-page*='render-api/products'] .content h2,
@@ -511,6 +521,8 @@ body .docsify-copy-code-button:after {
 
 [data-page*='js/filters'] .content h2 code,
 [data-page*='js/actions'] .content h2 code,
+[data-page*='php/filters'] .content h2 code,
+[data-page*='php/actions'] .content h2 code,
 [data-page*='shortcodes'] .content h2 code,
 [data-page*='php-functions'] .content h2 code,
 [data-page*='render-api/products'] .content h2 code,
@@ -526,6 +538,8 @@ body .docsify-copy-code-button:after {
 
 [data-page*='js/filters'] .content h2 span,
 [data-page*='js/actions'] .content h2 span,
+[data-page*='php/filters'] .content h2 span,
+[data-page*='php/actions'] .content h2 span,
 [data-page*='shortcodes'] .content h2 span,
 [data-page*='php-functions'] .content h2 span,
 [data-page*='render-api/products'] .content h2 span,
@@ -540,6 +554,10 @@ body .docsify-copy-code-button:after {
 [data-page*='js/filters'] .content h2 code:hover,
 [data-page*='js/actions'] .content h2 a:hover,
 [data-page*='js/actions'] .content h2 code:hover,
+[data-page*='php/filters'] .content h2 a:hover,
+[data-page*='php/filters'] .content h2 code:hover,
+[data-page*='php/actions'] .content h2 a:hover,
+[data-page*='php/actions'] .content h2 code:hover,
 [data-page*='php-functions'] .content h2 a:hover,
 [data-page*='php-functions'] .content h2 code:hover,
 [data-page*='shortcodes'] .content h2 a:hover,

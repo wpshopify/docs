@@ -173,3 +173,15 @@ $Products = WP_Shopify\Factories\DB\Products_Factory::build();
 
 $result = $Products->get_products_by_collection_id(164430086192);
 ```
+
+## `get_products()`
+
+Allows you to fetch all currently synced products
+
+**Example**
+
+```php
+$Products = WP_Shopify\Factories\DB\Products_Factory::build();
+
+$result = $Products->get_products();
+```

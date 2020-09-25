@@ -65,6 +65,10 @@
   - [Notices](js/filters/notices.md)
   - [Global](js/filters/global.md)
 
+- <span class="section section-actions">PHP Filters</span>
+
+  - [Misc](php/filters/misc.md)
+
 * <span class="section section-templates">PHP Templates</span>
 
   - [products/all](templates/products/all.md)
