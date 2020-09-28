@@ -669,3 +669,118 @@ Allows for determining whether to show the buy button controls when linking to W
 ```js
 [wps_products link_with_buy_button="true" link_to="wordpress"]
 ```
+
+## `carousel`
+
+Allows for showing products in a carousel view. Default: `false`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products carousel="true"]
+```
+
+## `carousel_dots`
+
+Determines whether to show the carousel dots or not. Default: `true`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_dots="false"]
+```
+
+## `carousel_infinite`
+
+Determines whether to continue sliding through products endlessly. Default: `true`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_infinite="false"]
+```
+
+## `carousel_speed`
+
+Determines the carousel speed. Default: `500`ms.
+
+| Possible values        |
+| :--------------------- |
+| Numebr of milliseconds |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_speed="1000"]
+```
+
+## `carousel_slides_to_show`
+
+Determines the number of carousel slides to show at once. Default: `4`.
+
+| Possible values          |
+| :----------------------- |
+| Numebr of slides to show |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_slides_to_show="3"]
+```
+
+## `carousel_slides_to_scroll`
+
+Determines the number of carousel slides to scroll at once. Default: `4`.
+
+| Possible values            |
+| :------------------------- |
+| Numebr of slides to scroll |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_slides_to_scroll="3"]
+```
+
+## `carousel_prev_arrow`
+
+Allows to specifying a custom "previous slide" arrow icon. Defaults to a black arrow.
+
+| Possible values                                                       |
+| :-------------------------------------------------------------------- |
+| A URL to a custom icon, or any valid CSS image url prop like data uri |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_prev_arrow="https://mysite.com/pre_arrow.png"]
+```
+
+## `carousel_next_arrow`
+
+Allows to specifying a custom "next slide" arrow icon. Defaults to a black arrow.
+
+| Possible values                                                       |
+| :-------------------------------------------------------------------- |
+| A URL to a custom icon, or any valid CSS image url prop like data uri |
+
+**Example**
+
+```js
+[wps_products carousel="true" carousel_next_arrow="https://mysite.com/pre_arrow.png"]
+```
