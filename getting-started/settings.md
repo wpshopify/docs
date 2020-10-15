@@ -88,10 +88,6 @@ Determines the currency display style. For example: setting to "symbol" will dis
 
 When enabled, will hide the decimals of prices. Useful if you want to turn your `$60.00` into `$60`.
 
-#### Enable local currency
-
-When enabled, shows prices in customer's local currency instead of Shopify's base currency. A valid HTTPs certificate is required.
-
 ## Layout
 
 #### Show breadcrumbs

@@ -29,6 +29,7 @@
   - [Hide cart tab when empty](guides/hide-cart-tab-when-empty.md)
   - [Using color swatches](guides/using-color-swatches.md)
   - [Change selected button colors](guides/change-selected-button-colors.md)
+  - [Getting started with Storefront](guides/getting-started-storefront.md)
 
 * <span class="section section-shortcodes">Shortcodes</span>
 

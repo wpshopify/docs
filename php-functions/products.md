@@ -158,7 +158,7 @@ $Products = WP_Shopify\Factories\DB\Products_Factory::build();
 $result = $Products->get_product_from_product_id(4464939827248);
 ```
 
-## `get_products_by_collection_id()`
+## `get_products_by_collection_ids()`
 
 Allows you to fetch a list of products from a single collection id
 
@@ -171,7 +171,7 @@ Allows you to fetch a list of products from a single collection id
 ```php
 $Products = WP_Shopify\Factories\DB\Products_Factory::build();
 
-$result = $Products->get_products_by_collection_id(164430086192);
+$result = $Products->get_products_by_collection_ids(164430086192);
 ```
 
 ## `get_products()`

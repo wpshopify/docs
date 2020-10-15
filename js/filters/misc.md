@@ -100,3 +100,19 @@ wp.hooks.addFilter('misc.shop.credentials', 'wpshopify', function (creds) {
   return creds;
 });
 ```
+
+## `wpshopify.cache.templates`
+
+Allows for toggling whether to cache custom HTML templates. Useful for increasing performance.
+
+| Parameters | Description                                   |
+| :--------- | :-------------------------------------------- |
+| true/false | Whether caching is on or not. Default: `true` |
+
+**Example**
+
+```js
+wp.hooks.addFilter('wpshopify.cache.templates', 'wpshopify', function (defaultCode) {
+  return false;
+});
+```
