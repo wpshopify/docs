@@ -22,6 +22,7 @@
   - [Add filter and sorting to Products](guides/add-filter-and-sorting-products.md)
   - [Add Cart Icon to WordPress Menu](guides/add-cart-icon-to-nav.md)
   - [Fix SG Optimizer conflict](guides/fix-sg-optimizer-conflict.md)
+  - [Fix OptimizePress conflict](guides/fix-optimizepress-conflict.md)
   - [Creating Product Detail Pages](guides/product-detail-pages.md)
   - [Using Default Pages](guides/default-pages.md)
   - [Render API](guides/render-api.md)
@@ -30,6 +31,7 @@
   - [Using color swatches](guides/using-color-swatches.md)
   - [Change selected button colors](guides/change-selected-button-colors.md)
   - [Getting started with Storefront](guides/getting-started-storefront.md)
+  - [Setting up cross-domain tracking](guides/setting-up-cross-domain-tracking.md)
 
 * <span class="section section-shortcodes">Shortcodes</span>
 
@@ -65,6 +67,10 @@
   - [Misc](js/filters/misc.md)
   - [Notices](js/filters/notices.md)
   - [Global](js/filters/global.md)
+
+- <span class="section section-actions">PHP Actions</span>
+
+  - [Syncing](php/actions/syncing.md)
 
 - <span class="section section-actions">PHP Filters</span>
 

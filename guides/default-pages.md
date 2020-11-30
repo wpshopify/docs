@@ -8,10 +8,10 @@ However, if you do not wish to use these pages you can turn them off within the 
 
 If you would like to change the default pages, go into the plugin settings and open the General section. Once open, configure the `Default Products Page` and `Default Collections Page` options and click save settings toward the bottom.
 
-![WP Shopify Creating Product Detail Pages](https://wpshopify.wpengine.com/wp-content/uploads/2020/06/screen-guide-default-pages-2.jpg)
+![WP Shopify Creating Product Detail Pages](https://wpshop.io/wp-content/uploads/2020/06/screen-guide-default-pages-2.jpg)
 
 ## Turning the default pages off
 
 In order to turn the default pages off, go into the plugin settings and open the General section. Once open, toggle the `Enable Default Pages` option and click save settings toward the bottom.
 
-![WP Shopify Creating Product Detail Pages](https://wpshopify.wpengine.com/wp-content/uploads/2020/06/screen-guide-default-pages-1.jpg)
+![WP Shopify Creating Product Detail Pages](https://wpshop.io/wp-content/uploads/2020/06/screen-guide-default-pages-1.jpg)

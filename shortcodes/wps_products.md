@@ -655,6 +655,21 @@ Allows for determining where products link, if anywhere. Default: `wordpress`.
 [wps_products link_to="none"]
 ```
 
+## `link_target`
+
+Allows for determining whether links open in a new tab or not. Default: `_self`.
+
+| Possible values |
+| :-------------- |
+| \_self          |
+| \_blank         |
+
+**Example**
+
+```js
+[wps_products link_target="_blank"]
+```
+
 ## `link_with_buy_button`
 
 Allows for determining whether to show the buy button controls when linking to WordPress or Shopify. Default: `false`.
@@ -783,4 +798,19 @@ Allows to specifying a custom "next slide" arrow icon. Defaults to a black arrow
 
 ```js
 [wps_products carousel="true" carousel_next_arrow="https://mysite.com/pre_arrow.png"]
+```
+
+## `keep_commas`
+
+By default, if you have a product with commas in the title, WP Shopify will treat this as multiple different product titles. Setting `keep_commas` to true will allow you to search products with commas in their title.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false (default) |
+
+**Example**
+
+```js
+[wps_products title="This, is my, product" keep_commas="true"]
 ```
