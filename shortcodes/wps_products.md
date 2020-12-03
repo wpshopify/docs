@@ -165,7 +165,7 @@ Display products based on one or more product post id(s).
 **Example**
 
 ```js
-[wps_products product_id="35421, 35418"]
+[wps_products post_id="35421, 35418"]
 ```
 
 ## `sort_by`
@@ -813,4 +813,19 @@ By default, if you have a product with commas in the title, WP Shopify will trea
 
 ```js
 [wps_products title="This, is my, product" keep_commas="true"]
+```
+
+## `direct_checkout`
+
+Allows for linking customers directly to the Shopify checkout process. This will bypass the default WP Shopify cart experience altogether. Default: `false`.
+
+| Possible values |
+| :-------------- |
+| true            |
+| false           |
+
+**Example**
+
+```js
+[wps_products direct_checkout="true"]
 ```
