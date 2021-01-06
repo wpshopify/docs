@@ -1,14 +1,14 @@
-# Google Analytics
+# Cross-domain Tracking
 
-# Google Tag Manager
+WP Shopify Pro comes with the ability to enable GA cross-domain tracking. The process has a few components to it, let's get started!
 
-WP Shopify Pro comes with the ability to enable cross-domain tracking. This allows you to attribute sales to the WordPress site when they occur on the Shopify checkout page.
+## Adding the snippets
 
-The process has a few components to it, let's get started!
+First, you’ll need to add the GTM tracking code to **both** your WordPress and Shopify sites. To add it within Shopify, you’ll need to place the embed code within the "Additional scripts" section of the Shopify checkout settings.
 
-## Configuring the snippet
+## Configuring the snippets
 
-Once you have the snippet added to both your WordPress and Shopify sites, you'll need to edit them to include the "GA Linker plugin". This is responsible for passing the tracking cookie from WordPress to Shopify. You can do this by setting the "domains" key inside the embed code.
+Once you have the snippets added to both your WordPress and Shopify sites, you'll need to edit them to include the **GA Linker plugin**. This is responsible for passing the tracking cookie from WordPress to Shopify. You can do this by setting the "domains" key inside the embed code.
 
 Here’s an example of how it should roughly look:
 
@@ -34,13 +34,13 @@ linker: {
 }
 ```
 
-You'll want to replace `yoursite.com` and `checkout.yoursite.com` with your WordPress domain, and the domain you're using on the Shopify checkout page. Note: this is usually the `.myshopify.com` domain unless you have a custom domain configured.
+You'll want to replace `yoursite.com` and `checkout.yoursite.com` with your WordPress and Shopify domains. The Shopify domain is usually the `.myshopify.com` domain unless you have a custom domain configured. If you have a custom domain, then you'll want to add both. Like this:
 
-## Adding the GTM snippet to your sites
+```js
+['wordpresssite.com', 'checkout.myshopify.com', 'customshopify.com'];
+```
 
-First, you’ll need to add the GTM tracking code to **both** your WordPress and Shopify sites. To add it within Shopify, you’ll need to place the embed code within the "Additional scripts" section of the Shopify checkout settings.
-
-## Referral exclusion list
+## Add domains to the referral exclusion list
 
 The Google Analytics Referral exclusion list is used when you enable cross-domain tracking so that multiple sessions aren't created when a user interacts with more than one of your domains in a single session.
 
