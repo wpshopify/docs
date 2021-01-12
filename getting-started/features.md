@@ -51,7 +51,7 @@ This feature is in both plugin versions.
 
 WP Shopify will create product and collection detail pages for you. By default, these pages are disabled by the plugin. However you can turn them on by enabling "Sync posts" within the plugin settings followed by a manual resync of your Shopify store from the Tools tab.
 
-You can see a live example on [our demo page](https://demo.wpshop.io/shop/products/test?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a live example on [our demo page](https://demo.wpshop.io/products/aerodynamic-aluminum-bottle?utm_medium=docs&utm_source=features&utm_campaign=info).
 
 This feature is in both plugin versions.
 
