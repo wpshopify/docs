@@ -75,6 +75,10 @@ span > code {
   color: #415aff;
 }
 
+.content p a.img-link:hover {
+  opacity: 1;
+}
+
 .content .alert .title {
   font-size: 18px;
   margin: 0;

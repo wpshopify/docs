@@ -32,6 +32,7 @@
   - [Change selected button colors](guides/change-selected-button-colors.md)
   - [Getting started with Storefront](guides/getting-started-storefront.md)
   - [Setting up cross-domain tracking](guides/setting-up-cross-domain-tracking.md)
+  - [WP Shopify Elementor Extension](guides/wpshopify-elementor-extension.md)
 
 * <span class="section section-shortcodes">Shortcodes</span>
 
