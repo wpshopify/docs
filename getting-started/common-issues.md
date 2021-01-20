@@ -49,6 +49,10 @@ We've taken great steps to ensure that the syncing process works across multiple
 
 ### Specific Syncing Errors
 
+#### cURL error 56: OpenSSL SSL_read: Connection reset by peer, errno 104
+
+This error is usually due to a plugin conflict with an SSL plugin like `Really Simple SSL`. Try deactivating all your SSL plugins and try again.
+
 #### No route was found matching the url and request method ...
 
 This error usually occurs when you have your permalinks set to "Plain".
