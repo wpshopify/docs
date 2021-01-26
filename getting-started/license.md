@@ -30,3 +30,4 @@ For developers: if you activate your WP Shopify license on a dev environment the
 - dev.\_
 - staging.\_
 - staging-\*
+- \*.wpengine.com

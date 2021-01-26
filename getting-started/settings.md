@@ -274,9 +274,9 @@ Direct Checkout can be enabled globally within the plugin settings under the "Ch
 
 ## Plugin
 
-#### Load styles
+#### Share Usage
 
-Allows you to specify what WP Shopify stylesheets are loaded on the front-end. Useful for users looking to customize.
+Allows WP Shopify to track which features you're using.
 
 #### Enable Beta Updates
 
