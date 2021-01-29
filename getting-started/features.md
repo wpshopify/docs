@@ -33,7 +33,7 @@ Shortcodes are in both plugin versions. The exceptions are [[wps_search]](shortc
 
 ## Built-in cart experience
 
-WP Shopify comes with a built-in cart experience. The cart has a slide-out effect which you can see on [our demo page](http://demo.wpshop.io?utm_medium=docs&utm_source=features&utm_campaign=info). The cart does not have a dedicated page.
+WP Shopify comes with a built-in cart experience. The cart has a slide-out effect which you can see on [our demo page](https://wpshop.io/features/#component-features-demo). The cart does not have a dedicated page.
 
 When the user is ready to pay and click "Checkout", they're taken to the default Shopify checkout page like normal.
 
@@ -51,7 +51,7 @@ This feature is in both plugin versions.
 
 WP Shopify will create product and collection detail pages for you. By default, these pages are disabled by the plugin. However you can turn them on by enabling "Sync posts" within the plugin settings followed by a manual resync of your Shopify store from the Tools tab.
 
-You can see a live example on [our demo page](https://demo.wpshop.io/products/aerodynamic-aluminum-bottle?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a live example on [our demo page](https://wpshop.io/features/#component-features-demo).
 
 This feature is in both plugin versions.
 
@@ -59,7 +59,7 @@ This feature is in both plugin versions.
 
 Like all eCommerce sites, WP Shopify allows you to place a "cart icon" anywhere on your site. You can also enable a "fixed" icon that locks to the side of the page. This fixed cart icon follows the user as they scroll.
 
-You can see a live example on [our demo page](https://demo.wpshop.io?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a live example on [our demo page](https://wpshop.io/features/#component-features-demo).
 
 This feature is in both plugin versions.
 
@@ -101,7 +101,7 @@ You can configure the search form to search by Title, Tag, Vendor, Product Type,
 
 By default, the search will be "fuzzy", meaning partial words will still match a full word. You can configure the search to be "exact" instead.
 
-You can see a live example on [our demo page](https://demo.wpshop.io/search-example?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a live example on [our demo page](https://wpshop.io/features/#component-features-demo).
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
@@ -111,7 +111,7 @@ WP Shopify Pro provides a [storefront shortcode](https://docs.wpshop.io/#/shortc
 
 You can configure the storefront to filter by Tags, Vendors, an Product Types. By default, the shortcode has three required attributes: `dropzone_payload`, `dropzone_options`, `dropzone_selections`.
 
-You can see a live example on [our demo page](https://demo.wpshop.io/search-example?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a live example on [our demo page](https://wpshop.io/features/#component-features-demo).
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
@@ -147,7 +147,7 @@ This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_sour
 
 WP Shopify Pro allows you to add a "notes" section to the slide-out cart. The customer can add their own order notes before they checkout.
 
-You can see a [live demo here](https://demo.wpshop.io?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a [live demo here](https://wpshop.io/features/#component-features-demo).
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 
@@ -155,7 +155,7 @@ This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_sour
 
 WP Shopify Pro allows you to add a "terms and conditions" checkbox to the cart. This will prevent the user from checking out until they agree to the terms. You can add custom HTML to the label text which allows you to provide a custon link to your own unique terms and conditions page.
 
-You can see a [live demo here](https://demo.wpshop.io?utm_medium=docs&utm_source=features&utm_campaign=info).
+You can see a [live demo here](https://wpshop.io/features/#component-features-demo).
 
 This is a [Pro-only feature](https://wpshop.io/purchase?utm_medium=docs&utm_source=features&utm_campaign=upgrade).
 

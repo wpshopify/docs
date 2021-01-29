@@ -9,7 +9,7 @@
   - [License](getting-started/license.md)
   - [Requirements](getting-started/requirements.md)
   - <div class="spacer"></div>
-  - [Demo :link:](https://demo.wpshop.io?utm_medium=docs&utm_source=sidenav&utm_campaign=info)
+  - [Demo :link:](https://wpshop.io/features/#component-features-demo)
   - [Example Sites :link:](https://wpshop.io/examples?utm_medium=docs&utm_source=sidenav&utm_campaign=info)
   - [FAQs :link:](https://wpshop.io/faq?utm_medium=docs&utm_source=sidenav&utm_campaign=help)
   - [Changelog :link:](https://wpshop.io/changelog?utm_medium=docs&utm_source=sidenav&utm_campaign=info)
