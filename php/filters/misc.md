@@ -17,3 +17,67 @@ add_filter('wpshopify_skip_compatibility', function($should_skip) {
    return true;
 });
 ```
+
+## `wpshopify_use_products_all_template`
+
+Allows you to turn off the default products archive template. Useful if you want to use your own wordpress templates.
+
+| Parameter           | Description                                                                  |
+| :------------------ | :--------------------------------------------------------------------------- |
+| use_plugin_template | Represents whether to use default products archive template. Default: `true` |
+
+**Example**
+
+```php
+add_filter('wpshopify_use_products_all_template', function($use_plugin_template) {
+   return false;
+});
+```
+
+## `wpshopify_use_products_single_template`
+
+Allows you to turn off the default products single template. Useful if you want to use your own wordpress templates.
+
+| Parameter           | Description                                                                 |
+| :------------------ | :-------------------------------------------------------------------------- |
+| use_plugin_template | Represents whether to use default products single template. Default: `true` |
+
+**Example**
+
+```php
+add_filter('wpshopify_use_products_single_template', function($use_plugin_template) {
+   return false;
+});
+```
+
+## `wpshopify_use_collections_all_template`
+
+Allows you to turn off the default collections archive template. Useful if you want to use your own wordpress templates.
+
+| Parameter           | Description                                                                     |
+| :------------------ | :------------------------------------------------------------------------------ |
+| use_plugin_template | Represents whether to use default collections archive template. Default: `true` |
+
+**Example**
+
+```php
+add_filter('wpshopify_use_collections_all_template', function($use_plugin_template) {
+   return false;
+});
+```
+
+## `wpshopify_use_collections_single_template`
+
+Allows you to turn off the default collections single template. Useful if you want to use your own wordpress templates.
+
+| Parameter           | Description                                                                    |
+| :------------------ | :----------------------------------------------------------------------------- |
+| use_plugin_template | Represents whether to use default collections single template. Default: `true` |
+
+**Example**
+
+```php
+add_filter('wpshopify_use_collections_single_template', function($use_plugin_template) {
+   return false;
+});
+```
