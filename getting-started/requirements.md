@@ -8,7 +8,11 @@ We believe that one of the best ways to make WordPress more secure is by requiri
 
 With this in mind, the minimum requirements for WP Shopify are:
 
-### Minimum Requirements
+## Incompatible Plugins
+
+- [Async JavaScript](https://wordpress.org/plugins/async-javascript)
+
+## Minimum Requirements
 
 - PHP 5.6 or greater
 - WordPress 5.0 or greater

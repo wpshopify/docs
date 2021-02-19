@@ -16,9 +16,9 @@ Fires after all available variants are selected but before adding to the cart.
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
   wp.hooks.addAction('before.product.addToCart', 'wpshopify', function (buyButtonState) {
     // Do something
-    console.log('WP Shopify Event 💥 before.product.addToCart', buyButtonState)
-  })
-})
+    console.log('WP Shopify Event 💥 before.product.addToCart', buyButtonState);
+  });
+});
 ```
 
 ## `after.product.addToCart`
@@ -35,9 +35,9 @@ Fires after a product variant is added to the cart.
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
   wp.hooks.addAction('after.product.addToCart', 'wpshopify', function (lineItems, variant) {
-    console.log('WP Shopify Event 💥 after.product.addToCart', buyButtonState)
-  })
-})
+    console.log('WP Shopify Event 💥 after.product.addToCart', buyButtonState);
+  });
+});
 ```
 
 ## `before.product.variantDropdown.toggle`
@@ -52,17 +52,19 @@ Fires before the variant dropdown opens
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
-  wp.hooks.addAction('before.product.variantDropdown.toggle', 'wpshopify', function (
-    productOptionState
-  ) {
-    console.log('WP Shopify Event 💥 before.product.variantDropdown.toggle', productOptionState)
-  })
-})
+  wp.hooks.addAction(
+    'before.product.variantDropdown.toggle',
+    'wpshopify',
+    function (productOptionState) {
+      console.log('WP Shopify Event 💥 before.product.variantDropdown.toggle', productOptionState);
+    }
+  );
+});
 ```
 
 ## `after.product.variant.selection`
 
-Fires after a product variant is selected
+Fires after each product variant selection
 
 | Parameters         | Description                         |
 | :----------------- | :---------------------------------- |
@@ -73,15 +75,32 @@ Fires after a product variant is selected
 
 ```js
 wp.hooks.addAction('after.cart.ready', 'wpshopify', function (cartState) {
-  wp.hooks.addAction('after.product.variant.selection', 'wpshopify', function (
-    selectedVariant,
-    productOptionState
-  ) {
-    console.log(
-      'WP Shopify Event 💥 after.product.variant.selection',
-      selectedVariant,
-      productOptionState
-    )
-  })
-})
+  wp.hooks.addAction(
+    'after.product.variant.selection',
+    'wpshopify',
+    function (selectedVariant, productOptionState) {
+      console.log(
+        'WP Shopify Event 💥 after.product.variant.selection',
+        selectedVariant,
+        productOptionState
+      );
+    }
+  );
+});
+```
+
+## `after.variants.selection`
+
+Fires only after all product variants are selected
+
+| Parameters | Description                          |
+| :--------- | :----------------------------------- |
+| variant    | Represents the selected variant data |
+
+**Example**
+
+```js
+wp.hooks.addAction('after.variants.selection', 'wpshopify', function (variant) {
+  console.log('variant', variant);
+});
 ```

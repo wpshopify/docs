@@ -33,6 +33,7 @@
   - [Getting started with Storefront](guides/getting-started-storefront.md)
   - [Setting up cross-domain tracking](guides/setting-up-cross-domain-tracking.md)
   - [WP Shopify Elementor Extension](guides/wpshopify-elementor-extension.md)
+  - [Add back to site link to checkout](guides/add-back-to-site-link.md)
 
 * <span class="section section-shortcodes">Shortcodes</span>
 

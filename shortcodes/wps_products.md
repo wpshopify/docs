@@ -648,6 +648,7 @@ Allows for determining where products link, if anywhere. Default: `wordpress`.
 | none            |
 | wordpress       |
 | shopify         |
+| modal           |
 
 **Example**
 

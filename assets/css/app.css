@@ -609,3 +609,7 @@ body .docsify-copy-code-button:after {
 .sidebar-nav .emoji {
   font-size: 8px;
 }
+
+.callout .icon-note {
+  display: none;
+}
